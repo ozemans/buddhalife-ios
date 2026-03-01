@@ -88,51 +88,51 @@ struct ConsequenceEngine {
 
         switch effect {
         case "positive":
-            changes["happiness"]! += randBetween(2, 6)
-            changes["socialStanding"]! += randBetween(1, 4)
-            changes["wisdom"]! += randBetween(1, 3)
-            changes["spiritualDev"]! += randBetween(1, 4)
+            changes["happiness", default: 0] += randBetween(2, 6)
+            changes["socialStanding", default: 0] += randBetween(1, 4)
+            changes["wisdom", default: 0] += randBetween(1, 3)
+            changes["spiritualDev", default: 0] += randBetween(1, 4)
             // Generous acts often cost money
             if choiceMentions(choice, keywords: ["sponsor", "offer", "donate", "give", "generous", "lavish"]) {
-                changes["wealth"]! -= randBetween(3, 10)
+                changes["wealth", default: 0] -= randBetween(3, 10)
             }
             // Temple/merit activities boost spiritual dev more
             if choiceMentions(choice, keywords: ["temple", "merit", "monk", "precept", "ordain", "meditation"]) {
-                changes["spiritualDev"]! += randBetween(2, 5)
+                changes["spiritualDev", default: 0] += randBetween(2, 5)
             }
 
         case "negative":
-            changes["happiness"]! -= randBetween(2, 6)
-            changes["socialStanding"]! -= randBetween(2, 5)
+            changes["happiness", default: 0] -= randBetween(2, 6)
+            changes["socialStanding", default: 0] -= randBetween(2, 5)
             // Breaking precepts or bad acts reduce spiritual dev
-            changes["spiritualDev"]! -= randBetween(1, 3)
+            changes["spiritualDev", default: 0] -= randBetween(1, 3)
             // Some negative choices gain wealth (dirty money, gambling)
             if choiceMentions(choice, keywords: ["gamble", "money", "accept", "job", "dirty", "steal"]) {
-                changes["wealth"]! += randBetween(2, 8)
+                changes["wealth", default: 0] += randBetween(2, 8)
             }
             // Dangerous choices may risk health
             if choiceMentions(choice, keywords: ["risk", "danger", "break", "fight", "drink", "spirit"]) {
-                changes["health"]! -= randBetween(2, 8)
+                changes["health", default: 0] -= randBetween(2, 8)
             }
 
         case "complex":
             // Complex choices have mixed outcomes -- some good, some bad
-            changes["wisdom"]! += randBetween(2, 5) // You always learn from complexity
-            changes["happiness"]! += randBetween(-4, 4)
-            changes["socialStanding"]! += randBetween(-3, 3)
+            changes["wisdom", default: 0] += randBetween(2, 5) // You always learn from complexity
+            changes["happiness", default: 0] += randBetween(-4, 4)
+            changes["socialStanding", default: 0] += randBetween(-3, 3)
             // Financial complexity
             if choiceMentions(choice, keywords: ["money", "debt", "gamble", "accept"]) {
-                changes["wealth"]! += randBetween(-5, 10)
+                changes["wealth", default: 0] += randBetween(-5, 10)
             }
             // Spiritual complexity
             if choiceMentions(choice, keywords: ["spirit", "faith", "religion", "path"]) {
-                changes["spiritualDev"]! += randBetween(-2, 4)
+                changes["spiritualDev", default: 0] += randBetween(-2, 4)
             }
 
         default: // "neutral"
             // Small, mild changes
-            changes["wisdom"]! += randBetween(0, 2)
-            changes["happiness"]! += randBetween(-2, 2)
+            changes["wisdom", default: 0] += randBetween(0, 2)
+            changes["happiness", default: 0] += randBetween(-2, 2)
         }
 
         // Apply surprise factor: occasionally, consequences are unexpectedly
@@ -140,7 +140,7 @@ struct ConsequenceEngine {
         if Double.random(in: 0..<1) < 0.15 {
             let surpriseMultiplier: Double = Double.random(in: 0..<1) < 0.5 ? 1.5 : 0.5
             for key in changes.keys {
-                changes[key] = Int((Double(changes[key]!) * surpriseMultiplier).rounded())
+                changes[key] = Int((Double(changes[key, default: 0]) * surpriseMultiplier).rounded())
             }
         }
 

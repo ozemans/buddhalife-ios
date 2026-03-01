@@ -72,8 +72,8 @@ struct NPCEngine {
         ))
 
         // Village/Neighborhood monk
-        let monkPool = monkNames[country] ?? monkNames["thailand"]!
-        let monkName = monkPool.randomElement()!
+        let monkPool = monkNames[country] ?? monkNames["thailand"] ?? ["Phra Somchai"]
+        let monkName = monkPool.randomElement() ?? "Phra Somchai"
         npcs.append(Relationship(
             name: monkName,
             type: "mentor",
@@ -194,29 +194,30 @@ struct NPCEngine {
 
     /// Get a random name for a given country and gender.
     static func getRandomName(country: String, gender: String) -> String {
-        let pool = namePools[country] ?? namePools["thailand"]!
+        let pool = namePools[country] ?? namePools["thailand"] ?? (male: ["Somchai"], female: ["Suda"])
         let list = gender == "female" ? pool.female : pool.male
-        return list.randomElement()!
+        return list.randomElement() ?? (gender == "female" ? "Suda" : "Somchai")
     }
 
     /// Generate a monk name appropriate for the given country.
     static func generateMonkName(country: String) -> String {
-        let pool = monkNames[country] ?? monkNames["thailand"]!
-        return pool.randomElement()!
+        let pool = monkNames[country] ?? monkNames["thailand"] ?? ["Phra Somchai"]
+        return pool.randomElement() ?? "Phra Somchai"
     }
 
     // MARK: - Private Helpers
 
     /// Pick a unique name that hasn't been used yet. Falls back to any name if all are taken.
     private static func pickUniqueName(country: String, gender: String, usedNames: inout Set<String>) -> String {
-        let pool = namePools[country] ?? namePools["thailand"]!
+        let fallback = gender == "female" ? "Suda" : "Somchai"
+        let pool = namePools[country] ?? namePools["thailand"] ?? (male: ["Somchai"], female: ["Suda"])
         let list = gender == "female" ? pool.female : pool.male
         let available = list.filter { !usedNames.contains($0) }
         let name: String
         if available.isEmpty {
-            name = list.randomElement()!
+            name = list.randomElement() ?? fallback
         } else {
-            name = available.randomElement()!
+            name = available.randomElement() ?? fallback
         }
         usedNames.insert(name)
         return name

@@ -285,63 +285,63 @@ struct LifeProgression {
         switch stage {
         case .childhood:
             // Children grow healthier, gain a little wisdom from learning
-            changes["health"]! += randBetween(0, 2)
-            changes["wisdom"]! += randBetween(0, 1)
-            changes["happiness"]! += randBetween(-1, 2)
+            changes["health", default: 0] += randBetween(0, 2)
+            changes["wisdom", default: 0] += randBetween(0, 1)
+            changes["happiness", default: 0] += randBetween(-1, 2)
 
         case .adolescence:
             // Volatile happiness, some wisdom growth, health peaks
-            changes["health"]! += randBetween(0, 1)
-            changes["wisdom"]! += randBetween(1, 2)
-            changes["happiness"]! += randBetween(-3, 3)
+            changes["health", default: 0] += randBetween(0, 1)
+            changes["wisdom", default: 0] += randBetween(1, 2)
+            changes["happiness", default: 0] += randBetween(-3, 3)
             // Social standing starts to matter
-            changes["socialStanding"]! += randBetween(-1, 1)
+            changes["socialStanding", default: 0] += randBetween(-1, 1)
 
         case .youngAdulthood:
             // Building wealth, accumulating wisdom, health stable
-            changes["wealth"]! += randBetween(-1, 2)
-            changes["wisdom"]! += randBetween(1, 2)
-            changes["socialStanding"]! += randBetween(0, 1)
+            changes["wealth", default: 0] += randBetween(-1, 2)
+            changes["wisdom", default: 0] += randBetween(1, 2)
+            changes["socialStanding", default: 0] += randBetween(0, 1)
             // Slight spiritual growth if already on that path
             if stats.spiritualDev > 10 {
-                changes["spiritualDev"]! += randBetween(0, 1)
+                changes["spiritualDev", default: 0] += randBetween(0, 1)
             }
 
         case .adulthood:
             // Peak earning years, wisdom accumulates steadily
             // Health begins very slow decline after 40
-            changes["wealth"]! += randBetween(0, 2)
-            changes["wisdom"]! += randBetween(1, 3)
-            changes["socialStanding"]! += randBetween(0, 1)
-            changes["spiritualDev"]! += randBetween(0, 1)
+            changes["wealth", default: 0] += randBetween(0, 2)
+            changes["wisdom", default: 0] += randBetween(1, 3)
+            changes["socialStanding", default: 0] += randBetween(0, 1)
+            changes["spiritualDev", default: 0] += randBetween(0, 1)
             if age > 40 {
-                changes["health"]! += randBetween(-2, 0)
+                changes["health", default: 0] += randBetween(-2, 0)
             }
 
         case .elderhood:
             // Health declines, but wisdom and spiritual development peak
             // This is the temple-sleeping phase -- spirituality accelerates
-            changes["health"]! += randBetween(-3, -1)
-            changes["wisdom"]! += randBetween(2, 4)
-            changes["spiritualDev"]! += randBetween(1, 3)
+            changes["health", default: 0] += randBetween(-3, -1)
+            changes["wisdom", default: 0] += randBetween(2, 4)
+            changes["spiritualDev", default: 0] += randBetween(1, 3)
             // Happiness depends on spiritual development
             if stats.spiritualDev > 30 {
-                changes["happiness"]! += randBetween(0, 2)
+                changes["happiness", default: 0] += randBetween(0, 2)
             } else {
-                changes["happiness"]! += randBetween(-2, 0)
+                changes["happiness", default: 0] += randBetween(-2, 0)
             }
             // Social standing rises with age in Buddhist cultures
-            changes["socialStanding"]! += randBetween(0, 2)
+            changes["socialStanding", default: 0] += randBetween(0, 2)
             // Wealth may decline as you give more to the temple
-            changes["wealth"]! += randBetween(-2, 0)
+            changes["wealth", default: 0] += randBetween(-2, 0)
 
             // Steeper health decline past 70
             if age > 70 {
-                changes["health"]! += randBetween(-3, -1)
+                changes["health", default: 0] += randBetween(-3, -1)
             }
             // And past 80
             if age > 80 {
-                changes["health"]! += randBetween(-4, -1)
+                changes["health", default: 0] += randBetween(-4, -1)
             }
         }
 

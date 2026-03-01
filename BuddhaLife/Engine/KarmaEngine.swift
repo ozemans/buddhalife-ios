@@ -104,7 +104,7 @@ struct KarmaEngine {
     /// Calculate the karma change from a choice.
     /// Returns a new Karma object (not a delta -- the full updated state).
     static func calculateKarmaChange(choice: KarmaChoiceInput, currentKarma: Karma) -> Karma {
-        let magnitude = karmaMagnitudes[choice.karmaEffect] ?? karmaMagnitudes[.neutral]!
+        let magnitude = karmaMagnitudes[choice.karmaEffect] ?? KarmaMagnitude(merit: 1, demerit: 1, momentumShift: 0)
         let intensity = choice.karmaIntensity
 
         let merit = currentKarma.merit
@@ -220,7 +220,7 @@ struct KarmaEngine {
         return KarmaDisplay(
             level: level,
             lotusStage: lotusStages[level] ?? 3,
-            description: descriptions[level] ?? descriptions[.balanced]!,
+            description: descriptions[level] ?? "Your karma is in equilibrium.",
             merit: (karma.merit * 10).rounded() / 10,
             demerit: (karma.demerit * 10).rounded() / 10,
             momentum: karma.momentum,

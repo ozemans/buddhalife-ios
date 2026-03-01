@@ -7,8 +7,12 @@ import Observation
 /// Programmatic waveform-based sound engine using AVAudioEngine.
 /// Faithfully ports audioEngine.js — generates sine/triangle tones with ADSR envelopes
 /// for temple bells, chimes, merit/demerit sounds, and screen transitions.
+///
+/// Uses pre-rendered AVAudioPCMBuffers played through a pool of AVAudioPlayerNodes.
+/// This avoids AVAudioSourceNode render-block closures that crash under Swift 6
+/// strict concurrency (the render block runs on the audio IO thread, not @MainActor).
 @MainActor @Observable
-final class AudioEngine {
+final class AudioEngine: NSObject {
 
     // MARK: - Singleton
 
@@ -28,15 +32,26 @@ final class AudioEngine {
     private static let muteKey = "buddhalife_muted"
 
     private var engine: AVAudioEngine?
-    private var isEngineRunning = false
+    private var players: [AVAudioPlayerNode] = []
+    private var nextPlayerIndex = 0
+    private let playerCount = 4
     private let sampleRate: Double = 44100
+
+    // Pre-rendered sound buffers
+    private var bellBuffer: AVAudioPCMBuffer?
+    private var chimeBuffer: AVAudioPCMBuffer?
+    private var meritBuffer: AVAudioPCMBuffer?
+    private var demeritBuffer: AVAudioPCMBuffer?
+    private var transitionBuffer: AVAudioPCMBuffer?
 
     // MARK: - Init
 
-    private init() {
+    private override init() {
         isMuted = UserDefaults.standard.bool(forKey: Self.muteKey)
+        super.init()
         setupAudioSession()
         setupEngine()
+        prerenderBuffers()
     }
 
     // MARK: - Audio Session Setup
@@ -47,7 +62,6 @@ final class AudioEngine {
             try session.setCategory(.ambient, mode: .default)
             try session.setActive(true)
 
-            // Handle interruptions gracefully
             NotificationCenter.default.addObserver(
                 self,
                 selector: #selector(handleInterruption),
@@ -68,10 +82,9 @@ final class AudioEngine {
 
         switch type {
         case .began:
-            isEngineRunning = false
+            engine?.pause()
         case .ended:
-            // Try to restart the engine
-            setupEngine()
+            try? engine?.start()
         @unknown default:
             break
         }
@@ -80,272 +93,187 @@ final class AudioEngine {
     // MARK: - Engine Setup
 
     private func setupEngine() {
-        engine = AVAudioEngine()
-        guard let engine else { return }
+        let eng = AVAudioEngine()
+        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)!
 
-        // Connect a dummy mixer node to keep the engine graph valid.
-        // We attach source nodes on-the-fly for each sound.
-        let mainMixer = engine.mainMixerNode
-        mainMixer.outputVolume = 1.0
+        // Create player node pool and attach/connect them once
+        for _ in 0..<playerCount {
+            let player = AVAudioPlayerNode()
+            eng.attach(player)
+            eng.connect(player, to: eng.mainMixerNode, format: format)
+            players.append(player)
+        }
+
+        eng.mainMixerNode.outputVolume = 1.0
+        eng.prepare()
 
         do {
-            try engine.start()
-            isEngineRunning = true
+            try eng.start()
         } catch {
-            isEngineRunning = false
+            // Engine failed to start -- sounds will be silent
         }
+
+        self.engine = eng
     }
 
-    /// Ensure the engine is running and audio is not muted.
-    private func ensureReady() -> Bool {
-        guard !isMuted else { return false }
-        guard let engine else { return false }
+    // MARK: - Tone Parameters
 
-        if !isEngineRunning {
-            do {
-                try engine.start()
-                isEngineRunning = true
-            } catch {
-                return false
-            }
-        }
-        return true
-    }
-
-    // MARK: - Tone Generation
-
-    /// Waveform type matching the JS oscillator types.
     private enum WaveformType {
         case sine
         case triangle
     }
 
-    /// ADSR envelope parameters matching createTone from audioEngine.js.
     private struct ToneParams {
         var type: WaveformType = .sine
         var freq: Double
-        var delay: Double = 0          // delay from "now" before this tone starts
+        var delay: Double = 0
         var attack: Double
         var decay: Double
-        var sustain: Double = 0        // sustain level (0-1 of peakGain)
+        var sustain: Double = 0
         var release: Double = 0
         var peakGain: Double = 0.12
     }
 
-    /// Schedule a tone as a short-lived AVAudioSourceNode.
-    /// The node renders samples for the full ADSR envelope then detaches itself.
-    private func playTone(_ params: ToneParams) {
-        guard ensureReady(), let engine else { return }
+    // MARK: - Buffer Pre-rendering
 
-        let sampleRate = self.sampleRate
-        let freq = params.freq
-        let attack = params.attack
-        let decay = params.decay
-        let sustain = params.sustain
-        let release = params.release
-        let peakGain = params.peakGain
-        let waveformType = params.type
-        let delaySeconds = params.delay
+    /// Pre-render all sound effects into PCM buffers at init time.
+    /// Each buffer contains the complete mixed waveform for one sound effect.
+    private func prerenderBuffers() {
+        bellBuffer = renderComposite([
+            ToneParams(freq: 800, attack: 0.005, decay: 1.8, sustain: 0, release: 0.2, peakGain: 0.12),
+            ToneParams(freq: 803, attack: 0.005, decay: 1.5, sustain: 0, release: 0.2, peakGain: 0.06),
+            ToneParams(freq: 1600, attack: 0.003, decay: 0.8, sustain: 0, release: 0.1, peakGain: 0.03),
+        ])
 
-        let totalDuration = attack + decay + release + 0.05
-        let totalSamples = Int(totalDuration * sampleRate)
-        let delaySamples = Int(delaySeconds * sampleRate)
+        chimeBuffer = renderComposite([
+            ToneParams(freq: 1200, attack: 0.003, decay: 0.4, sustain: 0, release: 0.1, peakGain: 0.1),
+            ToneParams(freq: 1802, attack: 0.003, decay: 0.25, sustain: 0, release: 0.05, peakGain: 0.04),
+        ])
 
-        var sampleIndex = -delaySamples // start negative to count through delay
+        meritBuffer = renderComposite([
+            ToneParams(freq: 523, attack: 0.01, decay: 0.15, sustain: 0, release: 0.05, peakGain: 0.1),
+            ToneParams(freq: 659, delay: 0.12, attack: 0.01, decay: 0.25, sustain: 0, release: 0.1, peakGain: 0.1),
+        ])
 
-        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)!
+        demeritBuffer = renderComposite([
+            ToneParams(type: .triangle, freq: 220, attack: 0.02, decay: 0.4, sustain: 0, release: 0.15, peakGain: 0.08),
+        ])
 
-        let sourceNode = AVAudioSourceNode(format: format) { _, _, frameCount, audioBufferList -> OSStatus in
-            let ablPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
-            let buffer = ablPointer[0]
-            let frames = Int(frameCount)
-            guard let data = buffer.mData?.assumingMemoryBound(to: Float.self) else {
-                return noErr
-            }
+        let transitionNotes: [Double] = [440, 523, 659]
+        let spacing = 0.1
+        transitionBuffer = renderComposite(transitionNotes.enumerated().map { i, freq in
+            ToneParams(freq: freq, delay: Double(i) * spacing, attack: 0.01, decay: 0.2, sustain: 0, release: 0.08, peakGain: 0.08)
+        })
+    }
 
-            for frame in 0..<frames {
-                let idx = sampleIndex + frame
+    /// Render multiple tones mixed together into a single PCM buffer.
+    private func renderComposite(_ tones: [ToneParams]) -> AVAudioPCMBuffer? {
+        guard let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1) else {
+            return nil
+        }
 
-                // During delay, output silence
-                if idx < 0 {
-                    data[frame] = 0
-                    continue
-                }
+        // Find the total duration needed (max of delay + tone duration across all tones)
+        let totalDuration = tones.map { $0.delay + $0.attack + $0.decay + $0.release + 0.05 }.max() ?? 1.0
+        let frameCount = AVAudioFrameCount(totalDuration * sampleRate)
 
-                // Past the end of the tone, output silence
-                if idx >= totalSamples {
-                    data[frame] = 0
-                    continue
-                }
+        guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: frameCount) else {
+            return nil
+        }
+        buffer.frameLength = frameCount
 
-                let t = Double(idx) / sampleRate
-                let phase = freq * t
+        guard let floatData = buffer.floatChannelData?[0] else { return nil }
 
-                // Generate waveform sample
+        // Zero the buffer
+        for i in 0..<Int(frameCount) {
+            floatData[i] = 0
+        }
+
+        // Mix each tone into the buffer
+        for params in tones {
+            let delaySamples = Int(params.delay * sampleRate)
+            let toneDuration = params.attack + params.decay + params.release + 0.05
+            let toneSamples = Int(toneDuration * sampleRate)
+
+            for i in 0..<toneSamples {
+                let bufferIndex = delaySamples + i
+                guard bufferIndex < Int(frameCount) else { break }
+
+                let t = Double(i) / sampleRate
+                let phase = params.freq * t
+
+                // Waveform
                 let sample: Double
-                switch waveformType {
+                switch params.type {
                 case .sine:
                     sample = sin(2.0 * .pi * phase)
                 case .triangle:
-                    // Triangle wave: 2 * |2 * (t*f - floor(t*f + 0.5))| - 1
                     let p = phase - floor(phase + 0.5)
                     sample = 4.0 * abs(p) - 1.0
                 }
 
-                // Calculate envelope gain at time t
+                // ADSR envelope
                 let envGain: Double
-                if t < attack {
-                    // Attack: ramp from ~0 to peakGain
-                    envGain = peakGain * (t / attack)
-                } else if t < attack + decay {
-                    // Decay: ramp from peakGain to sustain level
-                    let decayProgress = (t - attack) / decay
-                    envGain = peakGain - (peakGain * (1.0 - sustain)) * decayProgress
-                } else if release > 0 && t < attack + decay + release {
-                    // Release: ramp from sustain level to ~0
-                    let sustainGain = peakGain * sustain
-                    let releaseProgress = (t - attack - decay) / release
+                if t < params.attack {
+                    envGain = params.peakGain * (t / params.attack)
+                } else if t < params.attack + params.decay {
+                    let decayProgress = (t - params.attack) / params.decay
+                    envGain = params.peakGain - (params.peakGain * (1.0 - params.sustain)) * decayProgress
+                } else if params.release > 0 && t < params.attack + params.decay + params.release {
+                    let sustainGain = params.peakGain * params.sustain
+                    let releaseProgress = (t - params.attack - params.decay) / params.release
                     envGain = sustainGain * (1.0 - releaseProgress)
                 } else {
                     envGain = 0
                 }
 
-                data[frame] = Float(sample * envGain)
+                floatData[bufferIndex] += Float(sample * envGain)
             }
-
-            sampleIndex += frames
-            return noErr
         }
 
-        engine.attach(sourceNode)
-        engine.connect(sourceNode, to: engine.mainMixerNode, format: format)
+        return buffer
+    }
 
-        // Schedule cleanup after the tone completes
-        let cleanupDelay = delaySeconds + totalDuration + 0.1
-        Task { @MainActor [weak engine] in
-            try? await Task.sleep(nanoseconds: UInt64(cleanupDelay * 1_000_000_000))
-            guard let engine else { return }
-            engine.disconnectNodeOutput(sourceNode)
-            engine.detach(sourceNode)
-        }
+    // MARK: - Playback
+
+    /// Play a pre-rendered buffer on the next available player node.
+    private func playBuffer(_ buffer: AVAudioPCMBuffer?) {
+        guard !isMuted,
+              let buffer,
+              let engine,
+              engine.isRunning else { return }
+
+        let player = players[nextPlayerIndex % playerCount]
+        nextPlayerIndex += 1
+
+        player.stop()
+        player.scheduleBuffer(buffer, completionHandler: nil)
+        player.play()
     }
 
     // MARK: - Sound Effects
 
     /// Temple bell -- sine wave ~800Hz, quick attack, long shimmer decay (~2s).
-    /// Played on: age advance, festival events.
-    /// Matches playBell from audioEngine.js.
     func playBell() {
-        // Main bell tone
-        playTone(ToneParams(
-            freq: 800,
-            attack: 0.005,
-            decay: 1.8,
-            sustain: 0,
-            release: 0.2,
-            peakGain: 0.12
-        ))
-
-        // Shimmer overtone (slight frequency offset for beating)
-        playTone(ToneParams(
-            freq: 803,
-            attack: 0.005,
-            decay: 1.5,
-            sustain: 0,
-            release: 0.2,
-            peakGain: 0.06
-        ))
-
-        // Higher harmonic for brightness
-        playTone(ToneParams(
-            freq: 1600,
-            attack: 0.003,
-            decay: 0.8,
-            sustain: 0,
-            release: 0.1,
-            peakGain: 0.03
-        ))
+        playBuffer(bellBuffer)
     }
 
     /// Light chime -- sine at ~1200Hz, short decay (~0.5s).
-    /// Played on: making a choice.
-    /// Matches playChime from audioEngine.js.
     func playChime() {
-        playTone(ToneParams(
-            freq: 1200,
-            attack: 0.003,
-            decay: 0.4,
-            sustain: 0,
-            release: 0.1,
-            peakGain: 0.1
-        ))
-
-        // Soft overtone
-        playTone(ToneParams(
-            freq: 1802,
-            attack: 0.003,
-            decay: 0.25,
-            sustain: 0,
-            release: 0.05,
-            peakGain: 0.04
-        ))
+        playBuffer(chimeBuffer)
     }
 
     /// Pleasant ascending two-note tone for gaining merit.
-    /// Matches playMeritSound from audioEngine.js.
     func playMeritSound() {
-        // First note -- C5
-        playTone(ToneParams(
-            freq: 523,
-            attack: 0.01,
-            decay: 0.15,
-            sustain: 0,
-            release: 0.05,
-            peakGain: 0.1
-        ))
-
-        // Second note -- E5 (ascending major third), delayed by 120ms
-        playTone(ToneParams(
-            freq: 659,
-            delay: 0.12,
-            attack: 0.01,
-            decay: 0.25,
-            sustain: 0,
-            release: 0.1,
-            peakGain: 0.1
-        ))
+        playBuffer(meritBuffer)
     }
 
     /// Low subtle tone for gaining demerit.
-    /// Matches playDemeritSound from audioEngine.js.
     func playDemeritSound() {
-        playTone(ToneParams(
-            type: .triangle,
-            freq: 220,
-            attack: 0.02,
-            decay: 0.4,
-            sustain: 0,
-            release: 0.15,
-            peakGain: 0.08
-        ))
+        playBuffer(demeritBuffer)
     }
 
     /// Gentle 3-note ascending sequence for screen transitions.
-    /// Matches playTransition from audioEngine.js.
     func playTransition() {
-        let notes: [Double] = [440, 523, 659] // A4, C5, E5
-        let spacing = 0.1
-
-        for (i, freq) in notes.enumerated() {
-            playTone(ToneParams(
-                freq: freq,
-                delay: Double(i) * spacing,
-                attack: 0.01,
-                decay: 0.2,
-                sustain: 0,
-                release: 0.08,
-                peakGain: 0.08
-            ))
-        }
+        playBuffer(transitionBuffer)
     }
 }
