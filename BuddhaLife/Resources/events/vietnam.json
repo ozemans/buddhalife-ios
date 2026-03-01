@@ -1,0 +1,610 @@
+[
+  {
+    "id": "vn_childhood_001",
+    "title": "The Ancestor Altar",
+    "country": "vietnam",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 11,
+    "karmaRange": [-100, 100],
+    "description": "Every Vietnamese home has a ban tho -- an ancestor altar displaying photos of the deceased, incense, flowers, and fruit offerings. Your mother lights incense on the 1st and 15th of every lunar month, placing your grandfather's favorite foods before his photograph. Today she asks you to help prepare the offerings. Your school friend says ancestor worship is old-fashioned.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Help prepare the offerings carefully and learn the prayers",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 6, "education": 3 },
+          "relationships": [{ "target": "family", "change": 8 }]
+        },
+        "outcomeText": "You arrange mangoes and sticky rice on the altar and light the incense with steady hands. Your mother teaches you the proper prayers -- not Pali like in Thailand, but Vietnamese phrases asking the ancestors for blessing and protection. The to tien (ancestral spirits) are not distant gods; they are your own family watching from the gioi khac (the otherworld). This is not superstition. As Vietnamese say, it is 'respect and intelligence.' The smoke curls upward and you feel connected to generations stretching back into history."
+      },
+      {
+        "id": "b",
+        "text": "Refuse -- tell your mother it is old-fashioned",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -2, "spiritualDev": -3 },
+          "relationships": [{ "target": "family", "change": -8 }]
+        },
+        "outcomeText": "Your mother's face hardens. She does not argue -- she simply performs the ritual alone, murmuring to your grandfather's photograph. That night, you dream of an old man standing at the foot of your bed, his face both familiar and strange. He says nothing. Your grandmother warns you: neglecting the ancestors invites their displeasure, and neglected ancestors can cause illness, bad luck, and night terrors. Whether you believe or not, the dream shakes you."
+      },
+      {
+        "id": "c",
+        "text": "Help with the offerings but ask why you do this",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "education": 5 },
+          "relationships": [{ "target": "family", "change": 6 }]
+        },
+        "outcomeText": "Your mother smiles and tells you: in the otherworld, the ancestors need what we send them. The food, the incense, the paper offerings -- these are provisions for their journey. When we honor them, they protect us. When we forget them, they suffer and we suffer too. She adds: 'Your grandfather loved mangoes. Do you think he stops loving mangoes just because he died?' The answer, in Vietnamese cosmology, is no. Love and obligation persist beyond the grave."
+      },
+      {
+        "id": "d",
+        "text": "Take the offering fruit to sell at the market for pocket money",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -5, "spiritualDev": -6, "socialStanding": -8, "wealth": 3 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "ancestors", "change": -12 }]
+        },
+        "outcomeText": "You slip the mangoes and sticky rice into a bag and sell them at the corner market for a few thousand dong. When your mother finds the altar bare, her face goes white. She does not shout. She sits down slowly, as if something has broken inside her. Your grandfather's photograph watches from the empty altar. That night, you dream of an old man with hollow eyes reaching toward you with thin hands, whispering: 'Even the food? You took even the food?' Your grandmother says you have invited the ancestors' deepest displeasure -- not anger, but sorrow, which is far worse. The coins in your pocket feel impossibly heavy."
+      }
+    ],
+    "tags": ["ancestor-altar", "ban-tho", "ancestors", "to-tien", "family"],
+    "source": "Knowledge base: Vietnam -- ban tho ancestor altar, tho cung to tien"
+  },
+  {
+    "id": "vn_childhood_002",
+    "title": "The Ghost Festival",
+    "country": "vietnam",
+    "lifeStage": "childhood",
+    "minAge": 7,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "It is the 15th of the 7th lunar month -- Ngay Xa Toi Vong Hon, the Buddhist Feast of Wandering Souls, also called 'Hell Day.' Your grandmother says the gates of the underworld are open and the con ma (angry spirits) roam the streets. She has prepared elaborate food offerings to pacify them. The neighborhood is thick with incense smoke. Your friends dare you to walk through the old cemetery after dark.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Stay home and help your grandmother with the offerings to the wandering souls",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5, "health": 2 },
+          "relationships": [{ "target": "grandmother", "change": 8 }]
+        },
+        "outcomeText": "You help set out plates of food at the front door for the wandering spirits -- not your ancestors, who are honored at the altar, but the nameless, homeless dead. In Vietnam, millions of angry spirits were created by the American War: soldiers, civilians, children, all dying violently with unresolved karma. On this night, they roam free. The offerings are both compassion and protection: feed the hungry ghosts, and they leave you in peace."
+      },
+      {
+        "id": "b",
+        "text": "Accept the dare and walk through the cemetery",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -4, "spiritualDev": -2, "health": -4 },
+          "relationships": [{ "target": "friends", "change": 3 }]
+        },
+        "outcomeText": "You creep through the cemetery gate as your friends watch from the road. The incense smoke hangs low between the graves. A sudden gust of cold air hits you and something brushes your arm -- a branch? A hand? You run screaming back to the road. That night you develop a high fever and cry in your sleep. Your grandmother performs a ritual with blessed water and prayers to Quan Am, the Bodhisattva of Compassion. She says the con ma touched your soul. You are sick for three days."
+      },
+      {
+        "id": "c",
+        "text": "Go to the pagoda with your mother for the special Vu Lan ceremony",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 7, "education": 3 },
+          "relationships": [{ "target": "family", "change": 6 }]
+        },
+        "outcomeText": "At the pagoda, monks chant in Sino-Vietnamese and transliterated Sanskrit. The Vu Lan ceremony honors filial piety -- the story of Muc Kien Lien descending to hell to save his mother. Even without understanding every word, the chanting generates merit. The pagoda is packed: young and old, rich and poor, all here to honor their mothers and pacify the wandering dead. You feel the weight of Vietnam's spiritual world -- Mahayana Buddhism, Confucian filial piety, and animist spirit belief all braided together."
+      },
+      {
+        "id": "d",
+        "text": "Steal the food offerings left outside for the wandering spirits",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -4, "spiritualDev": -5, "socialStanding": -7, "wealth": 3 },
+          "relationships": [{ "target": "grandmother", "change": -10 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You creep along the street collecting plates of food left out for the con ma. Roast duck, sticky rice, fruit -- a feast meant for the hungry dead. A neighbor catches you with your arms full. The look on her face is not anger but horror: on the one night when the gates of the underworld stand open, you are stealing from the most dangerous spirits in Vietnamese cosmology. Your grandmother hears and cannot speak for a full minute. 'You have taken food from the mouths of the dead,' she finally whispers. 'The wandering souls have nothing -- no family, no altar, no peace -- and you took even this.' For weeks afterward, you feel cold spots following you down the street, and the smell of incense makes your stomach turn with shame."
+      }
+    ],
+    "tags": ["ghost-festival", "con-ma", "wandering-souls", "vu-lan", "ancestors"],
+    "source": "Knowledge base: Vietnam -- Ngay Xa Toi Vong Hon, con ma, war ghosts"
+  },
+  {
+    "id": "vn_adolescence_001",
+    "title": "The Youth Buddhist Retreat",
+    "country": "vietnam",
+    "lifeStage": "adolescence",
+    "minAge": 16,
+    "maxAge": 22,
+    "karmaRange": [-100, 100],
+    "description": "You are a university student in Ho Chi Minh City. A temple -- perhaps Giac Ngo or the Temple of Harmony -- offers a weekend retreat combining Dharma lectures, Vipassana meditation, a talk show with a successful celebrity businessperson, and a group hike. Your exams are next week. A friend says these retreats are also great for networking and meeting people.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Attend the full retreat -- spiritual cultivation is 'total life practice'",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 6, "spiritualDev": 8, "socialStatus": 3, "education": -2 },
+          "relationships": [{ "target": "spiritual_community", "change": 8 }]
+        },
+        "outcomeText": "The retreat is a revelation. The Dharma lectures challenge your assumptions; the meditation quiets the exam anxiety; the celebrity talk show is unexpectedly inspiring. You meet other young people who combine Buddhism with career ambition, self-improvement, and social media. This is Vietnamese Buddhism's modernist wing -- philosophical, ethical, meditation-focused. You leave feeling that spiritual cultivation and worldly success are not opposites. Your exam preparation suffered, but something deeper has begun."
+      },
+      {
+        "id": "b",
+        "text": "Skip the retreat and study for exams -- practical obligations come first",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 0, "education": 5 },
+          "relationships": []
+        },
+        "outcomeText": "You stay in the library and cram. The exam goes well. But when your friends return from the retreat glowing with enthusiasm, talking about mindfulness and 'total life practice,' you feel a pang of missing out. The Vietnamese pattern is well-documented: high Buddhist engagement during university, declining with careers and families, returning during existential crises. You are at the high point. The retreat will be offered again next month."
+      },
+      {
+        "id": "c",
+        "text": "Attend the retreat and also consult a tarot reader about your exam results",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": 5, "spiritualDev": 4, "socialStatus": 2 },
+          "relationships": [{ "target": "spiritual_community", "change": 4 }]
+        },
+        "outcomeText": "You attend the Dharma lectures in the morning and visit a tarot reader in the afternoon. Your friends do the same -- young Vietnamese commonly combine Buddhism with tarot cards, astrology, fortune telling, and self-improvement courses as 'projects of self-cultivation.' The older monks would disapprove, but for your generation, spiritual seeking is eclectic. You pick and choose from multiple traditions, assembling a personal practice that the temple would not recognize but that feels authentically yours."
+      },
+      {
+        "id": "d",
+        "text": "Attend only the meditation portion, skipping the celebrity talk show",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 7 },
+          "relationships": [{ "target": "spiritual_community", "change": 5 }]
+        },
+        "outcomeText": "You sit in the meditation hall while the celebrity draws crowds in the main pavilion. The monk leading the session teaches tam bo nhat bai -- three steps, one prostration -- a devotional practice from East Asian Mahayana Buddhism. Each prostration is an act of humility. Your knees ache; your ego resists. But something opens. This is not the Buddhism of your grandmother's incense offerings -- it is an embodied, demanding practice that leaves you quietly transformed."
+      }
+    ],
+    "tags": ["youth", "retreat", "meditation", "modernity", "ho-chi-minh-city", "university"],
+    "source": "Scholar 3 (Nguyen -- youth Buddhist programs in HCMC)"
+  },
+  {
+    "id": "vn_youngadult_001",
+    "title": "Devotional vs. Modernist Buddhism",
+    "country": "vietnam",
+    "lifeStage": "young_adulthood",
+    "minAge": 20,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "Your grandmother wants you to come to the pagoda on the 1st of the lunar month to make offerings and pray to Quan Am, the Bodhisattva of Compassion. Your modernist Buddhist friend calls this 'superstitious' devotional practice and says real Buddhism is about meditation and philosophy. The abbot of Giac Ngo temple has warned about mu chu Phat phap -- 'Dharma illiteracy' -- among devotional Buddhists. But your grandmother's faith is genuine and deep.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Go with your grandmother -- devotional practice has its own merit",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 4, "socialStatus": 2 },
+          "relationships": [{ "target": "grandmother", "change": 10 }]
+        },
+        "outcomeText": "You stand beside your grandmother in the crowded pagoda, surrounded by incense smoke and the murmur of prayers to Quan Am. She asks the Bodhisattva for your success in exams, a good marriage, and the family's health. It is Vietnamese Buddhism at its most common: 'mostly devotional,' as the scholars note. But watching your grandmother's face -- radiant with faith, at peace in this moment -- you understand that devotion is its own form of practice. Not every Buddhist needs to meditate."
+      },
+      {
+        "id": "b",
+        "text": "Go to the modernist temple's Vipassana session instead",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "socialStatus": 3 },
+          "relationships": [{ "target": "grandmother", "change": -5 }]
+        },
+        "outcomeText": "You sit on a cushion in a clean, minimalist meditation hall. The monk teaches Vipassana observation of the breath, no statues of Quan Am, no incense, no chanting. This is the Buddhism that attracts educated middle-class youth: philosophical, ethical, meditation-focused. You feel your mind quieting. But when you call your grandmother that evening, she sounds hurt. She ate her temple meal alone. The class distinction in Buddhist approach -- modernist for the educated, devotional for the rest -- troubles you."
+      },
+      {
+        "id": "c",
+        "text": "Go with grandmother but silently reinterpret the devotional elements through a modernist lens",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 6 },
+          "relationships": [{ "target": "grandmother", "change": 8 }]
+        },
+        "outcomeText": "You accompany your grandmother and bow before Quan Am. But instead of praying for exam results, you silently cultivate compassion -- the quality Quan Am represents. Instead of asking for favors, you reflect on the suffering of all beings. You participate in the form while transforming the content. Your grandmother sees you praying and is satisfied. Your modernist friend would not recognize what you are doing. It is a private reconciliation between two Buddhisms that Vietnamese society has not yet resolved."
+      },
+      {
+        "id": "d",
+        "text": "Skip both and volunteer at the temple's charity organization",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 5, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You spend the morning distributing rice and medicine to poor families through the temple's social welfare program. This is the legacy of Thich Nhat Hanh's School of Youth for Social Services, founded in 1965: engaged Buddhism that serves the community directly. Your grandmother cannot argue with charitable action, and your modernist friend cannot call it superstitious. You have found a path that honors both the devotional and philosophical traditions by acting on their shared value: compassion."
+      }
+    ],
+    "tags": ["devotional", "modernist", "quan-am", "generational", "buddhism-types"],
+    "source": "Scholar 3 (Nguyen -- modernism vs. devotionalism in Vietnamese Buddhism)"
+  },
+  {
+    "id": "vn_youngadult_002",
+    "title": "The Paper Mansion",
+    "country": "vietnam",
+    "lifeStage": "young_adulthood",
+    "minAge": 20,
+    "maxAge": 40,
+    "karmaRange": [-100, 100],
+    "description": "Your uncle has died and the family is commissioning a nha tang -- an elaborate paper mansion -- to burn as an offering. The paper replica includes a house, a car, a television, paper money, and even a paper smartphone. In the otherworld, your uncle will receive these as real objects. The nha tang costs a month's salary. A cousin who studied abroad says this is wasteful superstition.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Contribute to the nha tang -- honor the tradition fully",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 4, "wealth": -6 },
+          "relationships": [{ "target": "family", "change": 8 }, { "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "You watch the nha tang burn in the courtyard, paper walls curling and blackening, the miniature TV dissolving into ash. The smoke rises toward the gioi khac (the otherworld), carrying your uncle's provisions for his journey. Your aunt says he loved watching football on TV, and now he will have one forever. The tradition is ancient but adaptive -- ten years ago, no one burned paper smartphones. The otherworld modernizes alongside the living world."
+      },
+      {
+        "id": "b",
+        "text": "Argue for a simpler offering -- donate the money to charity instead",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": 3, "wealth": 3 },
+          "relationships": [{ "target": "family", "change": -5 }]
+        },
+        "outcomeText": "You suggest the money would be better spent feeding the poor in your uncle's name. The family is divided -- the younger generation agrees, the older generation is scandalized. Your aunt says: 'Your uncle needs things in the otherworld. Charity helps the living, not the dead.' The Confucian value of hieu (filial piety) demands that you care for the dead according to their needs, not your philosophical preferences. The argument creates a rift that takes months to heal."
+      },
+      {
+        "id": "c",
+        "text": "Commission the nha tang but also arrange a proper Buddhist merit-transfer ceremony",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 6, "wealth": -8 },
+          "relationships": [{ "target": "family", "change": 10 }, { "target": "ancestors", "change": 10 }]
+        },
+        "outcomeText": "You do both: the paper mansion for your uncle's material needs in the otherworld, and a full Buddhist ceremony at the pagoda for his spiritual merit. Monks chant in Sino-Vietnamese while the nha tang burns in the courtyard. Tam giao -- the 'triple religion' of Buddhism, Taoism, and Confucianism -- finds its natural expression in your uncle's funeral. Not one tradition alone but all three woven together, as they have been in Vietnam for centuries."
+      },
+      {
+        "id": "d",
+        "text": "Pocket the money your family gave you for the nha tang and claim it cost less than expected",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -6, "spiritualDev": -5, "socialStanding": -8, "wealth": 5 },
+          "relationships": [{ "target": "family", "change": -12 }, { "target": "ancestors", "change": -10 }]
+        },
+        "outcomeText": "You commission a cheap, flimsy nha tang and keep the difference. At the burning, the paper mansion collapses before the flames even reach it, its thin walls buckling in the heat. Your aunt frowns -- she knows what a proper nha tang looks like. Your cousin whispers to your mother. In the otherworld, your uncle receives a broken house, a home unfit for habitation. In Vietnamese belief, what you burn is exactly what the dead receive. You have condemned your uncle to poverty in the afterlife to enrich yourself in this one. The family's trust in you -- once the bedrock of hieu -- cracks like cheap paper in the fire. The money spends quickly, but your uncle's funeral becomes the one the family remembers with shame."
+      }
+    ],
+    "tags": ["nha-tang", "paper-mansion", "ancestors", "funeral", "otherworld", "tam-giao"],
+    "source": "Knowledge base: Vietnam -- nha tang paper mansion offerings"
+  },
+  {
+    "id": "vn_adulthood_001",
+    "title": "Your Child Stole from the Ancestor Altar",
+    "country": "vietnam",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your children have been sneaking fruit and sweets from the ancestor altar for months, eating the offerings meant for the dead. Now both children are experiencing nightmares, convulsions, and mysterious illness. Doctors find nothing wrong. Your grandmother discovers the theft and is horrified: the ancestors are punishing the disrespect.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Enforce traditional punishment and make elaborate offerings to appease the ancestors",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 1 },
+          "stats": { "happiness": -3, "spiritualDev": 4, "health": 5, "wealth": -4 },
+          "relationships": [{ "target": "ancestors", "change": 8 }, { "target": "children", "change": -3 }]
+        },
+        "outcomeText": "You scold the children firmly and prepare an extra-elaborate offering: your grandfather's favorite pho, fresh flowers, new incense, and paper money. The grandmother leads a prayer of apology to the to tien. Within days, the nightmares stop and the convulsions cease. The children are frightened and chastened. The ancestors' displeasure is real -- or at least, the family's belief in it functions as a moral enforcement mechanism that has governed Vietnamese behavior for millennia."
+      },
+      {
+        "id": "b",
+        "text": "Take the children to the hospital for a thorough medical examination",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 1 },
+          "stats": { "happiness": -2, "spiritualDev": -1, "health": 0, "wealth": -5 },
+          "relationships": [{ "target": "grandmother", "change": -5 }]
+        },
+        "outcomeText": "The doctors run every test. Blood work: normal. Brain scan: clear. Neurological exam: nothing. The bill is significant and the doctors shrug: 'Sometimes children have nightmares.' Your grandmother says nothing, but her silence is eloquent. The symptoms continue. In Vietnam, the distinction between ton giao (institutionalized religion) and tin nguong (popular beliefs/practices) means that ancestor punishment falls outside modern medicine's categories. The doctors cannot treat what they do not recognize."
+      },
+      {
+        "id": "c",
+        "text": "Consult a spirit medium to learn what the ancestors truly want",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 5, "wealth": -3 },
+          "relationships": [{ "target": "ancestors", "change": 5 }]
+        },
+        "outcomeText": "The medium enters a trance and speaks in your grandfather's voice. He is not angry about the stolen food -- he is angry that the family has been neglecting the altar for months, making offerings carelessly without genuine attention. The children's theft was merely the last insult. The medium prescribes a renewal of the household's spiritual practice: daily incense, fresh flowers, heartfelt prayers on the 1st and 15th. The children recover when the family's devotion returns."
+      }
+    ],
+    "tags": ["ancestors", "altar-theft", "punishment", "children", "to-tien", "illness"],
+    "source": "Scholar 1 (Gustafsson -- Phan Van Si and My Hanh)"
+  },
+  {
+    "id": "vn_adulthood_002",
+    "title": "The Daughter in the City",
+    "country": "vietnam",
+    "lifeStage": "adulthood",
+    "minAge": 40,
+    "maxAge": 65,
+    "karmaRange": [-100, 100],
+    "description": "Your eldest daughter has moved to Ho Chi Minh City for work. She earns good money and sends remittances, but she did not come home for Tet -- the Lunar New Year. The ancestor altar in your old family home has been neglected by the new tenants. You begin having night terrors. The old Confucian ideal of ngu dai dong duong (five generations under one roof) feels impossibly distant.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Call your daughter home immediately to perform the proper rites",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 4, "health": 5 },
+          "relationships": [{ "target": "daughter", "change": -3 }, { "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "Your daughter takes three days off work -- a sacrifice in Vietnam's competitive job market. She performs the Tet rites at the old family home, cleaning the altar, lighting fresh incense, and preparing a feast for the ancestors. Your night terrors stop. But the tension remains: your daughter is a 'flying duck' (con gai bay) in the old Vietnamese phrase -- a daughter who has flown from the nest. Sons carry the patriline; daughters marry out. The modern economy has made daughters the family's primary earners, but the ancestral obligations still weigh on the sons."
+      },
+      {
+        "id": "b",
+        "text": "Commission an elaborate nha tang as a substitute offering",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 3, "wealth": -6 },
+          "relationships": [{ "target": "ancestors", "change": 5 }]
+        },
+        "outcomeText": "You commission a magnificent paper mansion and burn it for the ancestors, along with paper money, paper clothes, and paper food. It is an expensive gesture of devotion. The night terrors ease but do not stop entirely. The ancestors seem partially appeased -- the paper offerings address their material needs in the otherworld, but they still want the personal attention of their living descendants. Objects cannot fully substitute for presence."
+      },
+      {
+        "id": "c",
+        "text": "Accept the situation and endure -- modernity is changing everything",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -5, "spiritualDev": -2, "health": -5 },
+          "relationships": [{ "target": "ancestors", "change": -8 }]
+        },
+        "outcomeText": "You tell yourself the night terrors are just stress. The ancestors will understand that times have changed. But the terrors intensify: you see your father standing at the foot of your bed, thin and hungry, pointing toward the neglected altar. In Vietnamese cosmology, the dead do not understand or accept modern excuses. Their needs are timeless. Neglect is neglect, whether the cause is laziness or economic necessity. The gap between the ancestral world and the modern one widens, and you are caught in it."
+      },
+      {
+        "id": "d",
+        "text": "Travel to the old family home yourself and restore the altar",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 6, "health": 5, "wealth": -3 },
+          "relationships": [{ "target": "ancestors", "change": 10 }]
+        },
+        "outcomeText": "You make the journey to the old village, negotiate with the tenants for access to the altar space, and spend three days cleaning, restoring, and performing the rites. The ancestral photos are dusted, the incense holders polished, fresh flowers placed. That first night in the old house, you sleep peacefully for the first time in months. The ancestors are appeased. You have fulfilled hieu -- filial piety -- the deepest obligation in Vietnamese culture."
+      }
+    ],
+    "tags": ["ancestors", "urbanization", "filial-piety", "tet", "modernity", "daughter"],
+    "source": "Scholar 1 (Gustafsson -- Nguyen Thi Thuy's career vs. ancestor duty)"
+  },
+  {
+    "id": "vn_adulthood_003",
+    "title": "The Temple Wedding",
+    "country": "vietnam",
+    "lifeStage": "adulthood",
+    "minAge": 22,
+    "maxAge": 38,
+    "karmaRange": [-100, 100],
+    "description": "Your pagoda has recently started offering Buddhist wedding ceremonies -- a relatively new phenomenon in Vietnam designed to attract young people to the temple. Your partner suggests a temple wedding instead of the traditional ancestor-hall ceremony. Your parents are confused: weddings belong at home, before the ancestor altar, not at the pagoda.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Choose the temple wedding -- embrace the modern Buddhist approach",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 6, "spiritualDev": 5, "socialStatus": 3 },
+          "relationships": [{ "target": "partner", "change": 8 }, { "target": "parents", "change": -5 }]
+        },
+        "outcomeText": "The temple ceremony is beautiful: monks chant blessings, incense fills the hall, and the vows are framed in Buddhist terms of compassion and mutual care. Your friends post photos on Facebook. The temple is delighted -- this is exactly the kind of innovation that brings young people back. But your parents sit through the ceremony with fixed smiles. For them, a wedding without bowing before the ancestor altar is incomplete. The ancestors were not consulted, and that omission may have consequences."
+      },
+      {
+        "id": "b",
+        "text": "Hold the traditional ceremony at home before the ancestor altar",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 2, "socialStatus": 4 },
+          "relationships": [{ "target": "parents", "change": 10 }, { "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "You kneel before the ban tho and introduce your spouse to the ancestors. Incense burns. Your parents beam. The to tien are witnesses and protectors of this union. Afterward, the feast stretches late into the night. It is the old way, and it works: three generations connected through the ritual, the living honoring the dead who bless the future. Your partner accepts the tradition with grace."
+      },
+      {
+        "id": "c",
+        "text": "Do both -- ancestor ceremony at home in the morning, temple blessing in the afternoon",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 7, "spiritualDev": 5, "socialStatus": 5, "wealth": -5 },
+          "relationships": [{ "target": "parents", "change": 8 }, { "target": "partner", "change": 6 }]
+        },
+        "outcomeText": "You honor both traditions: the ancestral rites at dawn, the temple blessing at noon, and the feast at dusk. It costs more and exhausts everyone, but the tam giao spirit of Vietnam -- braiding multiple traditions into one -- finds its perfect expression. Confucian filial piety, Buddhist blessings, and Taoist harmony all present in a single day. Your parents are satisfied; your partner is happy; the monks are encouraged. This is how Vietnamese religion has always worked: not choosing, but combining."
+      },
+      {
+        "id": "d",
+        "text": "Show up drunk to the ceremony and loudly mock the rituals as pointless",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -8, "spiritualDev": -4, "socialStanding": -10 },
+          "relationships": [{ "target": "parents", "change": -10 }, { "target": "partner", "change": -8 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You arrive reeking of rice wine, stumbling into the ceremony space. You laugh at the incense, call the monks' chanting 'noise,' and ask loudly why anyone bothers with dead people who cannot hear. Your mother covers her face. Your partner stares at you with the expression of someone realizing they have made a terrible mistake. The monks continue chanting -- they have seen worse -- but the guests fall silent with the particular Vietnamese silence that is louder than any rebuke. Your father leads you outside by the arm without a word. The ancestors at the ban tho witnessed everything. In Vietnamese culture, to disgrace your family at a ceremony is to wound the living and the dead simultaneously. The wedding photographs will always carry the shadow of this moment."
+      }
+    ],
+    "tags": ["wedding", "temple", "ancestors", "modernity", "tam-giao", "family"],
+    "source": "Knowledge base: Vietnam -- temples now offering wedding ceremonies"
+  },
+  {
+    "id": "vn_adulthood_004",
+    "title": "The War Ghosts",
+    "country": "vietnam",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your new house was built on land near a former American bombing site. Construction workers found bone fragments during excavation. Since moving in, your family has experienced disturbing phenomena: objects falling, cold spots, your daughter talking to 'friends' no one else can see. A neighbor says the area is populated by con quy -- ghouls created from those who died violently in the war. The con ma (angry spirits) are among the most feared forces in Vietnamese spiritual life.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Hire monks to perform an elaborate pacification ceremony",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "health": 5, "wealth": -5 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "The monks chant through the night, dedicating merit to the war dead and asking them to find peace. They sprinkle blessed water throughout the house. They advise you to set out offerings on the 1st and 15th of each lunar month -- not for your ancestors, but for the homeless, nameless war ghosts who have no one to remember them. The disturbances decrease. In Vietnam, the American War created millions of angry spirits. The spiritual landscape is still shaped by that cataclysm, decades later."
+      },
+      {
+        "id": "b",
+        "text": "Collect the bone fragments and arrange a proper burial with Buddhist rites",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "socialStatus": 5, "wealth": -3 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You carefully gather every fragment and commission a small grave at the local cemetery. Monks chant the funeral rites -- decades late, but better late than never. The unnamed dead finally receive the ceremony they were denied by the violence of their deaths. In Vietnamese hell, the worst fate is not punishment but 'a condition of homelessness and eternal hunger.' By giving these spirits a resting place, you have ended their wandering. The disturbances stop completely."
+      },
+      {
+        "id": "c",
+        "text": "Sell the house and move -- this land is cursed",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -3, "spiritualDev": -1, "wealth": -8 },
+          "relationships": [{ "target": "family", "change": 3 }]
+        },
+        "outcomeText": "You sell at a loss -- once the neighborhood knows about the con quy, no one will pay full price. You move to a newer development farther from the old bombing sites. The disturbances stop, but you carry the guilt of leaving the war dead unattended. Someone else will build on that land. The con ma will be their problem now. In Vietnam, where the war's death toll runs to millions, there are not enough rituals in the world to pacify every angry spirit."
+      }
+    ],
+    "tags": ["war-ghosts", "con-ma", "con-quy", "american-war", "spirits", "pacification"],
+    "source": "Knowledge base: Vietnam -- millions of angry spirits from the American War"
+  },
+  {
+    "id": "vn_youngadult_003",
+    "title": "The Duyen Connection",
+    "country": "vietnam",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 30,
+    "karmaRange": [-100, 100],
+    "description": "You feel an inexplicable pull toward a small pagoda on the outskirts of Hanoi. Every time you pass it, something tugs at you. When you finally enter, the monk greets you as if he has been waiting. He says you have duyen -- a predestined karmic affinity from a past life -- with this temple. Perhaps you were a devotee here in a previous incarnation.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Embrace the connection and begin regular practice at this pagoda",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 7, "spiritualDev": 10, "socialStatus": 2 },
+          "relationships": [{ "target": "spiritual_community", "change": 10 }]
+        },
+        "outcomeText": "You begin visiting every week. The monk teaches you chanting in Sino-Vietnamese, meditation techniques, and the philosophy of Mahayana Buddhism. The other devotees welcome you like a returning family member. The concept of duyen explains the inexplicable: why certain places feel like home, why certain teachers speak directly to your heart, why certain paths feel predestined. Whether it is literally past-life memory or simply the resonance of a personality with a place, the result is the same: you have found your spiritual home."
+      },
+      {
+        "id": "b",
+        "text": "Visit once out of curiosity but do not commit",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You explore the pagoda, light incense, and listen to the monk speak about duyen and past-life connections. It is interesting but you are not ready to commit. The pull fades over time, replaced by the demands of work and daily life. The monk says that duyen is like a seed -- it can be nurtured or neglected. Perhaps in another year, or another life, you will return."
+      },
+      {
+        "id": "c",
+        "text": "Dismiss the feeling as coincidence -- past lives are not real",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": -2 },
+          "relationships": []
+        },
+        "outcomeText": "You rationalize the pull as architecture or nostalgia and walk past the pagoda without entering. The feeling persists for months before fading. Your rationalist friend approves, but at quiet moments -- waiting for the bus, lying in bed before sleep -- the unexplained pull returns, a whisper from a life you may or may not have lived."
+      }
+    ],
+    "tags": ["duyen", "past-life", "karmic-affinity", "pagoda", "hanoi", "connection"],
+    "source": "Knowledge base: Vietnam -- duyen concept and predestined karmic affinity"
+  },
+  {
+    "id": "vn_elderhood_001",
+    "title": "The Patriline Question",
+    "country": "vietnam",
+    "lifeStage": "elderhood",
+    "minAge": 55,
+    "maxAge": 80,
+    "karmaRange": [-100, 100],
+    "description": "You have only daughters -- no son to carry the patriline (ho). In traditional Vietnamese culture, sons maintain the ancestral altar, perform the rites, and continue the family name. Daughters are 'flying ducks' who marry into other families. You are aging and worry: who will tend the ancestor altar after you die? Who will make offerings on the 1st and 15th? Who will remember you?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ask your eldest daughter to maintain the ancestral altar despite the tradition",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": 3, "spiritualDev": 3 },
+          "relationships": [{ "target": "daughter", "change": 8 }]
+        },
+        "outcomeText": "Your daughter accepts with love. She is the modern Vietnamese woman: educated, earning, and willing to carry the spiritual obligations traditionally reserved for sons. Her husband's family may object -- she will maintain two altars, two sets of ancestors, two lineages of obligation. But in changing Vietnam, where the one-child policy and urbanization have disrupted traditional family structures, daughters who tend altars are becoming the norm. The ancestors, you hope, will understand."
+      },
+      {
+        "id": "b",
+        "text": "Adopt a nephew to continue the patriline",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 4, "socialStatus": 3 },
+          "relationships": [{ "target": "nephew", "change": 5 }]
+        },
+        "outcomeText": "You adopt your brother's son, who will carry your family name and maintain the altar. The arrangement is traditional and accepted. The ancestors will have a male descendant to honor them, and the patriline continues unbroken. But your daughters feel slighted -- they love you no less than a son would, and their exclusion from the sacred obligation stings. Confucian patriarchy grants spiritual status to men that women's devotion cannot fully replace."
+      },
+      {
+        "id": "c",
+        "text": "Trust that the pagoda monks will perform rites for you after death",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 5, "wealth": -5 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "You make a significant donation to the pagoda and arrange for monks to chant for you on death anniversaries. The Buddhist institution will remember you even if the family cannot. It is a cold comfort compared to a son's devotion, but in modern Vietnam -- where migration, urbanization, and changing family structures have disrupted the old patterns -- institutional religion fills gaps that kinship once covered."
+      }
+    ],
+    "tags": ["patriline", "ancestors", "daughters", "filial-piety", "modernity", "gender"],
+    "source": "Knowledge base: Vietnam -- patrilineal kinship, daughters as 'flying ducks'"
+  },
+  {
+    "id": "vn_adolescence_002",
+    "title": "The Communal Hall Festival",
+    "country": "vietnam",
+    "lifeStage": "adolescence",
+    "minAge": 14,
+    "maxAge": 19,
+    "karmaRange": [-100, 100],
+    "description": "Your village is celebrating the annual festival at the dinh -- the communal hall housing the village guardian spirit. The festival combines Confucian propriety, Buddhist merit-making, and Taoist ritual in a way that perfectly embodies tam giao. Your parents insist you participate in the procession. Your urban cousin visiting from Hanoi calls it backward.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Participate fully in the procession and rituals, learning the traditions",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 5, "education": 3, "socialStatus": 3 },
+          "relationships": [{ "target": "family", "change": 8 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You carry offerings in the procession to the dinh, where the village guardian spirit receives incense and prayers. The festival is a living example of tam giao: Buddhist monks chant, Confucian scrolls are read, and Taoist elements weave through the ceremony. Your parents beam with pride. The dinh has been the village's spiritual center for centuries -- the place where the guardian spirit and the community meet. This is Vietnamese religion at its most authentic: not one tradition but all of them at once."
+      },
+      {
+        "id": "b",
+        "text": "Side with your cousin -- suggest the village should modernize",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -1, "spiritualDev": -2, "socialStatus": -3 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -5 }]
+        },
+        "outcomeText": "Your parents are hurt. The village elders overhear and shake their heads. The dinh festival has survived French colonialism, Japanese occupation, the American War, and communist reform. It survived because communities protected it, not because outsiders approved. Your cousin's urban sophistication feels thin compared to the weight of tradition. The guardian spirit does not care about modernity."
+      },
+      {
+        "id": "c",
+        "text": "Observe the festival with curiosity, asking elders to explain the meaning of each ritual",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 4, "education": 6 },
+          "relationships": [{ "target": "elders", "change": 8 }]
+        },
+        "outcomeText": "You shadow the elders throughout the festival, asking questions. Why do they offer this food? What does the guardian spirit protect? How does the Buddhist chanting connect to the Confucian scrolls? The elders are delighted -- few young people ask anymore. They explain the layered history: the dinh predates Buddhism in Vietnam, but Buddhism was woven in centuries ago, and Confucian order gave it structure. Understanding the layers makes the festival richer. You are learning to see with Vietnamese eyes."
+      },
+      {
+        "id": "d",
+        "text": "Sneak into the dinh during the ceremony and steal money from the offering collection",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -5, "spiritualDev": -7, "socialStanding": -10, "wealth": 4 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -12 }, { "target": "elders", "change": -10 }]
+        },
+        "outcomeText": "While the procession circles outside, you slip into the dinh and grab fistfuls of offering money from the collection box. The guardian spirit's painted eyes seem to follow you from the altar. An elder catches you at the door, money spilling from your pockets. The silence that follows is devastating. The dinh has been the village's sacred center for centuries -- offerings to the guardian spirit paid for by every family, rich and poor alike. To steal from it is to steal from the entire community and from the spirit that protects them all. Your parents are summoned. Your father cannot meet the elders' eyes. Your urban cousin, who called the festival backward, at least never robbed it. The village will remember this for years, and the guardian spirit, the elders say, remembers forever."
+      }
+    ],
+    "tags": ["dinh", "communal-hall", "tam-giao", "village", "guardian-spirit", "festival"],
+    "source": "Knowledge base: Vietnam -- dinh as village focal point, tam giao triple religion"
+  }
+]

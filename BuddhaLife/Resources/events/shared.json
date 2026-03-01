@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "sh_childhood_001",
+    "title": "The Stray Dog",
+    "country": "shared",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "A mangy, starving dog has been lingering near the temple. The monks leave scraps for it but it is clearly suffering. Your friend throws a rock at it to chase it away. The First Precept -- 'do not kill' -- is the foundation of Buddhist ethics. But does it extend to animals? And is letting an animal suffer different from harming it?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Feed the dog and try to nurse it back to health",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 5, "health": -1 },
+          "relationships": []
+        },
+        "outcomeText": "You share your lunch with the dog every day. It begins to trust you, wagging its tail when you approach. The monks nod approvingly -- metta (loving-kindness) extends to all sentient beings, not just humans. The dog recovers slowly. Your mother worries about disease, but the merit of compassion for a suffering creature is real and recognized by the community."
+      },
+      {
+        "id": "b",
+        "text": "Ignore the dog -- it is not your responsibility",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": -1 },
+          "relationships": []
+        },
+        "outcomeText": "You walk past the dog each day. It grows thinner. One morning it is gone. The monks say it probably died in the forest. You feel a twinge of guilt but push it away. The First Precept forbids killing, not inaction. But the Buddha taught that compassion is active, not passive. The dog's suffering was an opportunity for merit that you chose to pass by."
+      },
+      {
+        "id": "c",
+        "text": "Ask the monks what Buddhism teaches about animal suffering",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 6, "education": 3 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "The monk sits with you and explains: all beings are caught in samsara. This dog may have been a human in a past life, or you may have been a dog. Compassion for animals generates the same merit as compassion for humans. He quotes the Buddha: 'A bhikkhu who practices metta for all beings -- even for a moment -- is a bhikkhu who practices mindfulness.' You begin leaving scraps at the temple gate."
+      },
+      {
+        "id": "d",
+        "text": "Join your friend in throwing rocks at the dog to drive it away",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -5, "spiritualDev": -6, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You pick up a stone and hurl it. The dog yelps and stumbles. Your friend cheers but the sound dies in the air as an elderly monk rounds the corner and witnesses the scene. His face is not angry -- it is something worse: deeply sad. He says nothing. He does not need to. The First Precept is the foundation of all Buddhist ethics, and you have shattered it against a creature that was already suffering. Word spreads through the temple. Your parents are called. The shame is immediate and total. At night, you hear the dog's cry in your sleep. The monks say that harming a helpless creature generates demerit that clings like mud -- easy to acquire, difficult to wash away. The other children avoid you for weeks."
+      }
+    ],
+    "tags": ["first-precept", "animals", "compassion", "metta", "moral-dilemma"],
+    "source": "Knowledge base: Buddhist concepts -- Five Precepts, metta"
+  },
+  {
+    "id": "sh_childhood_002",
+    "title": "The Vesak Celebration",
+    "country": "shared",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "It is Vesak -- the triple celebration of the Buddha's birth, enlightenment, and death, the most sacred day in the Buddhist calendar. The temple is decorated with flowers and lanterns. Your family has prepared special offerings. The monks will chant through the night. Lanterns will be released into the sky.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Participate fully: make offerings, listen to the sermons, release a lantern at midnight",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 7, "spiritualDev": 8, "socialStatus": 3 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "The temple glows with candlelight. You sit through the sermon about Siddhartha's enlightenment under the Bodhi tree, understanding little but absorbing the atmosphere of devotion. At midnight, you release a paper lantern into the dark sky, watching it rise like a prayer. The Buddha was born under a tree, enlightened under a tree, gave his first sermon in a forest, and died in a forest. On Vesak, the whole world becomes a temple."
+      },
+      {
+        "id": "b",
+        "text": "Attend the celebration but focus on the food and fun",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 6, "spiritualDev": 2 },
+          "relationships": [{ "target": "friends", "change": 3 }]
+        },
+        "outcomeText": "You eat special Vesak sweets, play with your friends among the lanterns, and fall asleep during the sermon. Your parents carry you home past midnight. The merit of attending Vesak is real even if your participation was mostly culinary. The community gathered, the chanting filled the air, and you were part of it. Deeper understanding will come with age."
+      },
+      {
+        "id": "c",
+        "text": "Stay awake for the entire night of chanting, testing your endurance",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 10, "health": -2 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "You force yourself to stay awake as the hours stretch past midnight, past two, past three. The monks' chanting becomes a current carrying you. Around four in the morning, something shifts -- the tiredness becomes a kind of clarity, and for a brief moment you understand why the monks do this. Dawn arrives and the chanting ends. You are exhausted and transformed in a way you cannot articulate. The monks smile at you, recognizing the effort."
+      }
+    ],
+    "tags": ["vesak", "celebration", "buddha", "lanterns", "sacred-day"],
+    "source": "Knowledge base: Buddhist concepts -- universal celebrations"
+  },
+  {
+    "id": "sh_adolescence_001",
+    "title": "The Five Precepts Dilemma",
+    "country": "shared",
+    "lifeStage": "adolescence",
+    "minAge": 14,
+    "maxAge": 19,
+    "karmaRange": [-100, 100],
+    "description": "Your friends invite you to a party where there will be drinking, dancing, and possibly stealing sweets from a shop on the way. The five precepts forbid killing, stealing, lying, sexual misconduct, and intoxication. Adults frequently say it is impossible to follow them until old age -- moral behavior is, in some sense, postponed until later in life. But the precepts are still the measure of a good person.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Decline the party and spend the evening at the temple instead",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "socialStatus": -3 },
+          "relationships": [{ "target": "friends", "change": -5 }]
+        },
+        "outcomeText": "Your friends call you boring, but the temple is peaceful. An elder tells you: 'A person who kept the precepts is praised at death.' You meditate on the five precepts: no killing, no stealing, no lying, no intoxication, no sexual misconduct. They sound simple; they are not. But tonight, in the quiet temple, they feel achievable. Your friends return from the party hungover and regretful. You return from the temple rested and clear."
+      },
+      {
+        "id": "b",
+        "text": "Go to the party but set personal limits -- no stealing, no drinking",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 5, "spiritualDev": 1, "socialStatus": 2 },
+          "relationships": [{ "target": "friends", "change": 3 }]
+        },
+        "outcomeText": "You attend but drink water while others drink beer. You dance but decline when friends suggest shoplifting sweets. The middle path is harder than either extreme -- it requires constant vigilance and the social courage to say no when everyone else says yes. Your friends tease you but secretly respect the discipline. The precepts are a spectrum, not a binary, and tonight you stayed closer to the virtuous end."
+      },
+      {
+        "id": "c",
+        "text": "Go to the party and join in fully -- you are young, the precepts can wait",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 5 },
+          "stats": { "happiness": 6, "spiritualDev": -4, "health": -2 },
+          "relationships": [{ "target": "friends", "change": 5 }]
+        },
+        "outcomeText": "You drink, dance, steal sweets, and stumble home at dawn. It was exhilarating. But the morning brings headache, guilt, and a queasy stomach. The adults are right: the precepts are hard to keep when you are young. But that does not make breaking them consequence-free. Each broken precept leaves a residue of demerit. The cumulative weight of youthful indiscretions will need to be addressed later through merit-making. For now, the debt accrues."
+      }
+    ],
+    "tags": ["precepts", "temptation", "youth", "moral-dilemma", "intoxication"],
+    "source": "Knowledge base: Buddhist concepts -- Five Precepts, moral behavior postponed"
+  },
+  {
+    "id": "sh_youngadult_001",
+    "title": "The Sacred Shrine vs. Urban Development",
+    "country": "shared",
+    "lifeStage": "young_adulthood",
+    "minAge": 20,
+    "maxAge": 40,
+    "karmaRange": [-100, 100],
+    "description": "The government announces plans to demolish a beloved 150-year-old shrine in your neighborhood to build a commercial development. Devotees gather, telling miracle stories about what happened to previous developers who tried to disturb the site. Workers are arriving with bulldozers. The shrine served as a pilgrimage site for generations.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the devotees protecting the shrine and share miracle stories with the workers",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 6 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You stand with the crowd, telling workers about the contractor whose bulldozer mysteriously broke down, the foreman who developed a fever, the developer who lost his fortune. The stories may be legend, but the faith behind them is real. Sacred space carries power that development cannot account for. The workers hesitate. Whether the shrine survives depends on forces larger than your protest, but you have borne witness to something that matters."
+      },
+      {
+        "id": "b",
+        "text": "Accept the government's decision but negotiate relocation of sacred objects",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": -1, "spiritualDev": 1, "socialStatus": 2 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You work with monks and elders to carefully remove and relocate the shrine's sacred objects to a new location. The physical items are saved, but the sacred power of the place -- accumulated through 150 years of prayer and pilgrimage -- cannot be moved. The new shrine will need decades of devotion before it carries the same spiritual weight. It is a compromise born of pragmatism, and it tastes like loss."
+      },
+      {
+        "id": "c",
+        "text": "See the development as progress -- the country needs modernization",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 1, "spiritualDev": -3, "wealth": 2 },
+          "relationships": [{ "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You stand aside as the bulldozers roll in. The shrine crumbles. The elders weep. In its place will rise a shopping center or an apartment block. You believe in progress, in modernity, in the future. But the community you were part of fractures around the loss. Sacred space is not renewable -- once destroyed, the accumulated devotion of generations disperses into the air, and no amount of concrete can replace it."
+      }
+    ],
+    "tags": ["shrine", "development", "modernization", "sacred-space", "community"],
+    "source": "Scholar 2 (Sevea -- shrine demolition)"
+  },
+  {
+    "id": "sh_adulthood_001",
+    "title": "The Kathina Ceremony",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 65,
+    "karmaRange": [-100, 100],
+    "description": "It is Kathina -- the annual ceremony at the end of Vassa (the rains retreat) when laypeople offer new robes and supplies to monks. Your community is collecting contributions. Kathina is one of the most merit-rich events in the Buddhist calendar. A wealthy businessman offers to sponsor the entire ceremony himself, claiming all the merit. The community is torn between gratitude and resentment.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Contribute what you can afford, regardless of the businessman's offer",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 5, "wealth": -4 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You give your modest contribution alongside dozens of others. The monks accept every offering equally -- a handful of rice from a farmer carries the same spiritual weight as a bolt of silk from a merchant. The merit of Kathina is not zero-sum; your contribution generates merit for you regardless of what the businessman gives. The communal nature of the ceremony -- everyone giving according to their means -- is itself a teaching about the merit economy."
+      },
+      {
+        "id": "b",
+        "text": "Let the businessman sponsor everything -- save your money for your family",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 1, "spiritualDev": -2, "wealth": 3 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "The businessman's sponsorship is lavish: new robes, rice, cooking oil, medicine, everything the monks need. You attend the ceremony and receive a share of the communal merit, but the merit of giving -- the dana itself -- belongs to the sponsor. The community's role is reduced to spectating. The merit-power nexus is on full display: wealth buys merit, merit buys social power, and social power accumulates more wealth. It is the engine of Buddhist society, and not everyone can afford to participate."
+      },
+      {
+        "id": "c",
+        "text": "Organize the community to match the businessman's donation collectively",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 6, "socialStatus": 8, "wealth": -5 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You rally dozens of families, each contributing a portion. Together, the community's collective offering matches the businessman's solo donation. The monks receive double the supplies. But more importantly, the merit is distributed across the entire community rather than concentrated in one wealthy donor. The businessman is impressed rather than offended -- he recognizes the communal spirit of Kathina. The merit-power nexus works both ways: collective generosity is its own form of power."
+      }
+    ],
+    "tags": ["kathina", "vassa", "robes", "dana", "merit-economy", "community"],
+    "source": "Knowledge base: Buddhist concepts -- dana, merit-power nexus, Kathina"
+  },
+  {
+    "id": "sh_adulthood_002",
+    "title": "Vassa: The Rains Retreat",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 20,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "Vassa begins -- the three-month monsoon retreat period (July-October) when monks remain in their monasteries and intensify their practice. For laypeople, Vassa is a time for increased devotion: more temple visits, stricter precept-keeping, and abstinence from major celebrations like weddings. Your best friend wants to get married during Vassa.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Advise your friend to wait until after Vassa for the wedding",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5 },
+          "relationships": [{ "target": "friend", "change": -2 }]
+        },
+        "outcomeText": "You explain the tradition: weddings during Vassa are inauspicious, as the monks' concentrated spiritual energy makes the period sacred. Your friend is impatient but eventually agrees. The wedding after Vassa is blessed by monks fresh from three months of intensive practice. The delay proves fortunate -- the extra time allows better planning, and the post-Vassa monks' blessings are believed to be especially powerful."
+      },
+      {
+        "id": "b",
+        "text": "Attend the wedding anyway -- traditions must adapt to modern life",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": 5, "spiritualDev": -2, "socialStatus": -2 },
+          "relationships": [{ "target": "friend", "change": 5 }]
+        },
+        "outcomeText": "The wedding during Vassa draws whispered disapproval from elders and monks. The ceremony proceeds without monastic blessings, since monks do not leave their monasteries during the retreat. The couple is happy but the community's blessing is incomplete. Some say the marriage started on a bad footing; others say such superstitions are outdated. Time will tell."
+      },
+      {
+        "id": "c",
+        "text": "Use Vassa as an opportunity for your own spiritual deepening -- take extra precepts",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 10, "health": 3 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "You commit to keeping eight precepts during Vassa: the standard five plus no eating after noon, no entertainment, and sleeping on a simple mat. The three months are demanding. You visit the temple on every wan sin (precept day), meditate daily, and withdraw from worldly distractions. By the end of Vassa, you feel lighter -- not in body but in spirit. The monks nod their recognition. You have tasted what the monastic life offers, even as a layperson."
+      }
+    ],
+    "tags": ["vassa", "rains-retreat", "precepts", "marriage", "spiritual-practice"],
+    "source": "Knowledge base: Buddhist concepts -- Vassa, precept-keeping, seasonal devotion"
+  },
+  {
+    "id": "sh_adulthood_003",
+    "title": "The Lay Reader's Burden",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 65,
+    "karmaRange": [10, 100],
+    "description": "You have been asked to serve as a tsalei (lay reader) -- performing scriptural readings at merit-making ceremonies. The role requires you to know the texts, maintain moral standing, and be available whenever the community needs you: funerals, weddings, newborn blessings, healing ceremonies. The responsibility is heavy but the spiritual rewards are immense.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the role and commit to learning the texts thoroughly",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 12, "socialStatus": 8 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You begin studying the Pali texts under the guidance of the senior monks. Your reading voice must carry authority and calm -- at funerals, your words guide the phi to a safe passage; at weddings, your blessings protect the couple's khwan; at newborn ceremonies, your white string ties bind protection around tiny wrists. The community comes to depend on you. The role makes you a living bridge between the written dhamma and the people who need its power."
+      },
+      {
+        "id": "b",
+        "text": "Accept but worry about maintaining the moral standards required",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 8, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 6 }]
+        },
+        "outcomeText": "You take on the role knowing that a lay reader's moral conduct is scrutinized. Any lapse -- a lost temper, a drink, a questionable business deal -- could undermine the perceived power of your readings. The responsibility is both an honor and a constraint. You find yourself living more carefully, making choices not just for yourself but for the community that relies on the sanctity of your voice."
+      },
+      {
+        "id": "c",
+        "text": "Decline -- you do not feel spiritually ready for such responsibility",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 2 },
+          "relationships": [{ "target": "community", "change": -2 }]
+        },
+        "outcomeText": "The monks accept your refusal with quiet disappointment. Lay readers are increasingly rare as younger generations pursue education and careers rather than scriptural study. Without lay readers, the community's ceremonial life depends entirely on monks, who are themselves dwindling in number. Your humility is honest, but the gap you leave will be felt."
+      },
+      {
+        "id": "d",
+        "text": "Accept the role but use the position to gain influence and take credit for the monks' teachings",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -4, "spiritualDev": -8, "socialStanding": -8 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You accept the role with a show of humility that masks ambition. Within months you are embellishing the readings with your own interpretations, presenting ancient wisdom as personal insight, and quietly positioning yourself as an authority that rivals the monks themselves. Families begin coming to you instead of the monastery. You charge small fees for private blessings -- something no lay reader should do. The senior monk who trained you discovers your conduct and confronts you before the community. The exposure is devastating. Your family cannot meet the eyes of their neighbors. The texts you memorized but never internalized speak of exactly this corruption: using the dhamma as a ladder for ego is among the heaviest demerits a layperson can accumulate. The role that could have elevated your spiritual life instead becomes the instrument of your disgrace."
+      }
+    ],
+    "tags": ["lay-reader", "tsalei", "scripture", "community-service", "ceremonies"],
+    "source": "Knowledge base: Buddhist institutions -- lay readers, tsalei, ceremonial roles"
+  },
+  {
+    "id": "sh_adulthood_004",
+    "title": "The Generous Rival",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "A neighbor who has wronged you in the past -- cheated you in a land deal, spread gossip about your family -- is now sponsoring a major merit-making ceremony and invites you to participate. Refusing would be socially disastrous, but participating means contributing to someone who harmed you. The merit-power nexus says merit is power. Do you help your rival accumulate it?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Attend and contribute generously -- let go of the grudge through dana",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 8 },
+          "relationships": [{ "target": "rival", "change": 5 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You arrive at the ceremony with a generous offering. Your rival is surprised. The monks chant, the merit is shared, and your contribution earns you spiritual credit alongside the sponsor. More importantly, the act of giving to someone who wronged you is an exercise in metta -- loving-kindness extended to all beings, including those who hurt you. The grudge does not dissolve overnight, but the act of generosity weakens its hold. The Buddha taught that anger harms the angry more than anyone else."
+      },
+      {
+        "id": "b",
+        "text": "Attend but contribute minimally -- fulfill the social obligation and nothing more",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": -1 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You show up, give the minimum acceptable offering, and leave early. The social duty is discharged but the grudge remains intact. The community notes your cool demeanor. Some sympathize -- they know what your rival did. Others judge: a Buddhist who cannot practice equanimity at a merit-making ceremony has not truly understood the dhamma. You are right to feel wronged, but the question is whether the feeling serves you."
+      },
+      {
+        "id": "c",
+        "text": "Refuse to attend -- some wrongs cannot be overlooked",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -3, "spiritualDev": -4, "socialStatus": -5 },
+          "relationships": [{ "target": "rival", "change": -5 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "Your absence is noted and discussed. In a community where merit-making ceremonies are collective events, boycotting one is a serious social statement. Your rival gains sympathy as the wronged party -- he invited you, and you refused. The community's memory of the original injustice fades, replaced by the fresh wound of your refusal. Anger, the monks would say, is like holding a hot coal: you are the one who gets burned."
+      },
+      {
+        "id": "d",
+        "text": "Attend the ceremony but steal from the offering collection while everyone is distracted",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -8, "spiritualDev": -7, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "During the ceremony, while the community bows in prayer and the monks chant with closed eyes, you slip your hand into the offering tray and pocket a thick fold of bills. The money feels hot in your pocket. You justify it as reclaiming what your rival cheated from you years ago. But this is not a land deal -- this is dana, offerings destined for the Sangha. Stealing from a merit-making ceremony is among the gravest violations in Buddhist ethics: you have stolen not just money but the merit of every person who contributed. Within days, the shortfall is noticed. Suspicion falls on several people, but a child who was peeking during prayers saw everything. The exposure is catastrophic. Your family is shunned. The monks perform a purification ceremony for the tainted offerings. Your rival, ironically, gains even more community sympathy. You have transformed yourself from a wronged party into a thief who desecrated sacred dana. The demerit of this act will shadow your karmic account for lifetimes."
+      }
+    ],
+    "tags": ["grudge", "forgiveness", "metta", "dana", "social-obligation", "moral-dilemma"],
+    "source": "Knowledge base: Buddhist concepts -- metta, dana, merit-power nexus"
+  },
+  {
+    "id": "sh_adulthood_005",
+    "title": "The Sick Parent",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your elderly parent is seriously ill. The hospital offers treatment but no cure. A traditional healer offers spiritual remedies: merit-transfer ceremonies, soul-calling rituals, protective chanting. A monk suggests an emergency three-day ordination -- the dying person's grandchild could ordain briefly, generating a burst of merit that might ease the parent's passage. Time is running out.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Arrange the emergency ordination of a grandchild to generate merit for the dying",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "health": 3 },
+          "relationships": [{ "target": "parent", "change": 10 }, { "target": "grandchild", "change": 3 }]
+        },
+        "outcomeText": "The grandchild's head is shaved at the bedside. The ordination is brief and solemn -- three days of monastic vows generating maximum merit directed entirely to the dying elder. The family gathers for the yaat nam water-pouring ceremony, transferring merit. Whether the parent recovers or passes, the merit eases their journey. Once dead, merit is the ONLY power that can reach a person. The emergency ordination is a final gift of love."
+      },
+      {
+        "id": "b",
+        "text": "Focus on hospital treatment and modern medicine",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 0, "wealth": -8 },
+          "relationships": [{ "target": "parent", "change": 3 }]
+        },
+        "outcomeText": "You pour resources into medical treatment. The doctors do their best. The hospital bills mount. Whether your parent recovers depends on factors beyond anyone's control. The medical approach may extend life, but it does not address the spiritual dimension -- and in Buddhist cosmology, the spiritual dimension is what matters most at the end. A good death (old, meritorious, calm) leads to a good rebirth. Medicine can delay death; only merit can improve what comes after."
+      },
+      {
+        "id": "c",
+        "text": "Combine both -- hospital treatment and merit-making ceremonies",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 5, "wealth": -10, "health": 2 },
+          "relationships": [{ "target": "parent", "change": 8 }]
+        },
+        "outcomeText": "You keep your parent in the hospital while monks chant at the bedside, and you arrange for merit-making ceremonies at the temple. It is expensive to pursue both paths, but it covers all bases: the body receives medical care while the spirit receives karmic care. Your parent, whether they recover or pass, is surrounded by both the technology of modernity and the ancient spiritual infrastructure that has accompanied Southeast Asian Buddhists through millennia of dying."
+      }
+    ],
+    "tags": ["illness", "death", "emergency-ordination", "merit-transfer", "healing"],
+    "source": "Knowledge base: Buddhist concepts -- emergency ordination, merit transfer, good death"
+  },
+  {
+    "id": "sh_youngadult_002",
+    "title": "The Social Media Monk",
+    "country": "shared",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "A charismatic young monk has gone viral on social media, posting short dhamma talks, meditation tips, and mindfulness challenges. His Instagram has 500,000 followers. Traditional monks criticize him for vanity and 'performing' the dhamma. Young people say he is the only monk who speaks their language. Your temple's abbot asks for your opinion.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Support the social media monk -- the dhamma must reach people where they are",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 3, "socialStatus": 3 },
+          "relationships": [{ "target": "youth", "change": 5 }]
+        },
+        "outcomeText": "You argue that the Buddha himself adapted his teaching to his audience -- merchants heard parables about trade, farmers heard metaphors about seeds and soil. Why should the dhamma not adapt to social media? Khun Mae Tritrinn in Thailand uses Facebook to teach dhamma to 429,000 followers. Temples in Vietnam use streaming for announcements and outreach. The medium changes; the message endures. The abbot listens thoughtfully."
+      },
+      {
+        "id": "b",
+        "text": "Side with the traditionalists -- the dhamma is cheapened by likes and followers",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 4 },
+          "relationships": [{ "target": "elders", "change": 5 }]
+        },
+        "outcomeText": "You tell the abbot that the Vinaya does not mention Instagram but its spirit is clear: monks should be humble, not celebrities. The 227 rules were designed to prevent exactly this kind of self-promotion. The dhamma spoken in a quiet monastery carries a weight that a fifteen-second video cannot. The abbot nods. But later, you notice that the young people in the temple are watching the social media monk's videos on their phones during breaks."
+      },
+      {
+        "id": "c",
+        "text": "Suggest a middle path -- the monk can use social media but should direct people to temples",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5 },
+          "relationships": [{ "target": "youth", "change": 3 }, { "target": "elders", "change": 3 }]
+        },
+        "outcomeText": "You propose that social media can be a gateway: short videos draw attention, but real practice requires sitting in a monastery, not scrolling a feed. The abbot approves the compromise. The social media monk begins ending every post with: 'This is a taste. Come to the temple for the meal.' The approach bridges the generational divide. Young people follow the monk online; some of them show up at the temple. The dhamma, as always, finds a way."
+      }
+    ],
+    "tags": ["social-media", "modernity", "monks", "youth", "outreach", "adaptation"],
+    "source": "Knowledge base: Cross-cutting themes -- Youth and Modernity, social media dhamma"
+  },
+  {
+    "id": "sh_elderhood_001",
+    "title": "Preparing for a Good Death",
+    "country": "shared",
+    "lifeStage": "elderhood",
+    "minAge": 60,
+    "maxAge": 90,
+    "karmaRange": [-100, 100],
+    "description": "You are aging. The question that every Buddhist must eventually face is approaching: will your death be 'safe' or 'dangerous'? A 'good death' is old, meritorious, calm -- the dying person's mind is clear, their attachments dissolved, their merit abundant. A 'dangerous death' is young, violent, full of emotional attachment. The quality of your final thoughts determines your rebirth. How do you prepare?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Intensify your practice: daily meditation, strict precept-keeping, regular merit-making",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 15, "health": 2 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You devote your remaining years to spiritual preparation. The three marks of existence -- anicca, dukkha, anatta -- become not abstract philosophy but lived experience. You meditate daily, watching thoughts arise and dissolve. You keep the eight precepts. You give generously. The monks say your face has changed -- it carries the calm of someone who is ready. When death comes, it will find you prepared: no unfinished business, no grasping attachment, no residual wot. This is the good death."
+      },
+      {
+        "id": "b",
+        "text": "Focus on settling worldly affairs: debts, feuds, and family obligations",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 3, "socialStatus": 5 },
+          "relationships": [{ "target": "family", "change": 8 }]
+        },
+        "outcomeText": "You pay off debts, reconcile with estranged relatives, and ensure your children's futures are secure. The worldly affairs are put in order. This is necessary preparation -- unresolved attachments create the 'dangerous death' that traps the spirit between worlds. But the monks remind you: worldly preparation without spiritual preparation is only half the work. The final thoughts that determine your rebirth are shaped not by your bank balance but by the quality of your consciousness."
+      },
+      {
+        "id": "c",
+        "text": "Refuse to think about death -- there is still time to live",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 4, "spiritualDev": -5 },
+          "relationships": []
+        },
+        "outcomeText": "You push the thought away and focus on daily pleasures. But the Buddha's first teaching was dukkha -- the unsatisfactoriness of existence, which includes its impermanence. Refusing to face death does not prevent it; it merely ensures you will be unprepared when it arrives. The elders who sleep at the temple have spent years cultivating the emotional control needed for a good death. Your avoidance is the opposite of that preparation. When the time comes, your unreadiness may drag you into a dangerous passage."
+      },
+      {
+        "id": "d",
+        "text": "Publicly mock the monks and elders for wasting their final years on superstitious rituals",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "socialStanding": -8 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "At a community gathering, you stand and declare that the monks' death preparation is superstitious nonsense -- that merit transfer is a fairy tale, that rebirth is a myth designed to keep people obedient, that the elders who sleep at the temple are wasting their final precious years on delusion. The silence that follows is absolute. An elderly woman who has kept the eight precepts for thirty years looks at you with eyes that hold no anger, only a deep and boundless pity. Your own grandchildren stare at the floor. The monks do not respond -- they do not need to. Your outburst reveals more about your own terror of death than any deficiency in their practice. In the weeks that follow, your family distances themselves from you. The community that would have supported you through illness and dying now regards you with wariness. You have insulted the very people whose chanting and merit-making would have eased your passage. When darkness comes, you will face it alone."
+      }
+    ],
+    "tags": ["death", "good-death", "preparation", "impermanence", "rebirth", "elderhood"],
+    "source": "Knowledge base: Buddhist concepts -- rebirth, good vs. dangerous death, emotional control"
+  },
+  {
+    "id": "sh_temptation_001",
+    "title": "Found Money",
+    "country": "shared",
+    "lifeStage": "childhood",
+    "minAge": 7,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "Walking home from school past the temple, you spot a worn leather wallet lying in the dust near the gate. Inside is a thick stack of bills -- more money than your family earns in a month. A faded photo shows an elderly man in a farmer's hat. No one is around. Your heart pounds as you hold what feels like a small fortune in your hands.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Bring the wallet to the monks at the temple and ask them to find the owner",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 5, "socialStatus": 3 },
+          "relationships": [{ "target": "family", "change": 5 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You carry the wallet to the temple. The monks post a notice. Three days later, an elderly rice farmer arrives, trembling with relief -- the money was his entire season's earnings, meant for his granddaughter's school fees. He weeps and presses your hands together in a wai so deep it embarrasses you. The monks tell the community what you did. Your parents beam with pride. The merit of returning what is not yours is straightforward but powerful: the Second Precept kept, a family's hardship averted, and the knowledge that your integrity held when no one was watching."
+      },
+      {
+        "id": "b",
+        "text": "Take the money home and give it to your parents -- they need it more",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 3 },
+          "stats": { "happiness": 3, "spiritualDev": -2, "wealth": 5 },
+          "relationships": [{ "target": "family", "change": 2 }]
+        },
+        "outcomeText": "You tell your mother you found some money. She counts the bills with wide eyes and tucks them away. The family eats better that week. But your mother's face holds a question she does not ask, and you avoid her gaze. The Second Precept -- do not take what is not given -- makes no exception for need. The money helps your family, but somewhere an old farmer is searching desperately for his lost earnings. The relief you brought your parents is built on someone else's suffering. The karmic ledger does not balance."
+      },
+      {
+        "id": "c",
+        "text": "Keep the money for yourself and spend it secretly on sweets and toys",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": 4, "spiritualDev": -5, "socialStanding": -3 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You stuff the wallet under your mattress and spend the bills slowly -- sweets from the market stall, a toy car, a comic book. The pleasures are real but each purchase carries a sour undertone. When your friend asks where you got the money, you lie. One lie requires another to support it. Within weeks you are maintaining an elaborate fiction. Your mother notices the new toys and her eyes narrow with suspicion. The Buddha taught that theft and lying are intertwined -- one broken precept pulls others down with it, like a row of falling dominoes. The sweets taste increasingly like guilt."
+      },
+      {
+        "id": "d",
+        "text": "Take the money and throw the wallet in the river to destroy the evidence",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -5, "spiritualDev": -7, "socialStanding": -7 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You pocket the bills and hurl the wallet into the brown river behind the temple. The leather sinks slowly, carrying with it the old farmer's photo, his identification, his last thread of hope for recovery. You spend the money quickly, nervously, as if speed could outrun consequence. But a fisherman downstream finds the waterlogged wallet and brings it to the monks. The farmer identifies the spot where he lost it. A child was seen near the temple gate that afternoon. The circle tightens. When the truth emerges -- and in a small community, truth always emerges -- the shame falls not just on you but on your entire family. Your father cannot show his face at the temple. Your mother weeps. The monks speak of the weight of deliberate theft: not just taking what is not given, but destroying the means of return. You have added cruelty to stealing, and the demerit compounds like interest on a debt that can never be repaid in this lifetime."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "second-precept", "stealing", "honesty", "childhood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_002",
+    "title": "The Bully's Target",
+    "country": "shared",
+    "lifeStage": "adolescence",
+    "minAge": 13,
+    "maxAge": 17,
+    "karmaRange": [-100, 100],
+    "description": "During the lunch break at school, you see a group of older students cornering a quiet, bookish classmate near the back wall. They are pulling his bag, mocking his stutter, shoving him. The ringleader -- the most popular boy in school -- catches your eye and waves you over with a grin. Joining them would cement your place in the social hierarchy. Defending the victim would make you the next target.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Step in and defend the bullied classmate, even at risk to yourself",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": -3, "health": -2 },
+          "relationships": [{ "target": "friends", "change": -3 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You walk toward the group and stand beside the victim. The ringleader's grin fades. You say nothing dramatic -- just stand there, a silent witness refusing to participate. The group hesitates. Cruelty depends on an audience that consents, and you have withdrawn your consent. They shove you once and walk away, bored without an approving crowd. The bullied boy looks at you with an expression you will remember for decades. A teacher who saw from a window mentions it to the monks at the temple. The First Precept -- do no harm -- has an active dimension: sometimes it means placing your body between the powerful and the powerless. The social cost is real, but the merit of courage in the face of cruelty is among the most potent a young person can earn."
+      },
+      {
+        "id": "b",
+        "text": "Walk away quietly -- it is not your problem",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": -1 },
+          "relationships": []
+        },
+        "outcomeText": "You turn and walk to the other side of the yard, pretending you did not see. The sounds continue behind you -- the laughter, the scuffle, the muffled protests. You eat your lunch with your back to the wall, the food tasteless. The Buddha taught that equanimity is not indifference, and silence in the face of suffering is not neutrality. You chose safety over compassion, and the choice sits in your stomach like a stone. The bullied boy's eyes meet yours later in class. He knows you saw. He knows you chose not to act."
+      },
+      {
+        "id": "c",
+        "text": "Join the bullies -- the victim is weak and you need social status",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": 2, "spiritualDev": -6, "socialStatus": 4 },
+          "relationships": [{ "target": "friends", "change": 3 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You walk over and join the circle. The ringleader claps your shoulder. You laugh when they laugh. You shove when they shove. The victim's eyes widen with betrayal -- he thought you were decent. The social reward is immediate: you sit with the popular group at lunch, you are included in weekend plans. But at night, the memory of the boy's face visits you. The monks say that harming others for social gain creates a particular kind of demerit -- one wrapped in cowardice, which makes it heavier. You traded someone's dignity for a seat at a table that can be taken away as easily as it was given."
+      },
+      {
+        "id": "d",
+        "text": "Lead the bullying yourself to impress the group and humiliate the victim publicly",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -4, "spiritualDev": -8, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You do not just join -- you escalate. You grab the boy's notebook and read his private writings aloud in a mocking voice. The crowd roars. The boy's face crumbles. He does not cry, which is somehow worse -- something behind his eyes simply goes dark. That evening, the boy's parents visit yours. His father is a quiet man who works at the temple. He does not raise his voice. He simply describes what happened, and the description is worse than any accusation. Your father's shame is volcanic and silent. The monks are informed. The community whispers. You have become the face of cruelty in the village. The social status you craved evaporates -- even the ringleader distances himself, because leaders discard tools that become liabilities. The boy with the stutter transfers to another school. You never learn what happens to him, but the emptiness behind his eyes follows you into adulthood, surfacing unbidden in quiet moments when you thought you had forgotten."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "bullying", "courage", "first-precept", "adolescence"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_003",
+    "title": "Easy Money",
+    "country": "shared",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 25,
+    "karmaRange": [-100, 100],
+    "description": "Your childhood friend, always the clever one, approaches you with a business proposition. He has found a way to sell counterfeit designer goods at the night market -- bags, watches, clothes. The profit margins are enormous. He needs a partner to handle the stall while he manages supply. Your legitimate job barely covers rent. The money would change everything: a motorbike, savings, respect.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Refuse and encourage your friend to find an honest livelihood instead",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 4, "socialStatus": 2 },
+          "relationships": [{ "target": "family", "change": 3 }, { "target": "community", "change": 3 }]
+        },
+        "outcomeText": "You tell your friend no. He laughs and calls you naive. You explain that Right Livelihood -- samma ajiva -- is not just a monastic ideal. The Buddha specifically named dishonest trade among the wrong livelihoods. Your friend shrugs and finds another partner. Months later, the police raid the night market and your friend's stall is confiscated. He faces fines he cannot pay. You are still poor, but you sleep without fear. The monks say that poverty with clean karma is wealth, and wealth with dirty karma is poverty. The motorbike can wait."
+      },
+      {
+        "id": "b",
+        "text": "Decline the partnership but do not lecture your friend about it",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": 1 },
+          "relationships": []
+        },
+        "outcomeText": "You say it is not for you and leave it at that. Your friend nods and moves on. You have avoided the karmic entanglement but you have also avoided the harder conversation -- the one where you might have steered your friend away from a dangerous path. The Middle Way is sometimes criticized as passivity dressed up as wisdom. Tonight, it feels like you chose the easy version of the right answer."
+      },
+      {
+        "id": "c",
+        "text": "Join the scheme -- the money is too good to pass up and no one really gets hurt",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": 5, "spiritualDev": -5, "wealth": 8, "socialStanding": -3 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -5 }]
+        },
+        "outcomeText": "The money flows immediately. Within weeks you have a new motorbike, better clothes, cash in your pocket. The customers at the night market do not care that the goods are fake -- they want the appearance of status at a fraction of the price. Everyone is complicit. But complicity does not dissolve karma. The Second Precept covers deception as a form of theft -- the customer pays for something that is not what it claims to be. You are selling lies shaped like handbags. When your mother asks about the new motorbike, you lie to her too, and the lie tastes like iron. The Buddha's Noble Eightfold Path includes Right Livelihood for a reason: how you earn your living shapes your mind as surely as how you meditate."
+      },
+      {
+        "id": "d",
+        "text": "Join the scheme and expand it -- recruit others and take a bigger cut",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -3, "spiritualDev": -7, "wealth": 10, "socialStanding": -8 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You do not just join -- you scale the operation. You recruit younger cousins, promising them quick money. You bribe the market manager for a better stall location. You begin selling to tourists at inflated prices, exploiting their ignorance. The money is intoxicating. You buy your mother a gold necklace; she wears it proudly, not knowing its provenance. But the operation's growth attracts attention. A supplier cheats you. A cousin is caught by police and names you. The network unravels. You have not just broken the precepts yourself -- you have drawn others into breaking them, multiplying the demerit exponentially. The monks teach that leading others into unwholesome action generates heavier karma than committing the action alone. Your cousins' parents arrive at your door with accusations and tears. Your mother removes the gold necklace and places it on the table without a word. The wealth evaporates, but the karmic debt remains."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "right-livelihood", "second-precept", "deception", "young_adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_004",
+    "title": "The Affair",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 45,
+    "karmaRange": [-100, 100],
+    "description": "At a work conference in another city, you meet someone. The attraction is immediate and electric. They are kind, attentive, and interested in you in a way your spouse has not been in years. Your marriage has grown stale -- routine, obligation, exhaustion. This person makes you feel alive again. They invite you for a drink after the evening session. Your hotel rooms are on the same floor. No one from your village would ever know.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Decline the invitation and call your spouse to reconnect",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "You excuse yourself, return to your room, and call home. Your spouse's voice is tired but warm. You talk about the children, the leaking roof, the mundane architecture of a shared life. The excitement of the stranger fades like a fever breaking. The Third Precept -- no sexual misconduct -- exists not as a punishment but as a protection. The monks teach that desire is a fire that promises warmth but delivers burns. You chose the difficult, unglamorous path of fidelity, and in the morning the choice feels solid as stone beneath your feet. The stranger smiles at you across the breakfast room. You nod politely and feel nothing but relief."
+      },
+      {
+        "id": "b",
+        "text": "Have the drink but maintain boundaries -- enjoy the attention without crossing lines",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": 4, "spiritualDev": -1 },
+          "relationships": []
+        },
+        "outcomeText": "You share one drink. The conversation is electric. You laugh in a way you have not laughed in months. When the moment arrives to decide -- their hand on yours, the question in their eyes -- you excuse yourself with an awkward smile and retreat to your room. The boundary held, barely. But the memory of the evening lingers like perfume, and for weeks after returning home you compare your spouse unfavorably to this phantom. The monks would say that entertaining desire without acting on it is like holding fire close to fabric -- maybe nothing burns, but the risk was unnecessary, and the heat leaves a mark."
+      },
+      {
+        "id": "c",
+        "text": "Pursue the affair -- you deserve happiness and your spouse will never find out",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": 6, "spiritualDev": -6, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -6 }]
+        },
+        "outcomeText": "You go to their room. The night is everything your stale marriage is not -- passionate, reckless, intoxicating. You return home carrying the secret like a stone in your chest. Your spouse notices nothing. But you notice everything differently now -- their imperfections magnified, your guilt converting to irritation. The Third Precept was broken in a hotel room, but its consequences unfold at home. You become short-tempered, distant, evasive. Your children sense the change. A secret affair is a second life that drains energy from the first. The monks teach that sexual misconduct generates demerit not because pleasure is sinful, but because the deception required to sustain it corrodes every other relationship. The affair ends, as affairs do, but the corrosion continues."
+      },
+      {
+        "id": "d",
+        "text": "Begin the affair and continue it long-term, building an elaborate web of lies",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -7, "spiritualDev": -8, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -15 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "What begins as one night becomes two, then ten, then an ongoing deception that requires a second phone, invented work trips, and increasingly elaborate lies. You are living two lives and neither one is real. The person you are with your lover is a performance; the person you are with your family is a performance. The authentic self has been buried under so many layers of deception that you can no longer locate it. Eventually, your spouse finds a message. The unraveling is catastrophic. Your children's trust -- the most precious thing you possessed -- shatters. Your spouse's family demands answers at the temple, in front of the monks and elders. The public shame in a Buddhist community where the Third Precept is fundamental to social order is absolute. You have broken not just a vow but the fabric of your family's place in the community. The monks say that prolonged, deliberate sexual misconduct generates demerit that reverberates across lifetimes, because the suffering it causes ripples outward through children, families, and generations."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "third-precept", "sexual-misconduct", "marriage", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_005",
+    "title": "The Corruption Offer",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 50,
+    "karmaRange": [-100, 100],
+    "description": "You have been appointed to a local government committee that approves building permits. A wealthy developer visits your home one evening with a thick envelope of cash and a simple request: approve his application to build on protected land near the river. The money inside would pay off your debts and fund your daughter's university education. He smiles and says everyone on the committee has already agreed. You are the last signature needed.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Refuse the bribe and report the developer to the authorities",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 5, "wealth": -3 },
+          "relationships": [{ "target": "family", "change": 3 }, { "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You push the envelope back across the table and tell the developer to leave. He threatens you -- subtly, with a smile. You report the bribe attempt. The investigation is slow and the developer has connections, but your refusal is noted by the community. The protected land remains unbuilt. Your daughter's university will have to wait another year, funded by honest savings. But the monks at the temple hear what you did and invite you to speak at a community gathering about the precepts in public life. The merit of refusing corruption when acceptance was easy and consequence-free is rare and powerful. Your children learn that integrity has a price, and that paying it is what makes it valuable."
+      },
+      {
+        "id": "b",
+        "text": "Refuse the bribe but stay quiet about it to avoid making enemies",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": 2 },
+          "relationships": []
+        },
+        "outcomeText": "You refuse the money but do not report it. The developer finds another way to get the permit approved. The building goes up on the protected land. The river suffers. You kept your hands clean but the outcome is the same as if you had not -- the corruption succeeded, just without your participation. Right Action requires more than personal abstention; it asks whether your silence enabled the harm. The answer, uncomfortably, is yes."
+      },
+      {
+        "id": "c",
+        "text": "Accept the bribe -- your daughter's future is more important than protected land",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": 2, "spiritualDev": -6, "wealth": 10, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You take the envelope. Your daughter enrolls at the university. The building rises on the riverbank. During the monsoon, the construction causes flooding in the downstream village. Three families lose their homes. The connection between your signature and their suffering is indirect but real -- a chain of cause and effect that the Buddha called dependent origination. Every link in the chain bears karmic weight. Your daughter's education, funded by corruption, carries an invisible asterisk. When she graduates, you clap with hands that signed away a river. The merit of educating a child does not cancel the demerit of enabling harm to a community. Karma is not accounting; debits and credits do not net out."
+      },
+      {
+        "id": "d",
+        "text": "Accept the bribe and demand a larger cut, leveraging your position for maximum gain",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -5, "spiritualDev": -8, "wealth": 15, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You look at the envelope and tell the developer it is not enough. His eyebrows rise, then he laughs -- he respects a negotiator. The amount doubles. Emboldened, you begin soliciting other developers. Within a year, you have approved a dozen questionable projects in exchange for payments that have transformed your family's standard of living. The river is polluted. The protected forest is shrinking. A journalist begins investigating the committee. When the story breaks, your name is prominent. The community's judgment is merciless -- you were entrusted with public stewardship and converted it into private wealth. Your family's new house, new car, new status -- all of it is tainted. Your daughter, now at university, reads about her father in the newspaper and cannot face her classmates. The monks refuse to accept your donations, saying that dana from corrupt wealth generates no merit. You have become the person the Buddha warned about: one who mistakes wealth for worth and discovers too late that the two are not the same."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "corruption", "bribery", "right-action", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_006",
+    "title": "The Inheritance Fight",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 35,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your father has died. He was a successful farmer who owned several plots of good land. The will is vague -- handwritten, witnessed by only one neighbor, and open to interpretation. Your two siblings live far away and trust you to handle the estate. A local lawyer suggests that the will's ambiguity allows you to claim the largest share legally. The temptation is enormous: the best plot, the one near the road, could secure your family's future for generations.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Divide the inheritance equally among all siblings, honoring your father's likely intention",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 5, "socialStatus": 5 },
+          "relationships": [{ "target": "family", "change": 8 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You divide everything into three equal portions and send your siblings detailed accounts of every asset. They are grateful and moved. At the funeral merit-making ceremony, the family stands united. The monks note approvingly that the dhamma's teaching on non-attachment extends to material inheritance -- your father's land was never truly 'his' and it is not truly 'yours.' The community respects your fairness. Your siblings' trust in you deepens into something permanent. The plot near the road goes to your younger sister, who needs it most. You receive less, but what you keep carries no karmic weight. Clean inheritance is the best inheritance."
+      },
+      {
+        "id": "b",
+        "text": "Follow the will's literal wording, even if it gives you a slightly larger share",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": 1, "spiritualDev": -1, "wealth": 5 },
+          "relationships": [{ "target": "family", "change": -3 }]
+        },
+        "outcomeText": "You hire the lawyer to interpret the will strictly. The legal reading gives you the house and the best plot, your siblings the remaining land. It is technically fair -- the document supports it. But your brother calls, his voice tight, asking if this is really what father intended. The ambiguity that benefits you could easily have been resolved the other way. You chose the interpretation that served your interest and called it law. The community shrugs -- inheritance disputes are common. But at the funeral, a hairline crack runs through the family's unity, and everyone pretends not to see it."
+      },
+      {
+        "id": "c",
+        "text": "Exploit the will's ambiguity to claim the largest share for yourself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -2, "spiritualDev": -5, "wealth": 12, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -12 }, { "target": "community", "change": -6 }]
+        },
+        "outcomeText": "You work with the lawyer to claim the house, the roadside plot, and the majority of the savings, leaving your siblings token shares of marginal land. They protest from a distance but lack the money or knowledge to challenge the legal maneuver. Your sister weeps on the phone. Your brother stops calling altogether. At the forty-nine-day merit-making ceremony for your father, you sit alone in the front row. The monks chant for your father's favorable rebirth, but the merit of the ceremony is hollowed out by the family discord surrounding it. The Buddha taught that attachment to material wealth is the root of suffering. You have confirmed this teaching by becoming its illustration. The roadside plot is yours. Your family is not."
+      },
+      {
+        "id": "d",
+        "text": "Forge documents to claim everything, cutting your siblings out entirely",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -8, "spiritualDev": -8, "wealth": 15, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -15 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You destroy the original will and produce a fabricated version that leaves everything to you. Your siblings, far away and trusting, receive letters from a lawyer informing them that their father left them nothing. The betrayal is incomprehensible to them -- they cannot believe their own sibling would do this. But they cannot prove otherwise. You now own all the land, the house, the savings. You are wealthy and utterly alone. The community knows the truth -- in a village, everyone always knows -- but the legal documents protect you. The monks, however, will not accept your donations. Word reaches the temple that you cheated your father's children at his deathbed, and the sangha quietly closes its doors to your merit-making. You have all the land and none of the spiritual infrastructure that makes the land meaningful. Your father's spirit, the monks whisper, watches with the heavy sorrow of a parent who raised a child that became a stranger."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "inheritance", "greed", "second-precept", "family", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_007",
+    "title": "False Witness",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 50,
+    "karmaRange": [-100, 100],
+    "description": "A powerful local official is accused of embezzling funds meant for the village school. You witnessed the transaction -- you saw the money change hands. The official's family approaches you privately. They remind you that the official helped your family during the flood last year, that he employs your cousin, that contradicting him would make your life very difficult. They ask you to say you saw nothing. The court date is tomorrow.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Testify truthfully about what you witnessed, regardless of consequences",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 6, "socialStatus": 3 },
+          "relationships": [{ "target": "family", "change": -3 }, { "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You stand before the court and describe what you saw. The official's family glares. Your cousin loses his job within the week. But the school funds are recovered and the children's education continues. The Fourth Precept -- do not lie -- is tested most severely when truth carries a price. The monks later tell you that Right Speech is the precept most frequently broken because lies are so useful in the short term. Your testimony cost you comfort but purchased something more durable: the knowledge that your word is reliable. In a community built on trust, that reputation is worth more than any official's favor."
+      },
+      {
+        "id": "b",
+        "text": "Avoid testifying by leaving town until the trial is over",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -3, "spiritualDev": -3 },
+          "relationships": [{ "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You invent a reason to visit relatives in another province. The trial proceeds without your testimony. The official is acquitted for lack of evidence. The school funds are never recovered. You return to a village where the children attend a school with leaking roofs and missing textbooks, and everyone knows why. Your absence from the trial was not invisible -- it was a statement, read clearly by all. The monks teach that silence can be a form of lying, and absence can be a form of complicity. You avoided the courtroom but you cannot avoid the karmic consequence of choosing comfort over truth."
+      },
+      {
+        "id": "c",
+        "text": "Lie under oath and say you saw nothing",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -4, "spiritualDev": -6, "socialStanding": -3 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You sit in the witness chair and say you saw nothing unusual. The lie tastes like metal. The official is acquitted. He thanks you privately, pressing an envelope into your hand -- money you did not ask for but cannot return without revealing the arrangement. The school children continue in their deteriorating classroom. The Fourth Precept has been broken under oath, in public, with consequences that extend to an entire generation of students. The monks teach that false witness is the heaviest form of lying because it corrupts the systems that communities depend on for justice. You protected a thief and betrayed the children. The envelope sits in your drawer, unopened, radiating guilt."
+      },
+      {
+        "id": "d",
+        "text": "Lie under oath and then blackmail the official for ongoing payments in exchange for your silence",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -7, "spiritualDev": -8, "wealth": 8, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You lie in court and then visit the official afterward with a proposition: monthly payments in exchange for your continued silence. His face hardens. He agrees, because he has no choice. For months, the money arrives -- a parasite's income, drawn from funds that should serve the public. But the relationship between blackmailer and victim is inherently unstable. The official begins gathering evidence against you. A recording of your demand surfaces. Now you are both exposed: he as a thief, you as a liar and extortionist. The community's judgment falls harder on you -- he stole money, but you sold your integrity and then weaponized the transaction. The monks refuse to hear your confession. The Fourth Precept, broken and then compounded, generates demerit that the elders describe as a pit: easy to fall into, nearly impossible to climb out of. Your family leaves the village in disgrace."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "fourth-precept", "lying", "justice", "right-speech", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_008",
+    "title": "Abandon the Sick",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your elderly mother has suffered a stroke. She can no longer walk, feed herself, or speak clearly. The doctors say she may live for years in this condition but will never fully recover. Caring for her requires quitting your job, moving back to the village, and spending your savings on medicine and assistance. Your spouse resents the burden. Your own children's needs are pressing. A government care facility exists, but it is underfunded and far away. She would be alone there.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Move home and care for your mother personally, sacrificing your career and savings",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 6, "wealth": -8, "health": -3 },
+          "relationships": [{ "target": "family", "change": 8 }, { "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You resign from your job, pack your belongings, and move back to the village house where you grew up. The days are long: bathing your mother, feeding her soft rice, massaging her stiff limbs, reading to her from the suttas she loved. Your savings dwindle. Your spouse struggles with the sacrifice. But the community sees and respects what you are doing. The monks teach that caring for one's parents is among the highest forms of merit a layperson can accumulate -- the Buddha himself tended to the sick, saying 'whoever tends the sick tends me.' Your mother's eyes, though her words are gone, carry a gratitude that needs no language. When she finally passes, years later, the community says she had a good death: loved, cared for, surrounded by merit. And you, exhausted and poorer, are richer in ways the bank cannot measure."
+      },
+      {
+        "id": "b",
+        "text": "Arrange for a hired caretaker and visit regularly, balancing duty with your own family's needs",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": 2, "wealth": -5 },
+          "relationships": [{ "target": "family", "change": 2 }]
+        },
+        "outcomeText": "You hire a woman from the village to provide daily care and visit every weekend, a four-hour journey each way. The arrangement is expensive but sustainable. Your mother receives adequate care but not the intimate attention of her own child. When you visit, she grips your hand and will not let go. The hired caretaker is kind but not family. The monks teach that filial devotion -- katannu -- is a debt that can never be fully repaid, because the care a parent gives a child is boundless. Your compromise is reasonable, but reason and filial duty do not always align. You do what you can, knowing it is less than what was done for you."
+      },
+      {
+        "id": "c",
+        "text": "Send her to the government care facility -- you cannot sacrifice your family's future",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": -4, "spiritualDev": -5, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You arrange the transfer. The facility is clean but impersonal. Your mother is placed in a room with three other elderly patients. She does not understand why she is there. Her eyes search for familiar faces and find none. You visit once a month, then less. The journey is long and each visit is painful. The community's judgment is severe -- in Southeast Asian Buddhist culture, placing a parent in institutional care is seen as a profound failure of filial duty. Your siblings, who contributed nothing to her care, now criticize you publicly. The monks say that a parent who raised you, fed you, protected you, and loved you unconditionally deserves the same in return. The facility keeps your mother alive. But alive and cared for are not the same thing."
+      },
+      {
+        "id": "d",
+        "text": "Cut off contact entirely -- she is a burden you never asked for and your life must continue",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -8, "spiritualDev": -8, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -15 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You stop answering your siblings' calls. You do not visit. You tell your spouse that your mother is 'being taken care of' and change the subject. In truth, she lies in the government facility, deteriorating, calling your name in her garbled speech to nurses who do not know you. The community learns of your abandonment. In Buddhist Southeast Asia, there is perhaps no greater moral failure than abandoning a parent in their hour of need. The monks speak of it in their sermons without naming you -- they do not need to. Everyone knows. Your own children watch and learn: this is how our parent treats the helpless. The lesson will echo when you yourself are old and sick and in need of care. Karma, the monks say, is not punishment -- it is consequence. And the consequence of abandoning the person who gave you life is a loneliness so deep that no amount of worldly success can fill it. When your mother dies alone in the facility, the monks perform the funeral rites but note that no family member attended. The community's silence at the ceremony speaks louder than any condemnation."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "filial-duty", "katannu", "caregiving", "sacrifice", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_009",
+    "title": "The Con",
+    "country": "shared",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "A business associate shows you a lucrative scheme: manufacturing and selling fake blessed amulets to desperate believers. The amulets are cheap metal stamped with sacred symbols, blessed by no one, but packaged convincingly with certificates from a fictitious monastery. Believers buy them for protection, healing, fertility, and luck. Your associate already has buyers lined up -- elderly villagers with sick grandchildren, farmers facing drought, mothers praying for sons in the military. The profit margin is enormous.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Refuse and warn the local monks about the scheme so they can alert the community",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 5 },
+          "relationships": [{ "target": "family", "change": 3 }, { "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You refuse immediately and go directly to the temple. The senior monk listens gravely. Fake amulets are not just a commercial fraud -- they are a spiritual one. Believers who purchase them forego other forms of merit-making, trusting in protection that does not exist. A grandmother who buys a fake healing amulet for a sick grandchild may delay medical treatment. The stakes are life and death, wrapped in faith. The monks issue a warning to the community. Your associate's scheme collapses before it begins. He curses you, but the community's gratitude is genuine and lasting. The merit of protecting the faithful from exploitation is recognized by the monks as among the most wholesome actions a layperson can perform."
+      },
+      {
+        "id": "b",
+        "text": "Refuse but stay quiet about it -- it is not your business what others choose to sell",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": -1, "spiritualDev": 0 },
+          "relationships": []
+        },
+        "outcomeText": "You decline and walk away. Your associate finds another partner. The fake amulets appear in the market. Elderly villagers buy them with trembling hands and desperate hope. A mother ties one around her sick child's neck and prays. The protection is imaginary. You kept your hands clean but the harm proceeds. The monks would say that knowing about a wrong and remaining silent makes you a participant in it -- the karmic weight is lighter than doing the deed, but heavier than you might wish."
+      },
+      {
+        "id": "c",
+        "text": "Join the scheme -- the believers want hope and you are providing it, even if the amulets are not real",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": 3, "spiritualDev": -7, "wealth": 10, "socialStanding": -5 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You convince yourself that you are selling hope, not deception. The amulets move quickly. Elderly farmers press crumpled bills into your hands with expressions of such grateful faith that you have to look away. A grandmother buys three -- one for each grandchild serving in the military. She touches them to her forehead in prayer. The metal is worthless. The blessing is nonexistent. The faith is real, and you are exploiting it. The Fourth Precept forbids lying; the Second forbids taking what is not freely given through honest means. You have broken both simultaneously. When a child wearing your amulet falls ill and the mother wails that the sacred protection failed, the sound reaches you through three walls and stays forever. The monks say that exploiting faith is among the heaviest demerits because it corrupts the very mechanism -- trust in the dhamma -- through which people accumulate merit and approach liberation."
+      },
+      {
+        "id": "d",
+        "text": "Scale the operation, target the most desperate believers, and charge premium prices",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "wealth": 15, "socialStanding": -10 },
+          "relationships": [{ "target": "family", "change": -12 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You identify the most vulnerable buyers: parents of sick children, elderly people terrified of a bad death, farmers facing ruin. You charge them the most because their desperation makes them willing to pay anything. The operation grows. You hire salespeople who target hospital waiting rooms and funeral parlors. The money pours in. Then a child dies. The parents, who spent their medicine money on your amulet instead, discover the fraud. The story spreads like fire through dry grass. Monks across the region denounce the scheme from their pulpits. Police arrive. But the legal consequences are nothing compared to the spiritual ones. You have weaponized the dhamma itself -- using sacred symbols to extract money from suffering people. The monks say this generates demerit so heavy it bends the trajectory of multiple future lives. Your own family disowns you. The community erases your name from temple donation records, as if you never existed. In Buddhist cosmology, there are hells reserved for those who corrupt the faith. The monks do not say you are going there. Their silence says it for them."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "fraud", "amulets", "faith", "exploitation", "fourth-precept", "adulthood"],
+    "source": "Universal Buddhist moral teachings"
+  },
+  {
+    "id": "sh_temptation_010",
+    "title": "Revenge",
+    "country": "shared",
+    "lifeStage": "elderhood",
+    "minAge": 55,
+    "maxAge": 80,
+    "karmaRange": [-100, 100],
+    "description": "Decades ago, a business partner cheated you out of your life's savings through a fraudulent land deal. You lost everything. Your family suffered years of poverty. The man prospered while you struggled. Now, in old age, the tables have turned. His business has failed, his children have abandoned him, and he is applying for a position at the company where you now sit on the board. His application is in your hands. One word from you and he will be rejected. Another word, and the community will learn about his past fraud. After thirty years, justice -- or revenge -- is finally within reach.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Approve his application and let go of the decades-old grudge",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 8 },
+          "relationships": [{ "target": "family", "change": 3 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You sign the approval. When he arrives on his first day and sees your face, the recognition is instantaneous. He freezes. You extend your hand. The gesture costs you more than anyone watching could understand -- thirty years of bitterness, released in a handshake. The monks would say this is the highest form of metta: loving-kindness extended to one who caused you suffering. The Buddha taught that holding a grudge is like drinking poison and expecting the other person to die. You have set down the poison. The relief is not immediate, but in the weeks that follow, a weight you had carried so long it felt like your own body lifts, and you discover you are lighter than you knew. The community, which remembers everything, speaks of your mercy with quiet awe."
+      },
+      {
+        "id": "b",
+        "text": "Recuse yourself from the decision -- let others judge his application without your bias",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You remove yourself from the process, explaining a conflict of interest. The committee approves or rejects him on his merits alone. You neither help nor hinder. The Middle Way applied to revenge is restraint -- neither indulging the desire for retribution nor pretending the wrong never happened. You acknowledge the wound and choose not to weaponize it. The monks would call this upeksha -- equanimity. It is not as dramatic as forgiveness, not as satisfying as revenge, but it is honest. The grudge remains, a scar rather than an open wound. Time will determine whether even that fades."
+      },
+      {
+        "id": "c",
+        "text": "Block his application -- after what he did, he does not deserve your mercy",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": 3, "spiritualDev": -5, "socialStanding": -3 },
+          "relationships": [{ "target": "family", "change": -3 }, { "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You write a quiet note to the committee chair: this man cannot be trusted. No details needed -- your reputation carries weight. The application is rejected. He receives a form letter. He will never know why, but you know. The satisfaction is real but brief, like scratching an itch that immediately returns worse than before. Revenge, the monks teach, is a second arrow. The first arrow was the original wrong done to you; the second arrow is the one you shoot yourself by choosing retribution over release. The grudge, fed rather than starved, grows stronger. You have not settled the score -- you have extended the game into another round. At your age, with death approaching, the monks gently suggest that the karmic weight of a thirty-year grudge is precisely the kind of attachment that produces a 'dangerous death.' You chose satisfaction over peace, and the two are very different things."
+      },
+      {
+        "id": "d",
+        "text": "Destroy him completely -- block his application, expose his fraud publicly, and ensure he is ruined",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "socialStanding": -8 },
+          "relationships": [{ "target": "family", "change": -8 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "You do not just block the application -- you launch a campaign of destruction. You share the decades-old fraud story with the community. You contact his remaining business associates. You ensure that every door in the district closes to him. The man who cheated you is systematically erased from economic and social life. He comes to your house one evening, gaunt and broken, and begs you to stop. You close the door. The revenge is total and it tastes like ash. Your family watches in horror as you pour the final years of your life into annihilating another human being. Your grandchildren hear you muttering about events that happened before their parents were born. The monks refuse to counsel you -- not out of judgment, but because you have become unreachable, sealed inside a fortress of bitterness. The Buddha's teaching on revenge is unambiguous: 'Hatred does not cease by hatred; hatred ceases only by love. This is an eternal law.' You have chosen the opposite of this law, and the consequence is a final chapter written in bile rather than peace. When death comes, the monks fear, your last thoughts will be of this man rather than the dhamma -- and the quality of your final thoughts determines your rebirth. You have handed your enemy the power to shape your next life."
+      }
+    ],
+    "tags": ["temptation", "moral_dilemma", "revenge", "forgiveness", "metta", "grudge", "elderhood"],
+    "source": "Universal Buddhist moral teachings"
+  }
+]

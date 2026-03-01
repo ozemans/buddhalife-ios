@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Vesak (Visakha Bucha)",
+    "country": "shared",
+    "month": "May",
+    "description": "The triple celebration of the Buddha's birth, enlightenment, and death. The most sacred day in the Theravada Buddhist calendar. Temples are decorated with lanterns and flowers; monks chant through the night; laypeople make special offerings and release lanterns.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["temple_celebration", "lantern_release", "special_offerings"] }
+  },
+  {
+    "name": "Khao Phansa (Buddhist Lent)",
+    "country": "shared",
+    "month": "July",
+    "description": "The beginning of the three-month monsoon retreat (Vassa). Monks remain in their monasteries for intensive practice. Laypeople increase temple attendance, take extra precepts, and refrain from major celebrations like weddings. A time of heightened spiritual activity.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["monks_retreat", "increased_precepts", "no_weddings"] }
+  },
+  {
+    "name": "Ok Phansa (End of Buddhist Lent)",
+    "country": "shared",
+    "month": "October",
+    "description": "The end of the three-month rains retreat. Monks emerge from their intensive practice period. Laypeople celebrate with Kathina (robe-offering) ceremonies, boat races, and illumination festivals. One of the most merit-rich periods in the calendar.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["kathina_ceremony", "boat_races", "illumination"] }
+  },
+  {
+    "name": "Magha Puja",
+    "country": "shared",
+    "month": "February",
+    "description": "Commemorates the spontaneous gathering of 1,250 enlightened monks before the Buddha. Celebrated with candlelight processions around temples (wian thian). An important day for making merit and reaffirming Buddhist faith.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["candlelight_procession", "special_offerings"] }
+  },
+  {
+    "name": "Songkran (Thai New Year)",
+    "country": "thailand",
+    "month": "April",
+    "description": "The Thai New Year water festival combining traditional merit-making (pouring scented water over Buddha images and elders' hands in the rod nam dam hua ceremony) with modern water-fight celebrations. A time of renewal, respect for elders, and communal joy.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["water_blessing", "elder_respect", "water_fight", "temple_cleaning"] }
+  },
+  {
+    "name": "Poy Sang Long (Novice Ordination Festival)",
+    "country": "thailand",
+    "month": "March",
+    "description": "The Shan novice ordination festival where boys are dressed as princes and carried to the monastery. The most important merit-making event for Shan families. Generates enormous merit for parents, especially mothers. Often involves multi-day celebrations with music, food, and processions.",
+    "gameEffect": { "meritMultiplier": 3.0, "events": ["ordination_ceremony", "prince_procession", "family_merit"] }
+  },
+  {
+    "name": "Kotsaa",
+    "country": "thailand",
+    "month": "November",
+    "description": "Annual merit-making ceremony in the 11th lunar month for all who died in the previous year. Spirits of the recently dead return to collect offerings. Gambling at kotsaa ceremonies is a longstanding tradition. The community gathers to honor the dead and transfer merit.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["ancestor_offerings", "merit_transfer", "funeral_gambling"] }
+  },
+  {
+    "name": "Kaentau (Paying Respect)",
+    "country": "thailand",
+    "month": "April/October",
+    "description": "Biannual village-wide ceremony where young people visit temple sleepers with flower bouquets and gifts. Temple sleepers tie white strings around wrists and utter blessings. A key intergenerational ritual reinforcing respect hierarchy and spiritual protection.",
+    "gameEffect": { "meritMultiplier": 1.3, "events": ["elder_visits", "blessing_strings", "flower_offering"] }
+  },
+  {
+    "name": "Thingyan (Water Festival / Burmese New Year)",
+    "country": "myanmar",
+    "month": "April",
+    "description": "Myanmar's New Year water festival. A time of cleansing and renewal. People pour water over each other and over Buddha images. Merit-making activities include releasing fish and birds, feeding monks, and visiting monasteries. The festival marks the descent of Thagyamin, king of the celestial beings.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["water_cleansing", "animal_release", "special_offerings"] }
+  },
+  {
+    "name": "Shinbyu",
+    "country": "myanmar",
+    "month": "any",
+    "description": "The novice ordination ceremony for Burmese boys, typically between ages 7-14. The single greatest act of merit a son can generate for his parents. The boy is dressed in royal attire before shaving his head and donning saffron robes. Can happen any time of year.",
+    "gameEffect": { "meritMultiplier": 3.0, "events": ["ordination_ceremony", "royal_dress", "family_merit"] }
+  },
+  {
+    "name": "Thadingyut (Festival of Lights)",
+    "country": "myanmar",
+    "month": "October",
+    "description": "Celebrates the Buddha's descent from Tavatimsa heaven after teaching the Abhidhamma to his mother. Buildings, pagodas, and homes are illuminated with candles and electric lights. A time for paying respect to elders and making merit. Marks the end of Buddhist Lent.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["illumination", "elder_respect", "end_of_lent"] }
+  },
+  {
+    "name": "Pchum Ben (Ancestors' Day)",
+    "country": "cambodia",
+    "month": "September/October",
+    "description": "A 15-day festival honoring the dead. Cambodians believe the gates of hell open and ancestors' spirits wander the earth seeking merit. Families bring food to pagodas and dedicate merit to seven generations of ancestors. The most important Cambodian Buddhist festival alongside Khmer New Year.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["ancestor_feeding", "pagoda_offerings", "merit_transfer"] }
+  },
+  {
+    "name": "Khmer New Year (Choul Chnam Thmey)",
+    "country": "cambodia",
+    "month": "April",
+    "description": "Three-day celebration marking the end of the harvest season. Families clean homes, visit pagodas, make offerings, and perform the bangsokol ceremony for the dead. Sand stupas are built at temples. Water is poured over Buddha images and elders.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["sand_stupas", "bangsokol", "temple_visits", "water_blessing"] }
+  },
+  {
+    "name": "Visak Bochea",
+    "country": "cambodia",
+    "month": "May",
+    "description": "The Cambodian observance of Vesak with particular significance given the Khmer Rouge's attempt to destroy Buddhism. Candlelight processions, meditation vigils, and acts of generosity commemorate the Buddha while affirming the survival and resilience of Cambodian Buddhist practice.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["candlelight_procession", "meditation_vigil", "resilience_commemoration"] }
+  },
+  {
+    "name": "Vu Lan (Feast of Wandering Souls)",
+    "country": "vietnam",
+    "month": "August",
+    "description": "The 15th of the 7th lunar month, also called 'Hell Day' (Ngay Xa Toi Vong Hon). The gates of the underworld open and con ma (angry spirits) roam free. Families prepare elaborate food offerings to pacify wandering souls. Strongly associated with filial piety -- the story of Muc Kien Lien saving his mother from hell.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["ghost_offerings", "filial_piety", "spirit_pacification"] }
+  },
+  {
+    "name": "Tet Nguyen Dan (Lunar New Year)",
+    "country": "vietnam",
+    "month": "January/February",
+    "description": "The most important Vietnamese festival. Families reunite, clean the ancestor altar, make elaborate offerings, and perform rites at the ban tho. The first visitor of the new year determines the household's fortune. Temples are crowded with devotees. Failing to return home for Tet can anger the ancestors.",
+    "gameEffect": { "meritMultiplier": 2.0, "events": ["ancestor_rites", "family_reunion", "temple_visit", "first_visitor"] }
+  },
+  {
+    "name": "Phat Dan (Buddha's Birthday)",
+    "country": "vietnam",
+    "month": "May",
+    "description": "Vietnamese celebration of the Buddha's birth in the Mahayana tradition. Celebrated at pagodas with bathing of the baby Buddha statue, chanting, vegetarian feasts, and acts of charity. Temples organize community service activities and dharma talks.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["buddha_bathing", "vegetarian_feast", "charity_work"] }
+  },
+  {
+    "name": "Boun That Luang",
+    "country": "laos",
+    "month": "November",
+    "description": "The most important national festival in Laos, held at the great golden stupa Pha That Luang in Vientiane. Thousands process around the stupa carrying candles. Combines Buddhist devotion, national pride, and a massive trade fair. Three days of merit-making and celebration.",
+    "gameEffect": { "meritMultiplier": 2.5, "events": ["stupa_procession", "candlelight", "trade_fair", "national_celebration"] }
+  },
+  {
+    "name": "Boun Khaosalak",
+    "country": "laos",
+    "month": "September",
+    "description": "Rice harvest offering ceremony concluding the agricultural cycle. Families prepare offerings for ancestors tied to the rice harvest. Boat racing on the river accompanies the temple ceremonies. Represents the deep connection between the Buddhist calendar and the agricultural rice cycle.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["harvest_offerings", "ancestor_merit", "boat_racing"] }
+  },
+  {
+    "name": "Boun Pi Mai (Lao New Year)",
+    "country": "laos",
+    "month": "April",
+    "description": "Three-day water festival similar to Songkran. Sand stupas are built at temples, Buddha images are bathed, and elders receive water blessings. In Luang Prabang, the festival features processions of the Phra Bang, the most sacred Buddha image in Laos.",
+    "gameEffect": { "meritMultiplier": 1.5, "events": ["water_blessing", "sand_stupas", "phra_bang_procession"] }
+  },
+  {
+    "name": "Khao Padapdin",
+    "country": "laos",
+    "month": "August/September",
+    "description": "Ceremony in the 9th lunar month making offerings to the dead. Part of the agricultural-Buddhist calendar linking harvest seasons to ancestor obligations. Families present food and merit to deceased relatives at the temple.",
+    "gameEffect": { "meritMultiplier": 1.3, "events": ["ancestor_offerings", "harvest_link"] }
+  },
+  {
+    "name": "Boun Haw Khao Padapdin",
+    "country": "laos",
+    "month": "September",
+    "description": "Merit-making ceremony where wrapped rice packages are offered at the temple for the spirits of the dead. Coincides with the rice harvest season, linking agricultural abundance to spiritual obligation. The dead receive provisions through the merit generated.",
+    "gameEffect": { "meritMultiplier": 1.3, "events": ["rice_offerings", "merit_transfer", "harvest_ceremony"] }
+  }
+]

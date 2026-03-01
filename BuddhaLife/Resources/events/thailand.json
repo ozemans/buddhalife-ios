@@ -1,0 +1,904 @@
+[
+  {
+    "id": "th_childhood_001",
+    "title": "The Novice Ordination Festival",
+    "country": "thailand",
+    "lifeStage": "childhood",
+    "minAge": 8,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "Your village is holding a poy sang long -- the novice ordination festival. Your parents have been saving for months. You will be dressed as a prince, carried on your uncle's shoulders to the monastery, and have your head shaved before the abbot. Your friend Weng is excited, but you are worried about sleeping away from home and not eating after noon.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Embrace the ordination with enthusiasm and pride",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 10, "education": 5 },
+          "relationships": [{ "target": "parents", "change": 10 }]
+        },
+        "outcomeText": "You march proudly to the monastery, head held high. Your mother weeps tears of joy -- your ordination sends her merit to the heavens. The monks welcome you as luk kham, an ordained son. You learn to chant, meditate at dawn, and eat only before noon. When you return to the village weeks later, people treat you differently. You have begun your Buddhist life."
+      },
+      {
+        "id": "b",
+        "text": "Go through with it reluctantly, focusing on the festival and food",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 3, "education": 3 },
+          "relationships": [{ "target": "parents", "change": 5 }]
+        },
+        "outcomeText": "You fidget during the ceremony and count the days until you return home. But even reluctant ordination generates merit -- the act itself matters more than your enthusiasm. Your mother gains spiritual credit, your father gains community respect. You learn a few chants and discover you enjoy the quiet mornings. The ambivalence is normal; many boys feel the same."
+      },
+      {
+        "id": "c",
+        "text": "Beg your parents to delay it until next year",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -3, "spiritualDev": -2, "education": 0 },
+          "relationships": [{ "target": "parents", "change": -8 }]
+        },
+        "outcomeText": "Your parents are visibly disappointed. The village whispers that you are immature, that your family cannot manage their household. Your mother, who cannot ordain herself and depended on your ordination for her greatest merit, says nothing but her silence weighs on you for months. The money saved for the festival sits unused."
+      }
+    ],
+    "tags": ["ordination", "merit", "family", "coming-of-age", "monastery"],
+    "source": "Scholar 2 (Eberhardt Ch8 -- Tsit and Weng anticipating ordination)"
+  },
+  {
+    "id": "th_childhood_002",
+    "title": "The Temple School",
+    "country": "thailand",
+    "lifeStage": "childhood",
+    "minAge": 6,
+    "maxAge": 11,
+    "karmaRange": [-100, 100],
+    "description": "Your family is too poor to send you to the government school in town. The village abbot offers to take you in as a dek wat -- a temple boy. You would live at the monastery, sweep the grounds, prepare food for the monks, and attend the temple school in exchange for education and meals.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept and move to the temple with gratitude",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "education": 10 },
+          "relationships": [{ "target": "parents", "change": 3 }]
+        },
+        "outcomeText": "Life at the temple is rigorous but rewarding. You wake before dawn to help prepare alms bowls, sweep the ordination hall, and carry water. In return, the monks teach you to read Pali script, basic arithmetic, and Buddhist history. You miss your mother's cooking, but the temple sleepers who live here treat you kindly. You are building a foundation that village children without this opportunity will never have."
+      },
+      {
+        "id": "b",
+        "text": "Refuse and stay home to help with the family farm",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 0, "education": -5 },
+          "relationships": [{ "target": "parents", "change": 5 }]
+        },
+        "outcomeText": "Your parents appreciate the extra hands in the rice paddies. You learn the rhythms of planting and harvest, the way the monsoon sky darkens before rain. But as the years pass, children who studied at the temple can read signs in town, negotiate prices at market, and recite scriptures at ceremonies. The world is changing, and the farm is not enough."
+      },
+      {
+        "id": "c",
+        "text": "Accept but sneak home whenever you get homesick",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 2 },
+          "stats": { "happiness": 3, "spiritualDev": 4, "education": 5 },
+          "relationships": [{ "target": "parents", "change": 2 }]
+        },
+        "outcomeText": "You shuttle between temple and home, never fully committing to either world. The monks note your absences with quiet disapproval. Your parents worry you are becoming ungrateful. But you do learn to read, and you maintain your family bonds. It is an imperfect middle path."
+      },
+      {
+        "id": "d",
+        "text": "Steal food and coins from the monks' offering trays while doing your chores",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -5, "spiritualDev": -6, "socialStanding": -8, "wealth": 3 },
+          "relationships": [{ "target": "monks", "change": -12 }, { "target": "family", "change": -8 }]
+        },
+        "outcomeText": "You pocket coins from the alms trays and hide sticky rice in your shirt when no one is looking. For a few days you feel clever -- richer than any dek wat has a right to be. Then the senior monk counts the offerings and his face darkens. The other temple boys are questioned. When the truth emerges, the abbot calls your parents to the temple. Your mother kneels before him, weeping with shame. Stealing from monks is among the gravest acts a child can commit -- you have taken from the Sangha itself, and the demerit falls not only on you but on the family that raised you."
+      }
+    ],
+    "tags": ["temple", "education", "poverty", "dek-wat", "monastery"],
+    "source": "Knowledge base: Thai Buddhist institutions -- temple as community center"
+  },
+  {
+    "id": "th_childhood_003",
+    "title": "The Spirit at the Crossroads",
+    "country": "thailand",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 10,
+    "karmaRange": [-100, 100],
+    "description": "Walking home from the rice fields at dusk, you pass the tsao moeng shrine at the village edge. The air turns cold. Your older cousin says the guardian spirit is watching and that children with weak khwan should never linger here after dark. You feel a strange tingling in your chest.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Press your hands together in a waai and whisper a respectful greeting to the spirit",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5, "health": 2 },
+          "relationships": []
+        },
+        "outcomeText": "Your cousin nods approvingly. The tingling fades. That night you sleep soundly and dream of a bright light near the shrine. Your grandmother says the tsao moeng noticed your good manners. In the villages of Shan country, respect for the guardian spirit is not optional -- it is survival."
+      },
+      {
+        "id": "b",
+        "text": "Run past the shrine as fast as you can",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": -2, "spiritualDev": 0, "health": -2 },
+          "relationships": []
+        },
+        "outcomeText": "You sprint home gasping. That night you have bad dreams and wake with a fever. Your mother performs a soul-calling ritual with a boiled egg and a white thread tied around your wrist. The saraa says one of your 32 khwan fled in fright. Children's souls are skittish, easily startled. It takes three days before you feel right again."
+      },
+      {
+        "id": "c",
+        "text": "Pick up a stone and throw it toward the shrine to prove you are brave",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 5 },
+          "stats": { "happiness": -5, "spiritualDev": -3, "health": -5 },
+          "relationships": [{ "target": "family", "change": -5 }]
+        },
+        "outcomeText": "The stone clatters against the shrine post. Your cousin grabs your arm, face white with terror. That night a violent storm shakes the village. You develop a high fever and babble in your sleep. The saraa is called. She says the tsao moeng is furious -- a child has insulted the village's protector. Your parents must bring offerings of flowers, candles, and a chicken to the shrine before you recover."
+      }
+    ],
+    "tags": ["spirits", "tsao-moeng", "khwan", "childhood", "village"],
+    "source": "Knowledge base: Shan practice -- tsao moeng shrine, children's vulnerable khwan"
+  },
+  {
+    "id": "th_adolescence_001",
+    "title": "The Paying Respect Ceremony",
+    "country": "thailand",
+    "lifeStage": "adolescence",
+    "minAge": 13,
+    "maxAge": 17,
+    "karmaRange": [-100, 100],
+    "description": "It is the biannual kaentau ceremony. As a young person, you must visit the temple sleepers -- the devout elderly who keep eight precepts and live at the monastery. There are dozens in your village and you have prepared flower bouquets and small gifts. Your friends want to rush through and go play.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Focus on a few key elders known for powerful blessings, bringing extra-generous gifts",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 6, "socialStatus": 4 },
+          "relationships": [{ "target": "elders", "change": 10 }]
+        },
+        "outcomeText": "You spend meaningful time with the most respected temple sleepers. Old Grandmother Kaew ties a white string around your wrist while murmuring blessings of protection. The saraa gives you a katha verse to recite when you feel afraid. These relationships with powerful elders will serve you for years -- their blessings are believed to shield against misfortune and strengthen your khwan."
+      },
+      {
+        "id": "b",
+        "text": "Try to visit as many as possible, rushing through each encounter",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 1 },
+          "stats": { "happiness": 1, "spiritualDev": 2, "socialStatus": 2 },
+          "relationships": [{ "target": "elders", "change": 3 }]
+        },
+        "outcomeText": "You dash from house to house, pressing flower bouquets into wrinkled hands and receiving hurried blessings. You cover most of the village but connect deeply with no one. The elders smile politely but you catch one whispering to another that 'the young ones rush through everything now.' The merit is real but thin, spread too wide."
+      },
+      {
+        "id": "c",
+        "text": "Skip the ceremony and go play with your friends",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 5 },
+          "stats": { "happiness": 5, "spiritualDev": -5, "socialStatus": -5 },
+          "relationships": [{ "target": "elders", "change": -8 }]
+        },
+        "outcomeText": "You and your friends spend the afternoon swimming in the river. It feels wonderful -- until you come home and your grandmother fixes you with a look that could curdle milk. The kaentau is not optional. It is how young people demonstrate respect for the spiritual hierarchy. Several temple sleepers noted your absence. Your reputation among the elders suffers, and their blessings will not extend to you this season."
+      },
+      {
+        "id": "d",
+        "text": "Visit the elders but pocket the gift money your parents gave you for them",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -3, "spiritualDev": -5, "socialStanding": -7, "wealth": 4 },
+          "relationships": [{ "target": "elders", "change": -10 }, { "target": "parents", "change": -8 }]
+        },
+        "outcomeText": "You make the rounds with empty hands and a pocket full of your parents' money, pressing your palms together in hollow wai after hollow wai. The temple sleepers notice the missing gifts immediately -- they know exactly which families sent what. Old Grandmother Kaew looks at you with an expression worse than anger: disappointment. Word travels back to your parents before you even reach home. You have stolen from the most spiritually powerful people in the village, people whose blessings protect your family and whose curses no one dares invite. The coins feel like burning coals in your pocket."
+      }
+    ],
+    "tags": ["kaentau", "temple-sleepers", "respect", "elders", "blessings"],
+    "source": "Scholar 2 (Eberhardt Ch7 -- kaentau Paying Respect ceremony)"
+  },
+  {
+    "id": "th_adolescence_002",
+    "title": "The Amulet Vendor",
+    "country": "thailand",
+    "lifeStage": "adolescence",
+    "minAge": 14,
+    "maxAge": 19,
+    "karmaRange": [-100, 100],
+    "description": "At the temple fair, a vendor displays rows of Buddhist amulets -- some blessed by famous monks, others of uncertain origin. Your classmate claims a particular amulet stopped a knife from cutting him. A rare amulet from a renowned forest monk costs a month of your family's income.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Save up and buy the genuine blessed amulet from the reputable vendor",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 3, "wealth": -8 },
+          "relationships": []
+        },
+        "outcomeText": "You wear the amulet against your skin, feeling its warmth. Whether its power is real or psychological, you walk with more confidence. At the temple, an elder nods approvingly -- supporting the amulet trade supports the monks who blessed them. But your family wonders where your savings went."
+      },
+      {
+        "id": "b",
+        "text": "Buy a cheap knockoff that looks the same",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 2, "spiritualDev": -2, "wealth": -1 },
+          "relationships": []
+        },
+        "outcomeText": "The fake amulet looks convincing enough. But you know the truth -- no monk blessed this stamped tin. When a friend asks to see it, you feel a twinge of shame. The elders say that deception, even small deception, corrodes the merit you carry. You wonder if wearing a false sacred object might actually invite bad luck."
+      },
+      {
+        "id": "c",
+        "text": "Focus on meditation practice instead -- true protection comes from within",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "wealth": 0 },
+          "relationships": []
+        },
+        "outcomeText": "You walk past the amulet stalls and sit in the ordination hall, joining the temple sleepers in their evening meditation. The abbot notices you and nods. 'Anicca, dukkha, anatta,' you recite with mak nap beads. This is the forest monk's way -- relying on inner cultivation rather than external objects. Your spiritualdev deepens, though your friends think you are strange."
+      },
+      {
+        "id": "d",
+        "text": "Wait for the vendor to turn away and steal the rare blessed amulet",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -8, "spiritualDev": -7, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -10 }, { "target": "monks", "change": -8 }]
+        },
+        "outcomeText": "You wait until the crowd surges and the vendor looks away, then your hand darts out and closes around the forest monk's amulet. You slip it into your pocket and walk quickly into the crowd. For one electric moment you feel invincible. Then the vendor shouts. Faces turn. A temple fair is a small world, and someone saw your hand. The vendor grabs your arm; the crowd parts. A monk who blessed these amulets stands watching, his expression unreadable. Stealing a sacred object consecrated by the Sangha is not ordinary theft -- it is a violation of the sacred. The vendor demands your parents come. The amulet, which was meant to protect, now radiates only shame."
+      }
+    ],
+    "tags": ["amulets", "temple-fair", "commerce", "superstition", "meditation"],
+    "source": "Knowledge base: Thai distinctive practices -- amulets and protective objects"
+  },
+  {
+    "id": "th_youngadult_001",
+    "title": "Someone Asks for Your Food",
+    "country": "thailand",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 25,
+    "karmaRange": [-100, 100],
+    "description": "You are eating lunch at the edge of the rice field when a neighbor approaches. Eye contact is made. The cultural rule is iron-clad: if someone sees your food and approaches, you must share. You are hungry, and this is your only meal until evening.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Share generously, offering the best portions",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 3, "health": -2 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You gesture them over with a smile and push the choicest pieces their way. They eat gratefully. In the Shan world, generosity is the greatest virtue -- it creates the social bonds that sustain everyone through hardship. You go hungry today, but tomorrow it may be your turn to approach someone's meal."
+      },
+      {
+        "id": "b",
+        "text": "Quickly claim 'am mii' -- 'I don't have any' -- before they reach you",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": 0, "spiritualDev": -1, "health": 2 },
+          "relationships": [{ "target": "community", "change": -2 }]
+        },
+        "outcomeText": "You mutter the deflection before they arrive. But your rice bowl is visible, steam rising. The neighbor pauses, looks at the bowl, looks at you, and walks away. The lie is transparent. You eat your fill but the food tastes like ash. The saying goes: 'am mii only works if the item is truly out of sight.'"
+      },
+      {
+        "id": "c",
+        "text": "Hide the food under your hat before they get close",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -3, "spiritualDev": -3, "socialStatus": -5 },
+          "relationships": [{ "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You shove the bowl under your hat. The neighbor sees the movement and their eyes narrow. Within a day, the story spreads: you hid your food rather than share. In a village where generosity is the measure of a person's worth, this is devastating. People begin to say you claim status without the generosity to support it."
+      },
+      {
+        "id": "d",
+        "text": "Share but make a joke about how little you have",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 1, "health": -1 },
+          "relationships": [{ "target": "community", "change": 3 }]
+        },
+        "outcomeText": "You laugh and wave them over: 'Come eat this mountain of rice I cannot possibly finish!' The joke acknowledges the social obligation while preserving your dignity. You share, they eat, and the exchange strengthens the web of reciprocity that holds the village together."
+      }
+    ],
+    "tags": ["generosity", "sharing", "social-hierarchy", "food", "village-life"],
+    "source": "Scholar 1 (Eberhardt Ch4 -- asking-for-things dynamic)"
+  },
+  {
+    "id": "th_youngadult_002",
+    "title": "Gambling at the Funeral",
+    "country": "thailand",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 30,
+    "karmaRange": [-100, 100],
+    "description": "A respected elder has died. The funeral vigil stretches through the night. Beneath the house, card games and dice keep the crowd awake -- gambling at funerals is a longstanding tradition. 'If we didn't have gambling, not enough people would come,' the kamnan says. You have limited cash.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Gamble modestly -- it is a social duty to keep the vigil alive",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 4, "spiritualDev": -1, "wealth": -3 },
+          "relationships": [{ "target": "community", "change": 4 }]
+        },
+        "outcomeText": "You play cards through the small hours, losing a little, winning a little. The point is not the money -- it is keeping the community together through the night, ensuring the deceased is not alone. The monks chant upstairs; the dice click below. This is how death is managed: with prayer and with play."
+      },
+      {
+        "id": "b",
+        "text": "Gamble big -- your luck has been good lately",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -2, "spiritualDev": -3, "wealth": -10 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You bet heavily and the cards turn against you. By dawn you have lost most of your savings. The excitement drained you but produced nothing. Others eye your losses with a mix of sympathy and judgment. Gambling at funerals is acceptable -- gambling addiction is not. You walk home in the grey light feeling hollowed out."
+      },
+      {
+        "id": "c",
+        "text": "Stay upstairs with the monks and elders, listening to chanting",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 6, "wealth": 0 },
+          "relationships": [{ "target": "elders", "change": 5 }]
+        },
+        "outcomeText": "You sit cross-legged among the temple sleepers as monks chant Pali verses for the deceased. The repetitive sound is hypnotic, and you find yourself genuinely reflecting on impermanence. The elders notice your piety. But downstairs, your friends wonder why you are being so serious. You have gained merit and lost a little social connection."
+      },
+      {
+        "id": "d",
+        "text": "Set up a food stall selling sweets and roasted eggs to the gamblers",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 0, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": 3 }]
+        },
+        "outcomeText": "You fire up a small charcoal stove and begin selling kai ping (roasted eggs) and sticky rice with mango to the crowd. Business is brisk -- people are hungry and grateful. You earn a tidy sum while contributing to the vigil's success. The kamnan nods approvingly: enterprise serves the community."
+      }
+    ],
+    "tags": ["funeral", "gambling", "community", "merit", "death"],
+    "source": "Scholar 1 (Eberhardt Ch3 -- funeral gambling traditions)"
+  },
+  {
+    "id": "th_youngadult_003",
+    "title": "Transgender Ordination",
+    "country": "thailand",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 28,
+    "karmaRange": [-100, 100],
+    "description": "You identify as katoey. You feel a deep calling to monastic life and spiritual practice -- the pull is undeniable, perhaps a duyen from a past life. But the reformed Sangha requires you to declare yourself male for full bhikkhu ordination. The village temple will not accept you as you are.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Suppress your identity and ordain as a male bhikkhu under the 227 rules",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 3 },
+          "stats": { "happiness": -8, "spiritualDev": 7, "socialStatus": 5 },
+          "relationships": [{ "target": "parents", "change": 8 }]
+        },
+        "outcomeText": "You shave your head and don the saffron robe, declaring yourself purisa -- male -- before the assembly. Your parents weep with pride; your mother gains the merit she has longed for. But inside, the denial gnaws. The Vinaya identifies four genders, yet the reformed tradition recognizes only two. You practice diligently, but the dissonance between inner truth and outer form becomes its own form of dukkha."
+      },
+      {
+        "id": "b",
+        "text": "Take eight precepts as a mae chii, maintaining your feminine identity",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 4, "socialStatus": -3 },
+          "relationships": [{ "target": "parents", "change": -2 }]
+        },
+        "outcomeText": "You don the white robes of a mae chii. The status is subordinate -- you cannot perform the rituals a bhikkhu can, and you eat after the monks. But you are authentic. Your spiritual practice is genuine even if the institution marks you as lesser. Your parents are quietly disappointed; mae chii ordination does not generate the same merit as a son becoming a monk."
+      },
+      {
+        "id": "c",
+        "text": "Seek out Dantham nunnery in Chiang Dao -- the 'third-way' space for transgender practitioners",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 8, "spiritualDev": 10, "socialStatus": 2 },
+          "relationships": [{ "target": "spiritual_community", "change": 10 }]
+        },
+        "outcomeText": "You travel north to Chiang Dao, where Khun Mae Tritrinn has built a small community of transgender practitioners. She wears brown robes from the forest monk lineage, practices mano-mayiddhi meditation, and teaches dhamma on Facebook to 429,000 followers. Here, you find a space where your identity and your calling are not in conflict. The path is narrow and unconventional, but it is real."
+      },
+      {
+        "id": "d",
+        "text": "Remain a dedicated lay practitioner and practice independently",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 3, "socialStatus": 0 },
+          "relationships": [{ "target": "parents", "change": -3 }]
+        },
+        "outcomeText": "You attend temple on wan sin, keep the five precepts, and meditate at home. It is a valid path but a lonely one. Without institutional support, your practice depends entirely on your own discipline. Your parents miss the merit that ordination would have brought them. But you are free to be yourself, and freedom is not nothing."
+      }
+    ],
+    "tags": ["transgender", "katoey", "ordination", "identity", "mae-chii", "dantham"],
+    "source": "Scholar 3 (Kidpromma -- transgender monasticism and Khun Mae Tritrinn)"
+  },
+  {
+    "id": "th_adulthood_001",
+    "title": "The Sobriety Oath",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 50,
+    "karmaRange": [-100, 30],
+    "description": "Your drinking has gotten out of hand. Missed days at the fields, arguments with your spouse, the children shrinking from your voice. A respected elder takes you aside and suggests 'drinking the water of the tsao moeng' -- a solemn oath before the village guardian spirit to never drink again. The consequences of breaking the oath are supernatural: madness, illness, ruin.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Take the oath before the tsao moeng shrine",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 10, "health": 8 },
+          "relationships": [{ "target": "family", "change": 10 }]
+        },
+        "outcomeText": "You kneel at the shrine at the village edge and drink the water while the saraa chants. The spirit is your witness now. In the days that follow, the craving claws at you, but the fear of supernatural punishment holds. Slowly, the craving fades. Your family begins to trust you again. Some who take this oath gain spiritual abilities -- the tsao moeng rewards those who keep faith. Uncle Pon took this same oath years ago and became the village healer."
+      },
+      {
+        "id": "b",
+        "text": "Refuse the oath and try to quit on your own willpower",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 0, "health": 2 },
+          "relationships": [{ "target": "family", "change": 2 }]
+        },
+        "outcomeText": "You appreciate the elder's concern but will not bind yourself to supernatural enforcement. You cut back for a while, then a bad harvest comes, and the bottle returns. Without the spiritual backbone of the oath, willpower alone buckles under pressure. Your family's patience wears thinner with each relapse."
+      },
+      {
+        "id": "c",
+        "text": "Take the oath but continue drinking in secret",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -10, "spiritualDev": -8, "health": -10 },
+          "relationships": [{ "target": "family", "change": -10 }]
+        },
+        "outcomeText": "You perform the ceremony for show, then drink rice whiskey behind the house that same night. Within weeks, things begin to unravel. You stumble into a ditch and break your wrist. Your savings vanish. You hear the tsao moeng in your nightmares, roaring. The village says you brought the wrath of the guardian spirit upon yourself. Breaking the oath is among the gravest spiritual transgressions in Shan life."
+      }
+    ],
+    "tags": ["sobriety", "tsao-moeng", "oath", "healing", "spirits", "addiction"],
+    "source": "Scholar 1 (Eberhardt Ch2 -- Uncle Pon's transformation)"
+  },
+  {
+    "id": "th_adulthood_002",
+    "title": "The Egg Won't Fall",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 50,
+    "karmaRange": [-100, 100],
+    "description": "Your child has been sick for days -- listless, feverish, refusing food. The saraa is performing a haung khwan soul-calling ceremony. She places a raw egg on a crossbow and chants, trying to lure your child's fled khwan back. But the egg keeps falling off -- 15, 20, 25 attempts. The audience grows restless. The khwan wants something specific before it will return.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Offer money as an incentive for the khwan to return",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 1, "wealth": -3 },
+          "relationships": [{ "target": "child", "change": 3 }]
+        },
+        "outcomeText": "The saraa places coins beside the offering tray. The egg wobbles... and falls again. Money is not what the khwan desires. The audience murmurs. Perhaps the soul wants something more personal, more sacrificial."
+      },
+      {
+        "id": "b",
+        "text": "Offer your gold necklace -- the most valuable thing you own",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 5, "wealth": -10, "health": 5 },
+          "relationships": [{ "target": "child", "change": 8 }]
+        },
+        "outcomeText": "You unclasp the necklace your mother gave you and place it beside the crossbow. The saraa chants again. The egg balances... holds... stays. The room exhales. Your child's color returns within hours. The public sacrifice -- giving your most precious possession for your child's soul -- earns you deep respect. Generosity and love called the khwan home."
+      },
+      {
+        "id": "c",
+        "text": "Suggest the khwan wants a life change -- perhaps the child should be ordained",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "health": 3 },
+          "relationships": [{ "target": "child", "change": 5 }]
+        },
+        "outcomeText": "The saraa considers this and tries the egg with a verbal promise that the child will be ordained as a novice. The egg balances perfectly on the first attempt. The crowd gasps. The khwan has spoken through the ritual: this child is meant for the monastery. You have committed to a major life change for your family, but your child begins recovering immediately."
+      },
+      {
+        "id": "d",
+        "text": "Explode at the saraa, accusing her of being a fraud who is milking your family for money",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -7, "spiritualDev": -6, "socialStanding": -10 },
+          "relationships": [{ "target": "community", "change": -12 }, { "target": "elders", "change": -10 }]
+        },
+        "outcomeText": "Fear and frustration boil over. You shove the crossbow aside and scream that the saraa is a charlatan, that the egg trick is nonsense, that your child needs a hospital not a circus. The room goes silent. The saraa -- who has healed children in this village for thirty years, who was chosen by the tsao moeng itself -- stares at you. The audience's eyes are wide with horror. You have insulted a spiritual authority mid-ceremony, disrupting the fragile connection between this world and the spirit world. Your child's fever spikes that night. The saraa refuses to return. Neighbors cross the street to avoid you. In the Shan world, attacking a healer during a soul-calling is an act of spiritual violence that the community will not soon forget."
+      }
+    ],
+    "tags": ["healing", "khwan", "soul-calling", "haung-khwan", "sacrifice", "saraa"],
+    "source": "Scholar 1 (Eberhardt Ch2 -- Nang Ing and Lom's healing sessions)"
+  },
+  {
+    "id": "th_adulthood_003",
+    "title": "Sponsoring an Ordination",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your son is old enough to ordain. Sponsoring the ceremony is the defining milestone of mature adulthood -- it announces to the community that you have arrived: house built, children raised, resources accumulated. But the ceremony must match your ambition. A lavish festival costs a year's savings.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Sponsor a lavish village-wide ordination festival with a procession, feast, and three-day celebration",
+        "effects": {
+          "karma": { "merit": 12, "demerit": 0 },
+          "stats": { "happiness": 8, "spiritualDev": 5, "socialStatus": 10, "wealth": -15 },
+          "relationships": [{ "target": "family", "change": 10 }, { "target": "community", "change": 10 }]
+        },
+        "outcomeText": "The village gathers for three days of music, food, and ceremony. Your son rides on his uncle's shoulders dressed as a prince. Monks from neighboring temples attend. Your mother weeps with joy -- her merit is now immense. The cost is staggering, but so is the social capital. You have announced yourself as a mature, competent adult who fulfills obligations. People will remember this for decades."
+      },
+      {
+        "id": "b",
+        "text": "Hold a modest ceremony -- respectable but restrained",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 4, "socialStatus": 3, "wealth": -5 },
+          "relationships": [{ "target": "family", "change": 5 }, { "target": "community", "change": 3 }]
+        },
+        "outcomeText": "The ceremony is proper and well-attended. Your son ordains with dignity. The monks chant, the guests eat, and by evening it is done. Respectable, but some neighbors compare it unfavorably to the festival last month where the headman's family slaughtered two pigs and hired musicians. In the merit economy, scale matters."
+      },
+      {
+        "id": "c",
+        "text": "Co-sponsor with another family to share costs and build an alliance",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 6, "spiritualDev": 4, "socialStatus": 5, "wealth": -8 },
+          "relationships": [{ "target": "family", "change": 7 }, { "target": "community", "change": 7 }]
+        },
+        "outcomeText": "You approach the family of your son's best friend. Together you pool resources for a joint festival that neither could afford alone. The combined ceremony is impressive, and the partnership creates a permanent ritual kinship bond between the families. Your sons become luk kham -- ordained brothers. It is the middle path: communal, practical, and still glorious."
+      },
+      {
+        "id": "d",
+        "text": "Delay the ordination -- there are bills to pay first",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -3, "spiritualDev": -2, "socialStatus": -6 },
+          "relationships": [{ "target": "family", "change": -5 }, { "target": "community", "change": -4 }]
+        },
+        "outcomeText": "People notice. The whispers begin: are they unable to manage their household? Is the father too attached to his money? Your mother says nothing but her silence is heavy. Delaying ordination delays her merit. In a community where this ceremony marks adult competence, delay marks its absence."
+      }
+    ],
+    "tags": ["ordination", "merit", "social-status", "family", "coming-of-age", "sponsorship"],
+    "source": "Scholar 1 (Eberhardt Ch6 -- ordination festivals)"
+  },
+  {
+    "id": "th_adulthood_004",
+    "title": "A Violent Death in the Village",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "A young mother and her infant are killed in a sudden motorbike accident near the village edge. The death is 'dangerous' -- violent, unexpected, full of attachment and unresolved wot. The kamnan asks for volunteers to help with the immediate cremation. Everyone is terrified: the phi of the dead will be restless and furious.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Volunteer for the cremation crew, drinking rice whiskey for courage",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 1 },
+          "stats": { "happiness": -5, "spiritualDev": 3, "socialStatus": 8, "health": -3 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You join the small group of men who carry the bodies to the cremation ground. You drink steadily to numb the terror -- proximity to violent death puts your own khwan at terrible risk. The nam mak khaun fragrant water waits by the roadside for your return. That night, despite washing, you have nightmares. But the village honors your courage. The kamnan says you have done what most could not."
+      },
+      {
+        "id": "b",
+        "text": "Go to the temple and make merit for the dead",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 5, "socialStatus": 3 },
+          "relationships": [{ "target": "community", "change": 4 }]
+        },
+        "outcomeText": "You join the monks in chanting for the deceased. The merit you generate is shared via yaat nam -- water poured onto the ground while the monk recites, cosmically crediting the dead. It is a safe and virtuous response. The mother and child need all the merit they can receive; their violent death means extra wot that must be addressed."
+      },
+      {
+        "id": "c",
+        "text": "Stay home and lock the windows until the cremation is complete",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -3, "spiritualDev": 0, "socialStatus": -4 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You bolt the door and press cotton into your children's ears so they cannot hear the chanting. Your khwan is safe, but the village notes your absence. Community obligation demands participation in death, even when death is terrifying. You are seen as a coward, though no one says it aloud."
+      },
+      {
+        "id": "d",
+        "text": "Offer to sponsor the song phi ritual to cleanse the death site",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 4, "socialStatus": 10, "wealth": -8 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "The song phi ceremony is expensive but essential -- without it, the death site will remain haunted, dangerous to all who pass. You fund the monks' chanting, the offerings of food and flowers, the ritual cleansing of the road. The community's gratitude is immense. You have protected everyone, including the restless phi who might otherwise linger for years."
+      }
+    ],
+    "tags": ["death", "violent-death", "cremation", "phi", "community", "danger"],
+    "source": "Scholar 1 (Eberhardt Ch3 -- Nang Yen and Tsip's dangerous death)"
+  },
+  {
+    "id": "th_adulthood_005",
+    "title": "The Healer's Calling",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 55,
+    "karmaRange": [10, 100],
+    "description": "After a spiritual crisis -- perhaps following the sobriety oath, perhaps after a near-death experience -- you begin having vivid dreams. Healing verses (katha) come to you unbidden, complete and powerful. The saraa confirms it: the tsao moeng has chosen you as a healer. This is not a career choice. It is a summons.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the calling and begin training as a saraa",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 15, "socialStatus": 8 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You begin attending temple on every wan sin, learning to combine Buddhist scripture with spirit power. You acquire the tools: the crossbow for soul-calling, the sword for exorcism, the katha verses from your dreams. Patients come to you -- children with fled khwan, adults with phi possession, elders preparing for death. It is exhausting, sometimes frightening work. But when the egg balances on the crossbow, you know the healing is real."
+      },
+      {
+        "id": "b",
+        "text": "Seek guidance from the established village healer first",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 10, "socialStatus": 5 },
+          "relationships": [{ "target": "mentor", "change": 10 }]
+        },
+        "outcomeText": "The old saraa takes you under their wing. They teach you the pat phi exorcism technique, how to read the egg's movements, which katha verses work for which ailments. The apprenticeship is slow and humbling -- you must learn to serve before you can heal. But the mentorship protects you from the dangers of untrained spiritual power."
+      },
+      {
+        "id": "c",
+        "text": "Resist the calling -- you have a family to feed and a farm to run",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": -5, "spiritualDev": -5, "health": -5 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You ignore the dreams. They intensify. The katha verses come whether you want them or not, jolting you awake at midnight. Your crops fail. Your livestock sicken. The tsao moeng chose you for a reason, and ignoring the summons carries consequences. The village whispers that you are foolish to defy the guardian spirit."
+      }
+    ],
+    "tags": ["healer", "saraa", "tsao-moeng", "calling", "pat-phi", "katha"],
+    "source": "Scholar 1 (Eberhardt Ch2 -- Uncle Pon's calling)"
+  },
+  {
+    "id": "th_adulthood_006",
+    "title": "The Forest Ordination",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [0, 100],
+    "description": "A logging company has arrived to clear the forest near your village. Monks from the northern tradition have proposed a forest ordination: wrapping trees in monastic robes to make them sacred. 'Abstinence from killing extends to the forest,' says the leader, quoting Buddhadasa Bhikkhu: 'Preserving ecology means conserving dhamma, as dhamma is our inner ecology.'",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the monks in ordaining the trees",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 7, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You help wrap saffron cloth around the ancient trunks. The monks chant the ordination verses. The trees are now sacred monks -- to destroy them is to destroy a member of the Sangha. The logging company hesitates; the media arrives. Buddhadasa Bhikkhu's environmental Buddhism has found a new expression in your forest. Whether the trees survive depends on whether sacred power can outweigh commercial profit."
+      },
+      {
+        "id": "b",
+        "text": "Support the logging -- your village needs the jobs and road improvements",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": 2, "spiritualDev": -3, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "The chainsaws roar. Trees that have stood for centuries fall in minutes. The logging company pays the village a modest sum and builds a better road. But the forest spirits have nowhere to go. The old people say the phi will be displaced and angry. The tsao moeng shrine at the forest edge now overlooks stumps and mud."
+      },
+      {
+        "id": "c",
+        "text": "Negotiate a compromise -- ordain the oldest trees, allow selective logging of younger ones",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 1 },
+          "stats": { "happiness": 3, "spiritualDev": 3, "socialStatus": 3, "wealth": 2 },
+          "relationships": [{ "target": "community", "change": 4 }]
+        },
+        "outcomeText": "You broker a deal that preserves the grove of ancient trees while allowing younger trees to be harvested. The monks ordain the elders of the forest; the loggers take the rest. It is imperfect -- the monks wanted to save everything, the company wanted to take everything. But the oldest trees survive, their robes fluttering in the wind, and the village gets some benefit."
+      }
+    ],
+    "tags": ["environment", "forest-ordination", "logging", "conservation", "buddhadasa"],
+    "source": "Knowledge base: Thai contemporary issues -- forest ordination as environmental practice"
+  },
+  {
+    "id": "th_adulthood_007",
+    "title": "Songkran Water War",
+    "country": "thailand",
+    "lifeStage": "adulthood",
+    "minAge": 20,
+    "maxAge": 45,
+    "karmaRange": [-100, 100],
+    "description": "It is Songkran -- the Thai New Year water festival. The streets are chaos: water guns, buckets, pickup trucks with barrels. But in the temple, monks sit quietly as elders pour scented water gently over Buddha images and then over the monks' hands. Your boss invites you to a wild Songkran party. Your grandmother wants you at the temple for the traditional rod nam dam hua ceremony.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Go to the temple for the traditional ceremony with your grandmother",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 2 },
+          "relationships": [{ "target": "family", "change": 8 }]
+        },
+        "outcomeText": "You pour scented water over your grandmother's hands as she blesses you for the new year. At the temple, the monks chant and the community shares a meal. The original meaning of Songkran is renewal and respect -- washing away the old year's dust, honoring elders. Your grandmother beams. This is the Songkran she remembers, before the water guns took over."
+      },
+      {
+        "id": "b",
+        "text": "Join the water fight in the streets with friends and colleagues",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 8, "spiritualDev": -1, "socialStatus": 3 },
+          "relationships": [{ "target": "friends", "change": 5 }]
+        },
+        "outcomeText": "You spend the day drenched, laughing, and sunburned. The water fight is exhilarating -- trucks loaded with ice water ambush pedestrians, children run screaming with plastic guns, and everyone is equal in the chaos. It is modern Songkran: joyful, chaotic, and divorced from its spiritual roots. Your grandmother eats her temple meal alone."
+      },
+      {
+        "id": "c",
+        "text": "Do both -- temple in the morning, water fight in the afternoon",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 7, "spiritualDev": 3, "socialStatus": 4 },
+          "relationships": [{ "target": "family", "change": 5 }, { "target": "friends", "change": 3 }]
+        },
+        "outcomeText": "You rise early for the rod nam dam hua ceremony, then change into clothes you do not mind ruining and join the street celebrations. It is the Thai way -- sacred and profane, ceremony and chaos, all braided together. Your grandmother is satisfied; your friends are happy. You end the day exhausted but renewed."
+      },
+      {
+        "id": "d",
+        "text": "Use the Songkran chaos as cover to pocket donations from the unattended temple collection box",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "family", "change": -10 }, { "target": "monks", "change": -12 }]
+        },
+        "outcomeText": "While the temple is nearly empty -- everyone either at the ceremony or in the streets -- you slip into the ordination hall and scoop bills from the donation box. Songkran money, offered by families for New Year merit. Your hands tremble. You stuff the cash into your wet clothes and walk out into the water fight, letting the chaos swallow you. But a temple boy saw you from behind a pillar. By evening, the monks know. By the next morning, your grandmother knows. She sits on her mat and will not look at you. Stealing from a temple on the holiest day of the year -- the day meant for washing away sins, not committing new ones. The New Year begins under a weight of demerit so heavy you can feel it pressing on your chest."
+      }
+    ],
+    "tags": ["songkran", "new-year", "water-festival", "family", "tradition-vs-modernity"],
+    "source": "Knowledge base: Thai distinctive practices -- Songkran traditions"
+  },
+  {
+    "id": "th_elderhood_001",
+    "title": "The Aging Decision",
+    "country": "thailand",
+    "lifeStage": "elderhood",
+    "minAge": 45,
+    "maxAge": 65,
+    "karmaRange": [-100, 100],
+    "description": "You are in your late forties. Your back aches from decades of farm work. People have started calling you 'old' and asking when you will begin sleeping at the temple. The expected life trajectory is clear: withdraw from worldly labor, take the eight precepts, meditate daily, prepare for a good death. But your youngest child has not finished school, your house still needs a new roof, and you need cash.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Begin the transition now -- start keeping precepts on wan sin, gradually withdraw from labor",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 12, "socialStatus": 8, "wealth": -5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You start sleeping at the temple on precept days, keeping eight rules instead of five. No food after noon. No entertainment. Simple sleeping mat on the floor. The meditation practice deepens -- you recite 'anicca, dukkha, anatta' with mak nap beads, and slowly the world's grip loosens. The community respects your transition. Your children must manage without your labor income, but they understand: this is how it is supposed to go."
+      },
+      {
+        "id": "b",
+        "text": "Delay until practical matters are resolved -- 'after the house, after school'",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 2 },
+          "stats": { "happiness": 0, "spiritualDev": -2, "socialStatus": -3, "wealth": 3 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You tell yourself: next year, after the roof. Then: after the youngest graduates. Then: after the debts are paid. The temple sleepers shake their heads gently. Everyone has reasons to delay, and delay is the voice of attachment. But attachment to your family's welfare is not shameful -- it is the basic human condition. The question is whether 'next year' ever comes."
+      },
+      {
+        "id": "c",
+        "text": "Reject the label entirely -- you feel too young and vital for temple sleeping",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 4, "spiritualDev": -5, "socialStatus": -5 },
+          "relationships": [{ "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You bristle at being called 'old.' You can still outwork younger men in the fields. But in the Shan world, age identity is socially assigned, not individually chosen. People your age are expected to begin the gradual withdrawal. Your resistance is seen not as vitality but as spiritual immaturity -- an unwillingness to face impermanence."
+      }
+    ],
+    "tags": ["aging", "temple-sleeping", "precepts", "transition", "attachment"],
+    "source": "Scholar 2 (Eberhardt Ch7 -- aging and temple sleeping transitions)"
+  },
+  {
+    "id": "th_elderhood_002",
+    "title": "The Good Death",
+    "country": "thailand",
+    "lifeStage": "elderhood",
+    "minAge": 55,
+    "maxAge": 90,
+    "karmaRange": [-100, 100],
+    "description": "An elderly relative -- Grandfather Wang, a lifelong merit-maker with no remaining wot -- is dying. The monks confirm he accumulated great merit and faces a 'safe' death. The family gathers. But grief is swelling inside you, and in the Shan tradition, excessive emotion at a deathbed is spiritually dangerous: it can pull the dying person's phi back, trapping them between worlds.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Control your grief publicly, maintaining calm composure",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 8, "health": 2 },
+          "relationships": [{ "target": "deceased", "change": 10 }]
+        },
+        "outcomeText": "You sit beside the bed with hands folded, face serene. Inside, your heart is breaking, but you express ilu man -- 'I feel sorry for him' -- rather than tsau lek -- 'I am sad.' The distinction matters: compassion releases the dying; personal grief holds them. Grandfather Wang's breathing slows. His face is peaceful. He passes surrounded by calm, his way clear to moeng phi, the Buddhist heavens. Your emotional control was a final gift of love."
+      },
+      {
+        "id": "b",
+        "text": "Weep openly -- you cannot hold back the grief",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -8, "spiritualDev": -3, "health": -4 },
+          "relationships": [{ "target": "deceased", "change": -5 }]
+        },
+        "outcomeText": "Tears come and you cannot stop them. You wail, clutching the old man's hand. The monks exchange worried glances. Your grief is a spiritual tether -- the deceased's phi feels the pull of your attachment and hesitates at the threshold. Your own khwan destabilizes from the emotional storm. The temple sleepers say that Grandfather Wang's passage was made harder by your tears. The guilt of that knowledge will follow you."
+      },
+      {
+        "id": "c",
+        "text": "Organize immediate merit-making at the temple to help his passage",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 5, "socialStatus": 5, "wealth": -3 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You channel your grief into action. You arrange for monks to chant at the temple, organize the yaat nam water-pouring ceremony, and begin gathering supplies for the funeral. Productive activity steadies your emotions. The merit generated flows to Grandfather Wang, strengthening his passage. The community sees your competence and maturity. This is what adults do in the face of death: they act."
+      },
+      {
+        "id": "d",
+        "text": "Demand that Grandfather Wang reveal where he hid his savings before he dies",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -10, "spiritualDev": -8, "socialStanding": -10, "wealth": 4 },
+          "relationships": [{ "target": "family", "change": -15 }, { "target": "community", "change": -12 }]
+        },
+        "outcomeText": "As the old man lies dying, surrounded by monks chanting for his peaceful passage, you lean in and whisper urgently about the gold he was rumored to have buried beneath his house. Your relatives recoil. A cousin pulls you away. The monks falter in their chanting. What you have done is monstrous by any standard, but in the Shan world it is almost incomprehensible -- you have injected greed and attachment into the most sacred moment of a person's life, the moment when the phi must be released cleanly. Grandfather Wang's eyes flutter open in confusion. The peaceful death his lifetime of merit earned him has been disturbed. Your family will speak of this for generations, and not kindly."
+      }
+    ],
+    "tags": ["death", "good-death", "grief", "emotional-control", "merit-transfer", "elderhood"],
+    "source": "Scholar 1 (Eberhardt Ch3 -- Grandfather Wang's good death)"
+  },
+  {
+    "id": "th_elderhood_003",
+    "title": "The Hunter's Omens",
+    "country": "thailand",
+    "lifeStage": "elderhood",
+    "minAge": 50,
+    "maxAge": 70,
+    "karmaRange": [-50, 80],
+    "description": "You have been a hunter and fisherman all your life. Lately, the omens are unmistakable: your gun misfires at close range, your nets come up empty, a catfish trapped your hand in its jaws. The village elders say these are signs from the tsao moeng -- it is time to give up killing and become a temple sleeper.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Heed the omens and begin the transition to temple sleeping",
+        "effects": {
+          "karma": { "merit": 12, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 15, "socialStatus": 10 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You hang up your gun and fold away the fishing nets. At the temple, you take the eight precepts, vowing not to kill any living being. The irony is not lost on you: decades of killing animals provided meat for the community, but every kill accumulated demerit. Now you must counterbalance a lifetime of wot with intensive merit-making. The other temple sleepers welcome you. Your old hunting skills -- patience, stillness, reading signs -- serve you well in meditation."
+      },
+      {
+        "id": "b",
+        "text": "Acknowledge the omens but delay -- 'I still have things to teach my apprentice'",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 2 },
+          "stats": { "happiness": 1, "spiritualDev": 2, "socialStatus": 2 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You take the young hunter under your wing and pass along years of knowledge about the forest, the animals, the weather signs. It is a genuine obligation -- someone must carry the tradition forward. But the omens do not stop. Each empty net, each misfired shot reminds you that the tsao moeng is waiting. The community accepts the delay, for now."
+      },
+      {
+        "id": "c",
+        "text": "Dismiss the omens as coincidence and continue hunting",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -5, "spiritualDev": -8, "health": -5 },
+          "relationships": [{ "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You dismiss the omens and head into the forest with your gun. A tree branch falls and narrowly misses your head. You slip crossing the stream and nearly drown. The village saraa says the tsao moeng's patience has limits. Continuing to kill when the spirits have told you to stop is not bravery -- it is spiritual recklessness. Your reputation among the elders suffers badly."
+      }
+    ],
+    "tags": ["aging", "hunting", "omens", "temple-sleeping", "tsao-moeng", "transition"],
+    "source": "Scholar 2 (Eberhardt Ch7 -- Uncle Toen the Great Hunter)"
+  }
+]

@@ -1,0 +1,590 @@
+[
+  {
+    "id": "kh_childhood_001",
+    "title": "The Neak Ta Shrine",
+    "country": "cambodia",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 11,
+    "karmaRange": [-100, 100],
+    "description": "At the edge of the pagoda compound, a small Neak Ta shrine sits beneath an ancient banyan tree. Your grandmother explains that Neak Ta are guardian spirits -- protectors of earth and water, ruling power over all living beings. Today the shrine needs fresh offerings. Your teacher at school says these spirit beliefs are superstition that 'real Buddhists' should abandon.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Help your grandmother prepare offerings of incense, flowers, and fruit for the Neak Ta",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 4, "health": 2 },
+          "relationships": [{ "target": "grandmother", "change": 8 }]
+        },
+        "outcomeText": "You arrange the fruit carefully and light the incense while your grandmother whispers to the Neak Ta. The shrine sits within the pagoda grounds -- spirit and Buddhist worlds are not separate in Cambodia. The Neak Ta has protected this village since before the temples were built, since before the great kings of Angkor raised their monuments. Your grandmother says: 'The Buddha teaches the dhamma; the Neak Ta protects the land. Both are needed.'"
+      },
+      {
+        "id": "b",
+        "text": "Tell your grandmother what your teacher said about superstition",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": 1 },
+          "relationships": [{ "target": "grandmother", "change": -5 }]
+        },
+        "outcomeText": "Your grandmother's expression hardens. 'Your teacher knows books,' she says quietly. 'I know this land.' She tells you about the Khmer Rouge, who also tried to destroy 'superstition' -- and destroyed everything else along with it. The Neak Ta survived because the people hid the shrines in the forest. The spirits outlasted the revolution. Your grandmother finishes the offerings alone."
+      },
+      {
+        "id": "c",
+        "text": "Make the offering but also say a Buddhist prayer to the Buddha",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 6, "health": 2 },
+          "relationships": [{ "target": "grandmother", "change": 6 }]
+        },
+        "outcomeText": "You place the offerings before the Neak Ta, then press your palms together and recite a Buddhist blessing. Your grandmother smiles -- this is exactly how Cambodian Buddhism works. The pagoda holds both the Buddha and the Neak Ta; the village exists in the Srok (ordered space) between the wild Prei (forest) and the sacred. You are learning to honor both worlds, as your ancestors did."
+      },
+      {
+        "id": "d",
+        "text": "Kick over the shrine offerings and tell your grandmother the spirits are fake",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -5, "spiritualDev": -5, "socialStanding": -8 },
+          "relationships": [{ "target": "grandmother", "change": -12 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "The fruit scatters across the dirt. The incense snaps underfoot. Your grandmother stares at you with an expression you have never seen before -- not anger but something deeper, a grief that reaches back through generations. The Neak Ta shrine has survived the Khmer Rouge, survived the forest clearing, survived decades of neglect. A child's tantrum will not destroy it. But the village witnesses your act, and the whispers begin immediately. The elders say the Neak Ta remembers every insult. That night, you cannot sleep, and the banyan tree outside your window seems to lean closer in the dark."
+      }
+    ],
+    "tags": ["neak-ta", "spirits", "syncretism", "pagoda", "grandmother"],
+    "source": "Knowledge base: Cambodia -- Neak Ta guardian spirits with shrines in pagoda precincts"
+  },
+  {
+    "id": "kh_childhood_002",
+    "title": "Grandmother's Khmer Rouge Story",
+    "country": "cambodia",
+    "lifeStage": "childhood",
+    "minAge": 8,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "Your grandmother rarely speaks about the past. But tonight, watching monks walk past in saffron robes, she tells you: during the Khmer Rouge years (1975-1979), there were no monks, no pagodas, no prayers. Any monk who gave sermons on the First Precept -- 'do not kill' -- was targeted and often killed. Almost 1.7 million people died. 'They tried to destroy everything,' she says. 'The elephants knew. They fled north to Laos before it began.'",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Listen carefully and ask her to tell you more",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 6, "education": 5 },
+          "relationships": [{ "target": "grandmother", "change": 10 }]
+        },
+        "outcomeText": "Your grandmother speaks for hours, her voice steady. She tells you about the ukrittakamm -- the 'unbearable disaster' -- in the Pali-Sanskrit loan word Cambodians use for the genocide. She tells you about monks who hid scripture in the forest, about families who whispered prayers in the dark. She tells you about the elephants' exodus of 1975, when the herds sensed what was coming and fled. You cry, and she holds you, and she says: 'This is why the pagoda matters. This is why we rebuild.'"
+      },
+      {
+        "id": "b",
+        "text": "Change the subject -- the story is too frightening",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 2, "spiritualDev": -1 },
+          "relationships": [{ "target": "grandmother", "change": -2 }]
+        },
+        "outcomeText": "You steer the conversation to lighter things. Your grandmother falls silent and stares at the passing monks. The story stays untold, and with it the lesson about why Cambodian Buddhism -- rebuilt from near-total destruction -- is so precious and so fragile. One day you will be ready to hear it. But tonight, the darkness is too much."
+      },
+      {
+        "id": "c",
+        "text": "Ask why the Buddha did not protect the monks during the Khmer Rouge",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 5 },
+          "relationships": [{ "target": "grandmother", "change": 5 }]
+        },
+        "outcomeText": "Your grandmother considers this for a long time. 'The Buddha teaches that all things are impermanent,' she says. 'Even the sasana itself. The Khmer Rouge proved that. But impermanence also means suffering does not last forever. The monks came back. The pagodas were rebuilt. The prayers returned.' She pauses. 'The dhamma was not destroyed. It was tested. And it survived.'"
+      }
+    ],
+    "tags": ["khmer-rouge", "genocide", "history", "resilience", "pagoda", "trauma"],
+    "source": "Knowledge base: Cambodia -- Khmer Rouge genocide and near-destruction of Buddhism"
+  },
+  {
+    "id": "kh_adolescence_001",
+    "title": "The Angkor Heritage Trip",
+    "country": "cambodia",
+    "lifeStage": "adolescence",
+    "minAge": 13,
+    "maxAge": 18,
+    "karmaRange": [-100, 100],
+    "description": "Your school is organizing a trip to Angkor Wat and the Bayon temple. Angkor Wat was originally Hindu; the Bayon is Buddhist. The great Khmer kings who built them were both Hindu and Buddhist, patron of divine kingship (devaraja) and Buddhist wisdom. A foreign tourist offers you money to be their guide. A monk at the site invites you to sit and meditate in the ancient stones.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the monk's invitation and meditate in the Bayon temple",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 8, "education": 4 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "You sit cross-legged before the enormous stone face of Avalokiteshvara, the Bodhisattva of Compassion, whose serene smile has watched over Cambodia for eight centuries. The monk guides you through a simple breathing meditation. The stones are cool against your legs. For a moment, the centuries dissolve and you feel a connection to the Buddhist kings who raised these monuments as acts of merit. This is your heritage -- not museum pieces, but living sacred space."
+      },
+      {
+        "id": "b",
+        "text": "Take the tourist's money and give them a guided tour",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 4, "spiritualDev": 0, "wealth": 5, "education": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You lead the tourist through the galleries, pointing out carvings you remember from school. You earn more in an afternoon than your father makes in a week. The tourist takes photos of everything. You realize you know less about your own heritage than you thought -- the tourist's guidebook has details you never learned. The money is welcome but the encounter leaves you feeling like a performer in your own history."
+      },
+      {
+        "id": "c",
+        "text": "Explore both temples on your own, reading the inscriptions and carvings",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 4, "education": 8 },
+          "relationships": []
+        },
+        "outcomeText": "You wander through the galleries alone, tracing your fingers over the bas-reliefs depicting the Churning of the Ocean of Milk, the Battle of Kurukshetra, Buddhist heavens and hells. The transition from Hindu Angkor Wat to Buddhist Bayon mirrors Cambodia's own religious evolution. You find a quiet corner where centuries of pilgrims have worn the stone smooth with their palms. You press your hand to the same spot, joining the unbroken chain."
+      },
+      {
+        "id": "d",
+        "text": "Chip off a small piece of carved stone from the temple to sell to a tourist as a souvenir",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -3, "spiritualDev": -7, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "monks", "change": -10 }, { "target": "community", "change": -12 }]
+        },
+        "outcomeText": "You pry loose a fragment of carved sandstone -- a piece of apsara dancer's hand, eight centuries old -- and slip it into your pocket. The tourist pays eagerly. But a guard sees the fresh scar on the wall. Your teacher is summoned. The shame is absolute: you have defaced your own heritage, sold a piece of Khmer civilization for pocket money. The monk at the site says that Angkor's stones carry the merit of the kings who built them, and to steal from the temple is to steal from the Buddha himself. The money burns in your pocket. Your classmates will not look at you on the bus ride home."
+      }
+    ],
+    "tags": ["angkor", "heritage", "tourism", "meditation", "history", "identity"],
+    "source": "Knowledge base: Cambodia -- Angkor complex, Hindu-Buddhist heritage"
+  },
+  {
+    "id": "kh_youngadult_001",
+    "title": "The Peace Walk",
+    "country": "cambodia",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [0, 100],
+    "description": "Maha Ghosananda's Dhammayietra peace walk is passing through your province. The route covers 430 kilometers, traversing former conflict zones and areas still contaminated with landmines. Walkers practice mindful walking as a form of Buddhist healing for the nation's post-genocide trauma. Two pilgrims were killed by crossfire during the 1994 walk. The monks sprinkle Tuek Mon (blessed water) on participants.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the walk for its full length -- practice mindfulness literally, as monks walked on landmined paths",
+        "effects": {
+          "karma": { "merit": 12, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 12, "health": -5 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "For weeks you walk, step by mindful step, through scarred landscapes. Former battlefields are now rice paddies; forested areas still hide unexploded ordnance. Each step is an act of faith. The monks chant as they walk. Villages along the route pour out to offer food and water. At night, you sleep in pagodas. The Dhammayietra is not a protest march -- it is 'pilgrimage for truth,' walking meditation scaled to a nation's wound. By the end, your feet are blistered but your spirit is renewed."
+      },
+      {
+        "id": "b",
+        "text": "Join but insist on staying within the marked safe paths",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 6, "health": -2 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You walk with the group but stay carefully within the de-mined corridors. The reduced risk means reduced intensity, but the practice is still genuine -- each step taken with awareness, each breath a prayer for Cambodia's healing. You meet survivors who tell stories of the war, the genocide, the long recovery. Their resilience makes your caution feel small."
+      },
+      {
+        "id": "c",
+        "text": "Support the walk financially and spiritually but do not physically participate",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 3, "wealth": -3 },
+          "relationships": [{ "target": "community", "change": 3 }]
+        },
+        "outcomeText": "You donate food, water, and money to the Dhammayietra organization. It is generous dana. But watching the walkers depart -- monks in saffron, nuns in white, laypeople in ordinary clothes, all stepping into the scarred landscape with deliberate mindfulness -- you wonder if merit made from a distance is the same as merit earned through embodied practice. Maha Ghosananda said: 'Our Dhammayietra office is anywhere under a tree.' Yours remains at your desk."
+      },
+      {
+        "id": "d",
+        "text": "Volunteer to help with tree ordinations at the walk's conclusion",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 7, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 7 }]
+        },
+        "outcomeText": "At the walk's end, you help wrap monastic robes around trees in a deforested area. The forest ordination makes the trees sacred monks -- to cut them is to commit a grave act against the Sangha. The First Precept, extended beyond human life to all living things, takes physical form in orange cloth against bark. 'Preserving ecology means conserving dhamma,' the monks chant. You tie the knots carefully, knowing that these robes may be all that stands between the trees and the chainsaws."
+      }
+    ],
+    "tags": ["dhammayietra", "peace-walk", "landmines", "healing", "maha-ghosananda"],
+    "source": "Scholar 3 (Kittisenee -- Dhammayietra peace walks through landmined areas)"
+  },
+  {
+    "id": "kh_youngadult_002",
+    "title": "The Forest vs. Development",
+    "country": "cambodia",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 40,
+    "karmaRange": [-100, 100],
+    "description": "A government concession has been granted to a foreign company to clear forest near your village for a rubber plantation. The forest is Prei -- in Khmer cosmology, a space that is both terrifying and sacred, home to Preay (the most vengeful ghosts) and ancient spirits. Monks have previously ordained the trees by tying monastic robes around them. The company says the concession is legal. Villagers say the land is sacred.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Support the tree ordination and oppose the clearing",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 7, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You stand with the monks and villagers in the forest, the ordained trees wrapped in saffron. 'Abstinence from killing extends to forests,' the monks declare. The company's bulldozers idle at the tree line. Whether they will respect the spiritual claim depends on forces far above your village. But for now, the trees stand. At Preah Vihear, villagers took the robes from ordained trees and wore them as amulets against landmines. Sacred power finds many forms."
+      },
+      {
+        "id": "b",
+        "text": "Allow the clearing but demand fair compensation and replanting",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 3 },
+          "stats": { "happiness": 1, "spiritualDev": -2, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You negotiate a deal: the company clears most of the forest but leaves a small protected area and pays the village a fee. The money is real -- new school, clean water system, better road. But the Prei shrinks. The Neak Ta shrine is relocated, its power diminished. The Preay ghosts have nowhere to go. At night, people report strange sounds from the plantation. The spirits of the forest do not recognize rubber trees."
+      },
+      {
+        "id": "c",
+        "text": "Organize a Dhammayietra-style mindful walk through the forest to raise awareness",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 6, "socialStatus": 6 },
+          "relationships": [{ "target": "community", "change": 7 }]
+        },
+        "outcomeText": "You organize a walking meditation through the threatened forest, inviting monks, journalists, and environmental activists. The walk draws attention to the concession and the spiritual significance of the land. Media coverage creates pressure. The company delays, though it does not withdraw. Environmental Buddhism -- born in Cambodia's scarred landscape -- proves that mindful walking can be both spiritual practice and political action."
+      }
+    ],
+    "tags": ["deforestation", "forest-ordination", "neak-ta", "prei", "environment", "development"],
+    "source": "Scholar 3 (Kittisenee -- forest ordination and environmental Buddhism)"
+  },
+  {
+    "id": "kh_adulthood_001",
+    "title": "The Bangsokol Ceremony",
+    "country": "cambodia",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "Before Khmer New Year, the deceased return to wander the earth seeking merit. Your family must perform the bangsokol ceremony -- a merit-making ritual for the dead. But your family lost everyone in the Khmer Rouge genocide: parents, grandparents, aunts, uncles. You do not know their death dates, their burial places, or even all their names. How do you make merit for the unnamed dead?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Hold the ceremony at the pagoda, dedicating merit to all family members known and unknown",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "socialStatus": 4 },
+          "relationships": [{ "target": "ancestors", "change": 10 }]
+        },
+        "outcomeText": "You sit before the monks and name the relatives you remember. Then you say: 'And to all those whose names I do not know, who died during the ukrittakamm, who had no one to make merit for them.' The monks chant. You pour water onto the ground in the merit-transfer ritual. For the first time in decades, you feel something ease in your chest. The dead have been acknowledged. In Cambodia, where an entire generation was murdered, the bangsokol ceremony heals not just families but the nation."
+      },
+      {
+        "id": "b",
+        "text": "Skip the ceremony -- you cannot bear the grief of remembering",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -5, "spiritualDev": -2, "health": -3 },
+          "relationships": [{ "target": "ancestors", "change": -5 }]
+        },
+        "outcomeText": "You tell yourself you will do it next year. But the dead do not wait on your schedule. That night, you dream of shadowy figures standing at the foot of your bed, their faces obscured. Your grandmother would have said they are the ancestors, hungry for merit. Without the ceremony, their wandering continues. The post-genocide wound stays open."
+      },
+      {
+        "id": "c",
+        "text": "Visit the Killing Fields memorial and perform the ceremony there",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": -5, "spiritualDev": 10, "socialStatus": 5 },
+          "relationships": [{ "target": "ancestors", "change": 12 }]
+        },
+        "outcomeText": "You travel to the memorial site where thousands of skulls are arranged behind glass. You place incense and flowers before the stupa and ask a monk to chant the bangsokol. The merit is dedicated not just to your family but to all who died here. Other visitors join, adding their own names and offerings. The ceremony becomes communal -- an entire nation making merit for its murdered ancestors. You weep, and for once, the tears feel like healing rather than harm."
+      },
+      {
+        "id": "d",
+        "text": "Use the bangsokol gathering to pressure relatives into giving you money, leveraging their guilt about the dead",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -6, "spiritualDev": -6, "socialStanding": -8, "wealth": 4 },
+          "relationships": [{ "target": "family", "change": -12 }, { "target": "ancestors", "change": -10 }]
+        },
+        "outcomeText": "You turn the ceremony into a shakedown, cornering relatives with talk of shared obligation and hinting that those who do not contribute generously are dishonoring the murdered dead. Some pay out of guilt. An aunt weeps -- not for the ancestors, but at your cruelty. The monks observe in silence, but the senior monk later tells a relative that exploiting the bangsokol for personal gain is among the gravest acts of spiritual corruption. You have weaponized the genocide's grief for pocket money. That night, the shadowy figures at the foot of your bed seem closer than ever, and their faces are no longer obscured. They are not pleased."
+      }
+    ],
+    "tags": ["bangsokol", "ancestors", "khmer-rouge", "merit-transfer", "healing", "genocide"],
+    "source": "Knowledge base: Cambodia -- bangsokol ceremony and post-genocide merit-making"
+  },
+  {
+    "id": "kh_adulthood_002",
+    "title": "The Sacred Vow in the Forest",
+    "country": "cambodia",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your family is starving. The rice harvest failed and no aid has reached your village. Your mother tells you about the upakit -- a sacred vow made in desperate circumstances, invoking dhamma and sacred beings for miraculous power. During the Khmer Rouge starvation, Mali's mother made such a vow in the forest and survived. 'But,' your mother warns, 'the vow binds you. You must fulfill whatever you promise.'",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Make the upakit, vowing to ordain as a monk for three months if your family survives",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 10, "health": 3 },
+          "relationships": [{ "target": "family", "change": 8 }]
+        },
+        "outcomeText": "You kneel in the forest and speak the vow aloud, invoking the dhamma and the Neak Ta. The words feel ancient, connecting you to every Cambodian who has ever been desperate enough to bargain with the sacred. Within days, a relative arrives with food from the city. Coincidence or miracle? It does not matter -- the vow is binding. When the crisis passes, you must ordain as promised. Failure to honor the upakit would bring catastrophe."
+      },
+      {
+        "id": "b",
+        "text": "Refuse to make the vow -- seek practical solutions instead",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": -4, "spiritualDev": 0, "health": -3 },
+          "relationships": [{ "target": "family", "change": 2 }]
+        },
+        "outcomeText": "You walk to the district town seeking work, food, anything. The journey takes two days in the heat. You find a day-laborer job carrying bricks and return with a bag of rice. It is enough for a week, barely. The practical approach works, slowly and painfully. Your mother says nothing about the upakit, but you catch her praying alone in the forest at dawn."
+      },
+      {
+        "id": "c",
+        "text": "Make the upakit, vowing to dedicate your life to protecting the forest if you survive",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 12, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You vow to protect the Prei that shelters you -- the same forest that sheltered your mother during the genocide. The vow is both spiritual and environmental: you are binding yourself to the land. Food comes from an unexpected source -- a monk leading a peace walk passes through your village with supplies. The coincidence feels like confirmation. You will spend years fulfilling your vow, joining forest ordinations and opposing deforestation. The upakit transforms your life."
+      }
+    ],
+    "tags": ["upakit", "sacred-vow", "starvation", "forest", "desperation", "faith"],
+    "source": "Knowledge base: Cambodia -- Mali's mother's sacred vow during Khmer Rouge"
+  },
+  {
+    "id": "kh_adulthood_003",
+    "title": "The Land Dispute",
+    "country": "cambodia",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "A powerful politician has claimed your family's ancestral land for a development project. The Neak Ta shrine where your grandparents made offerings for generations sits squarely in the development zone. Monks from the local pagoda have offered to mediate, but the politician has police on his side. Other families in your village face the same eviction.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the monks' mediation and hope for a fair outcome through Buddhist principles",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 4, "socialStatus": 3 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "The senior monk invites both sides to the pagoda for mediation. He speaks of the First Precept, of right livelihood, of the karmic consequences of dispossession. The politician nods politely and proceeds with the eviction. In Cambodia, where the prime minister is a former Khmer Rouge commander, moral authority alone cannot stop political power. The monks' mediation preserves your dignity but not your land."
+      },
+      {
+        "id": "b",
+        "text": "Organize the community to resist -- stand your ground at the Neak Ta shrine",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 1 },
+          "stats": { "happiness": -5, "spiritualDev": 2, "socialStatus": 6, "health": -3 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "Villagers gather at the Neak Ta shrine, forming a human chain. The spirits will fight with us, the elders say. Journalists arrive, and the story spreads. The resistance delays the development but draws police retaliation -- arrests, intimidation, midnight visits. In Cambodia's compromised democracy, standing up is dangerous. But the community bond forged in resistance is real, and the Neak Ta shrine becomes a symbol."
+      },
+      {
+        "id": "c",
+        "text": "Accept compensation and relocate, taking the Neak Ta shrine materials with you",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": -4, "spiritualDev": -2, "wealth": 8 },
+          "relationships": [{ "target": "ancestors", "change": -5 }]
+        },
+        "outcomeText": "You accept the money and carefully dismantle the Neak Ta shrine, carrying the stones and offerings to your new location. But a Neak Ta is not portable -- it is bound to the earth and water of a specific place. The shrine can be rebuilt, but the spiritual connection to the ancestral land is severed. The compensation money runs out faster than expected. The Neak Ta of the new place does not know your family."
+      },
+      {
+        "id": "d",
+        "text": "Secretly feed information to the politician about your neighbors' plans in exchange for a private payment",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -7, "spiritualDev": -6, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -15 }, { "target": "family", "change": -10 }]
+        },
+        "outcomeText": "You meet the politician's aide in a tea shop and tell him which families are organizing resistance, where the monks plan to hold vigils, and when the journalists are expected. The money is good. The evictions proceed with surgical precision -- families are targeted individually, isolated before they can unite. When the community realizes there was an informer, suspicion falls everywhere. But the Neak Ta knows. In Khmer tradition, guardian spirits see everything within their domain. You betrayed not just your neighbors but the sacred order of the Srok itself. The payment runs out. The guilt does not."
+      }
+    ],
+    "tags": ["land-dispute", "neak-ta", "politics", "displacement", "resistance"],
+    "source": "Knowledge base: Cambodia -- contemporary issues, land disputes, authoritarian power"
+  },
+  {
+    "id": "kh_adulthood_004",
+    "title": "The Preay in the Plantation",
+    "country": "cambodia",
+    "lifeStage": "adulthood",
+    "minAge": 20,
+    "maxAge": 50,
+    "karmaRange": [-100, 100],
+    "description": "Workers at the new rubber plantation report disturbing experiences: shadows moving between the trees at dusk, tools going missing, a foreman found unconscious with scratches on his face. The elders say this is the work of Preay -- the most vengeful ghost in Khmer tradition -- displaced when the forest was cleared. The pronunciation of Preay is close to Prei (forest), and the two are deeply connected. The plantation manager wants to bring in a bulldozer to level the remaining shrine area.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Urge the manager to leave the shrine intact and bring monks to perform a pacification ceremony",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 6 }]
+        },
+        "outcomeText": "Monks chant through the night, sprinkling Tuek Mon (blessed water) over the plantation and the remaining shrine. They dedicate merit to the displaced spirits and ask them to find peace. The disturbances decrease. The shrine stays. Workers feel safer. In Cambodia, practical solutions to spirit problems are not superstition -- they are the way a community manages the unseen forces that have always shared the land."
+      },
+      {
+        "id": "b",
+        "text": "Dismiss the reports as nonsense and support the clearing",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -3, "spiritualDev": -3, "health": -3 },
+          "relationships": [{ "target": "community", "change": -5 }]
+        },
+        "outcomeText": "The shrine is bulldozed. That night, three workers flee the plantation, refusing to return. The foreman develops a mysterious fever. You begin having nightmares -- a dark figure standing at the edge of your vision. The Prei is not just forest; it is a spiritual dimension. The Preay is not just a ghost; it is the forest's rage at its own destruction. You denied this, and now you feel it."
+      },
+      {
+        "id": "c",
+        "text": "Suggest relocating the shrine to a new area and creating a permanent spirit house",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 1 },
+          "stats": { "happiness": 2, "spiritualDev": 2, "socialStatus": 3, "wealth": -2 },
+          "relationships": [{ "target": "community", "change": 3 }]
+        },
+        "outcomeText": "You fund the construction of a new spirit house at the plantation's edge, large enough to honor the displaced Neak Ta and appease the Preay. The monks bless it. Workers make daily offerings before their shifts. It is a compromise -- the forest is still gone, but its spirits have been given a new home. The disturbances mostly stop, though some workers say they can still hear the Preay crying on moonless nights."
+      }
+    ],
+    "tags": ["preay", "ghosts", "prei", "forest", "plantation", "spirits"],
+    "source": "Knowledge base: Cambodia -- Preay as most vengeful ghost, Prei/forest cosmology"
+  },
+  {
+    "id": "kh_youngadult_003",
+    "title": "The Rebuilding of the Pagoda",
+    "country": "cambodia",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "Your village pagoda, destroyed during the Khmer Rouge years, is being rebuilt. The community has been raising funds for a decade. You can contribute labor, money, or skilled work. The pagoda is not just a building -- it is the center of the Srok (village/ordered space), the institution the genocide tried to erase.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Donate your savings and volunteer to lay bricks every weekend",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 6, "socialStatus": 8, "wealth": -8 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "Month by month, the pagoda rises. You carry bricks and mix cement alongside monks, elders, and children. The act of rebuilding is itself a form of healing -- each brick laid over the ruins of the Khmer Rouge destruction. When the preaching hall is completed, the first ceremony draws the entire village. People weep. Forty years after the genocide tried to erase Buddhism, the pagoda stands again. Your hands helped build it."
+      },
+      {
+        "id": "b",
+        "text": "Contribute modestly -- you have your own family to support",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 3, "socialStatus": 3, "wealth": -2 },
+          "relationships": [{ "target": "community", "change": 4 }]
+        },
+        "outcomeText": "You give what you can afford and attend occasional work days. The pagoda is built slowly, with contributions from everyone at their own capacity. Your modest donation joins hundreds of others. The merit is real if not dramatic. When the pagoda opens, you sit in the back row and listen to the first chanting in this space in over forty years."
+      },
+      {
+        "id": "c",
+        "text": "Focus on earning money to send your children to school instead",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": 1, "spiritualDev": -1, "education": 5, "wealth": 3 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You prioritize your children's education over the pagoda fund. It is a defensible choice -- the Khmer Rouge destroyed schools as well as pagodas. But the community notices your absence from work days. In post-genocide Cambodia, rebuilding the pagoda is not optional -- it is a communal act of defiance against erasure. Your children go to school, but the question remains: what good is education without the spiritual center that gives the Srok its meaning?"
+      },
+      {
+        "id": "d",
+        "text": "Volunteer to manage the rebuilding fund, then skim money for yourself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -8, "spiritualDev": -8, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -15 }, { "target": "monks", "change": -12 }]
+        },
+        "outcomeText": "You offer to keep the accounts, and the community trusts you. Over months you siphon small amounts -- a few dollars here, materials diverted there. The pagoda construction slows inexplicably. When the discrepancy is discovered, the silence from the village is worse than any accusation. You have stolen not just money but from the collective healing of a genocide. The monks say that stealing from the Sangha generates demerit that echoes across lifetimes. Families who contributed their last riel to rebuild what the Khmer Rouge destroyed now look at you the way they once looked at the cadres. You are not welcome at the construction site again."
+      }
+    ],
+    "tags": ["pagoda", "rebuilding", "khmer-rouge", "community", "healing", "merit"],
+    "source": "Knowledge base: Cambodia -- rebuilding Buddhist institutions after genocide"
+  },
+  {
+    "id": "kh_elderhood_001",
+    "title": "The Maha Ghosananda Prophecy",
+    "country": "cambodia",
+    "lifeStage": "elderhood",
+    "minAge": 55,
+    "maxAge": 85,
+    "karmaRange": [20, 100],
+    "description": "You are an elder who remembers the genocide. The young monks speak of Maha Ghosananda, who founded the Dhammayietra peace walks and was related in Buddhist prophecy to Preah Bat Dhammik -- the meritorious-charismatic leader who would heal Cambodia from the west. He died in 2007, and the walks ended in 2018. A young monk asks you: who will continue the healing?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Tell the young monk that the healing continues through every act of merit, every mindful step",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 10, "socialStatus": 5 },
+          "relationships": [{ "target": "monks", "change": 8 }]
+        },
+        "outcomeText": "You tell the story of Maha Ghosananda walking barefoot through landmined fields, chanting metta. You tell how he said: 'Our Dhammayietra office is anywhere under a tree.' The healing does not need a leader -- it needs practitioners. Every person who walks mindfully, who makes merit for the dead, who rebuilds a pagoda or ordains a tree is continuing the work. The young monk listens, and you see something awaken in his eyes."
+      },
+      {
+        "id": "b",
+        "text": "Express doubt -- the healing is incomplete, and the country's wounds are too deep",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 1 },
+          "stats": { "happiness": -3, "spiritualDev": 2 },
+          "relationships": [{ "target": "monks", "change": 2 }]
+        },
+        "outcomeText": "You speak honestly about the limits of healing. The Khmer Rouge killed the monks, destroyed the pagodas, broke the trust between generations. The prophecy of Preah Bat Dhammik is beautiful but Cambodia's leaders are not meritorious-charismatic healers -- they are power-brokers. The young monk is somber. But you add: 'Perhaps the prophecy does not refer to one leader. Perhaps it refers to all of us, walking together.' A small hope in a scarred land."
+      },
+      {
+        "id": "c",
+        "text": "Encourage the young monk to start a new Dhammayietra for the current generation",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 8, "socialStatus": 6 },
+          "relationships": [{ "target": "monks", "change": 10 }]
+        },
+        "outcomeText": "You challenge the young monk: start walking. The original Dhammayietra began at a refugee camp and ended in Phnom Penh. Today's challenges are different -- deforestation, land grabs, the erosion of tradition -- but the practice is the same: mindful walking through damaged landscapes as an act of Buddhist healing. The young monk accepts. A new walk is planned. The prophecy is not a prediction of the future -- it is a call to action in the present."
+      }
+    ],
+    "tags": ["maha-ghosananda", "prophecy", "dhammayietra", "healing", "elderhood", "legacy"],
+    "source": "Knowledge base: Cambodia -- Maha Ghosananda and Preah Bat Dhammik prophecy"
+  },
+  {
+    "id": "kh_adolescence_002",
+    "title": "The Pagoda Youth Group",
+    "country": "cambodia",
+    "lifeStage": "adolescence",
+    "minAge": 14,
+    "maxAge": 19,
+    "karmaRange": [-100, 100],
+    "description": "A young monk at your local pagoda has started a youth group. He teaches meditation, leads discussions about Buddhist ethics, and organizes community service -- cleaning up the village, visiting the elderly, maintaining the Neak Ta shrines. He says Cambodia's young people must rebuild what the Khmer Rouge destroyed: not just pagodas, but Buddhist knowledge itself. Your friends think it is boring. The monk says it is the most important work in the country.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the youth group and commit to regular attendance",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 8, "education": 4, "socialStatus": 3 },
+          "relationships": [{ "target": "monks", "change": 8 }, { "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You attend weekly sessions at the pagoda. The young monk is charismatic and angry in a righteous way: angry that the genocide stole an entire generation of Buddhist knowledge, angry that young Cambodians know more about K-pop than the dhamma. He teaches you meditation, the five precepts, and the stories of Maha Ghosananda. You begin to understand why the pagoda matters -- it is not just a building but the heart of the Srok, the ordered world that the Khmer Rouge tried to erase."
+      },
+      {
+        "id": "b",
+        "text": "Attend occasionally when your friends go, but do not commit",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 3, "education": 2 },
+          "relationships": [{ "target": "monks", "change": 2 }]
+        },
+        "outcomeText": "You drop in when the topics interest you. The meditation sessions are calming; the community service is fine. But you do not build the deep connection that regular members develop. The young monk notices your inconsistency but says nothing -- in post-genocide Cambodia, any engagement with the pagoda is a victory. Even partial participation keeps the thread of Buddhist continuity alive."
+      },
+      {
+        "id": "c",
+        "text": "Refuse -- you have studies and work to focus on",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 1 },
+          "stats": { "happiness": 1, "spiritualDev": -2, "education": 3 },
+          "relationships": [{ "target": "monks", "change": -2 }]
+        },
+        "outcomeText": "You choose academics and part-time work over the pagoda group. The practical benefits are clear: better grades, more money. But the young monk's words echo: 'The Khmer Rouge destroyed our Buddhist knowledge. If your generation does not rebuild it, it dies with us.' The weight of that inheritance -- the responsibility to restore what was destroyed -- is a burden unique to young Cambodians. You carry it whether you acknowledge it or not."
+      }
+    ],
+    "tags": ["youth", "pagoda", "education", "khmer-rouge-legacy", "rebuilding", "community-service"],
+    "source": "Knowledge base: Cambodia -- rebuilding Buddhist institutions and identity after genocide"
+  }
+]

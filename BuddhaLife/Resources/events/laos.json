@@ -1,0 +1,580 @@
+[
+  {
+    "id": "la_childhood_001",
+    "title": "The Morning Alms Round",
+    "country": "laos",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 11,
+    "karmaRange": [-100, 100],
+    "description": "In Luang Prabang, the ancient royal capital, monks walk in a silent line at dawn to collect alms. Your mother wakes you before sunrise to prepare sticky rice for the offering. The monks' bare feet are cold on the stone streets. Tourists with cameras crowd the edges, snapping photos. Your mother says this tradition has continued for centuries -- even through the communist revolution.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Kneel beside your mother and place rice into each monk's bowl with both hands",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 7, "socialStatus": 3 },
+          "relationships": [{ "target": "mother", "change": 8 }, { "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "The rice is warm in your hands. Each monk pauses before you, eyes downcast, and you place a ball of sticky rice into the bowl. Your mother whispers: 'The monks carry the Buddha's teaching. We carry their food. This is how the world works.' The dana of the morning alms round is the foundation of Lao Buddhism -- laypeople support the Sangha, and the Sangha sustains the dhamma. You are part of a chain stretching back to the Buddha himself."
+      },
+      {
+        "id": "b",
+        "text": "Watch from the doorway, too sleepy to participate properly",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 1 },
+          "relationships": [{ "target": "mother", "change": -2 }]
+        },
+        "outcomeText": "You lean against the doorframe, half-asleep, watching the monks glide past like saffron shadows. Your mother gives the rice alone. She does not scold you, but her disappointment is palpable. The tourists photograph the scene; you yawn. One day you will understand what you missed -- the merit, the connection, the living thread of a tradition that survived wars and revolutions. But today, sleep wins."
+      },
+      {
+        "id": "c",
+        "text": "Ask why the tourists are allowed to photograph something sacred",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 4, "education": 3 },
+          "relationships": [{ "target": "mother", "change": 5 }]
+        },
+        "outcomeText": "Your mother sighs. 'The tourists bring money to Luang Prabang,' she says. 'But they do not understand what they are photographing. This is not a performance -- it is the oldest relationship in Buddhism: the giver and the receiver, the layperson and the monk.' She pauses. 'We cannot stop them. We can only make sure we do it properly ourselves.' You kneel and give the rice, ignoring the camera flashes."
+      },
+      {
+        "id": "d",
+        "text": "Grab rice from a monk's alms bowl when no one is looking and eat it yourself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "socialStanding": -10 },
+          "relationships": [{ "target": "mother", "change": -12 }, { "target": "monks", "change": -12 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "Your hand darts into the bowl and you stuff warm rice into your mouth. The monk does not flinch -- his discipline holds -- but his eyes flicker with something that might be pity. Your mother sees. She drops her own offering basket. The tourists stop photographing. In the sudden silence of the Luang Prabang morning, the weight of what you have done settles like stone. You have not just stolen food -- you have violated the oldest sacred exchange in Buddhism, the dana that connects laypeople and Sangha in a chain stretching back to the Buddha's own alms bowl. Your mother pulls you home without a word. She does not bring you to the alms round again for a very long time. The monks will still accept offerings from your family, because forgiveness is their practice. But the community remembers."
+      }
+    ],
+    "tags": ["alms-round", "luang-prabang", "monks", "tourism", "dana", "morning"],
+    "source": "Knowledge base: Laos -- Buddhist institutions, former royal capital Luang Prabang"
+  },
+  {
+    "id": "la_childhood_002",
+    "title": "The Novice Monk Decision",
+    "country": "laos",
+    "lifeStage": "childhood",
+    "minAge": 8,
+    "maxAge": 14,
+    "karmaRange": [-100, 100],
+    "description": "In Laos, boys as young as eight can be ordained as novice monks. Your family is from a poor multi-ethnic community in northern Laos -- Lue, Phounoy, and Khmu families living alongside each other. The monastery offers the best education available. Your parents see ordination as both spiritual merit and practical opportunity. But the monastery is in town, far from your village.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept ordination and move to the monastery school in town",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 10, "education": 8 },
+          "relationships": [{ "target": "parents", "change": 8 }, { "target": "monks", "change": 8 }]
+        },
+        "outcomeText": "You shave your head and put on the saffron robe. The monastery in Boun Tay teaches reading, writing, Pali chanting, and Buddhist ethics. The acan (lay leader, a former monk himself) knows both the Buddhist texts and the local traditions of your multi-ethnic community. You miss your family and the village, but the education transforms your prospects. Merit flows to your parents, especially your mother. In Laos, where Buddhism coexists with diverse ethnic practices, the monastery is the bridge between worlds."
+      },
+      {
+        "id": "b",
+        "text": "Stay in the village and help with the family's subsistence farming",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 0, "education": -3 },
+          "relationships": [{ "target": "parents", "change": 3 }]
+        },
+        "outcomeText": "You stay in the rice fields with your family. The work is familiar and your parents appreciate the help. But as cash crops (rubber and beans sold to Chinese entrepreneurs) begin to replace subsistence rice farming, education becomes more important. Boys who attended the monastery school can negotiate with Chinese traders; those who did not are at their mercy. The economic landscape is shifting beneath your bare feet."
+      },
+      {
+        "id": "c",
+        "text": "Negotiate with your parents: ordain for one rainy season only, then return home",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 5, "education": 5 },
+          "relationships": [{ "target": "parents", "change": 6 }]
+        },
+        "outcomeText": "You ordain for the three months of Khao Phansa (Buddhist Lent), the monsoon retreat period. It is enough to generate significant merit for your parents and enough to learn basic reading and Buddhist scripture. When you return to the village, you are changed -- the monks' discipline has left its mark. You can read signs in town and recite prayers at ceremonies. The community notes your transformation with approval."
+      }
+    ],
+    "tags": ["novice", "ordination", "education", "multi-ethnic", "monastery", "boun-tay"],
+    "source": "Knowledge base: Laos -- Buddhist institutions, multi-ethnic communities in northern Laos"
+  },
+  {
+    "id": "la_adolescence_001",
+    "title": "The Boun Festival",
+    "country": "laos",
+    "lifeStage": "adolescence",
+    "minAge": 13,
+    "maxAge": 19,
+    "karmaRange": [-100, 100],
+    "description": "It is Boun Khaosalak -- the rice harvest offering ceremony that concludes the agricultural cycle. Families prepare elaborate offerings for the ancestors, and the entire village gathers at the temple. The festival combines ancestor worship, Buddhist merit-making, and agricultural thanksgiving. But your family has not harvested well this year, and the cost of the offering is steep. There is also boat racing on the river and music.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Help your family prepare a proper offering despite the poor harvest",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "wealth": -4 },
+          "relationships": [{ "target": "family", "change": 6 }, { "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "You help prepare rice, meat, and sweets for the ancestral offering. At the temple, the acan leads the ceremony, chanting Buddhist texts while families present their offerings. The ancestors of the previous year receive merit and provisions. Even in a bad year, the offerings must be made -- the connection between the Buddhist calendar and the rice cycle is the heartbeat of Lao village life. Your family goes home poorer but spiritually renewed."
+      },
+      {
+        "id": "b",
+        "text": "Focus on the boat racing and music -- this is your year to compete",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 1 },
+          "stats": { "happiness": 8, "spiritualDev": 0, "socialStatus": 3 },
+          "relationships": [{ "target": "friends", "change": 5 }]
+        },
+        "outcomeText": "You paddle furiously in the boat race, your team's muscles straining against the current. The crowd roars from the riverbank. You win, and the village celebrates. But you missed the main offering ceremony, and your parents had to present without you. The boun festival has always blended the sacred and the festive, but you leaned entirely toward the festive. The ancestors received their merit; you received your glory. Whether these are equivalent is a question for later."
+      },
+      {
+        "id": "c",
+        "text": "Suggest postponing the elaborate offering until a better harvest year",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": -2, "spiritualDev": -2, "wealth": 3 },
+          "relationships": [{ "target": "family", "change": -3 }, { "target": "ancestors", "change": -5 }]
+        },
+        "outcomeText": "Your parents shake their heads. The calendar waits for no one. Khao Padapdin and Khao Salak -- the harvest ceremonies for the dead in the 9th and 10th lunar months -- must be observed on time. Already, the connection between the Buddhist calendar and the rice cycle is weakening as employment diversifies. Some families now make ancestor offerings at convenient times like New Year rather than the traditional harvest-linked dates. Your suggestion is practical but the acan disapproves."
+      },
+      {
+        "id": "d",
+        "text": "Gamble away the family's offering money on the boat race betting",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -7, "spiritualDev": -5, "socialStanding": -8, "wealth": -4 },
+          "relationships": [{ "target": "family", "change": -12 }, { "target": "ancestors", "change": -10 }]
+        },
+        "outcomeText": "The boat race betting is irresistible -- everyone says your village's team will win. You wager the money your parents set aside for the ancestral offering. Your team loses. The money is gone. When your family arrives at the temple with no offering to present, your mother's hands are empty and her eyes are full. The acan looks at your family's bare spot among the elaborate offerings of other families and says nothing, which is worse than any rebuke. The ancestors of the previous year go without provisions. In Lao belief, hungry ancestors are dangerous ancestors -- they return in dreams demanding what they are owed. Your father works double shifts for weeks to repay the debt of shame. The festival that was meant to close the harvest cycle with gratitude instead opens a wound that takes a full year to heal."
+      }
+    ],
+    "tags": ["boun", "harvest", "ancestors", "boat-racing", "festival", "agriculture"],
+    "source": "Knowledge base: Laos -- Boun Khaosalak, Khao Padapdin ceremonies"
+  },
+  {
+    "id": "la_youngadult_001",
+    "title": "Buddhism Under Communism",
+    "country": "laos",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 30,
+    "karmaRange": [-100, 100],
+    "description": "The communist government of the Lao People's Democratic Republic has an uneasy relationship with Buddhism. The party promotes 'scientific socialism' but knows that Buddhism is inseparable from Lao identity. A government official visits your monastery and suggests that monks should teach 'development ideology' alongside Buddhist scripture. The abbot is uncomfortable. You are a young monk caught between institutional loyalty and political reality.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the government's request and incorporate development messages into your teaching",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 3 },
+          "stats": { "happiness": -2, "spiritualDev": -3, "socialStatus": 3 },
+          "relationships": [{ "target": "government", "change": 5 }, { "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You begin weaving government messages about hygiene, education, and development into your sermons. The official is pleased. But the laypeople notice -- the dhamma is being diluted with party propaganda. The abbot says nothing publicly but his sermons become more traditionally Buddhist, as if to compensate. In Laos, where competing national narratives -- communist, anticommunist, and others -- all lay claim to the past, the monastery walks a tightrope between spiritual integrity and political survival."
+      },
+      {
+        "id": "b",
+        "text": "Politely refuse and continue teaching pure dhamma",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 8, "socialStatus": -3 },
+          "relationships": [{ "target": "community", "change": 8 }, { "target": "government", "change": -5 }]
+        },
+        "outcomeText": "You tell the official respectfully that the monastery teaches the dhamma, not politics. He leaves with a thin smile. You may face consequences -- reduced government support, closer surveillance, bureaucratic difficulties. But the laypeople are grateful that their temple remains a spiritual refuge. In a country where the government controls most institutions, the monastery's independence is precious and fragile."
+      },
+      {
+        "id": "c",
+        "text": "Find a creative middle path -- teach Buddhist ethics that naturally align with development goals",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 5, "socialStatus": 2 },
+          "relationships": [{ "target": "community", "change": 5 }, { "target": "government", "change": 2 }]
+        },
+        "outcomeText": "You develop sermons about the Buddhist precept against intoxication (relevant to the drug addiction plaguing young people), about right livelihood (relevant to the cash crop economy), and about compassion (relevant to community welfare). The official hears development-compatible messages; the laypeople hear dhamma. You have threaded the needle between political compliance and spiritual integrity. The abbot nods approvingly -- this is how Buddhism has survived every political regime that tried to control it."
+      }
+    ],
+    "tags": ["communism", "government", "politics", "monastery", "independence", "dhamma"],
+    "source": "Knowledge base: Laos -- Buddhism under communism, LPDR"
+  },
+  {
+    "id": "la_youngadult_002",
+    "title": "The Chinese Casino",
+    "country": "laos",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "Chinese companies are building casinos, hotels, and plantations across Laos. A new casino in the Special Economic Zone offers jobs paying five times the local wage. Your village is being transformed -- rubber plantations replace rice paddies, Chinese signs appear on shop fronts, and young people are leaving the monasteries for casino jobs. A monk warns that gambling generates demerit, but your family needs the money.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Take the casino job -- your family needs the income",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": 3, "spiritualDev": -5, "wealth": 10, "socialStatus": -2 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "The casino is a world apart: air-conditioned, neon-lit, filled with Chinese tourists. You deal cards or serve drinks, earning more in a week than your father makes in a month farming rice. But the monk's warning echoes. Gambling -- facilitating gambling -- sits uneasily with the five precepts. Your village's traditional rhythms -- the boun festivals, the rice cycle, the monastery chanting -- feel distant from the casino floor. Globalization reaches deep into Laos from every side, especially China, which accounts for 40% of foreign investment."
+      },
+      {
+        "id": "b",
+        "text": "Refuse the casino job and stay in the agricultural economy",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 4, "wealth": -2 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You remain in the village, working the rice fields and selling beans to Chinese traders. The income is modest but the precepts are intact. The monastery bell still marks your days. But as more young people leave for the casinos and plantations, the village empties. Who will be the next generation of monks? Who will perform the boun festivals? Who will maintain the phrasat obligations for the dead? The traditional Buddhist-agricultural cycle is breaking down."
+      },
+      {
+        "id": "c",
+        "text": "Take the job temporarily and donate a significant portion to the monastery",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 2 },
+          "stats": { "happiness": 2, "spiritualDev": -1, "wealth": 5 },
+          "relationships": [{ "target": "monks", "change": 3 }, { "target": "family", "change": 3 }]
+        },
+        "outcomeText": "You work at the casino and channel part of your earnings into monastery donations. The monks accept the dana -- merit from giving is merit from giving, whatever the source. But the parallel with Myanmar's 'dirty money' dilemma is uncomfortable. Can casino wages be laundered through merit-making? The question has no easy answer, and you find yourself living in both worlds: the neon casino at night, the saffron monastery at dawn."
+      }
+    ],
+    "tags": ["china", "casino", "globalization", "gambling", "modernity", "precepts"],
+    "source": "Knowledge base: Laos -- Chinese investment, casinos, changing economy"
+  },
+  {
+    "id": "la_adulthood_001",
+    "title": "The Funeral Dilemma",
+    "country": "laos",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "A family member has died. The proper funeral requires keeping the body at home for the most auspicious timing -- up to five days, feeding many visitors, hiring monks, and performing elaborate rituals including sompoi water purification, bamboo trellises (taleo) at corners to deter spirits, and bone washing. The cost is staggering: 150 kilograms of pork and a dozen ducks is standard. Quick cremation would save money but violate tradition.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Wait for the most auspicious day and perform the full funeral rites",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "wealth": -10 },
+          "relationships": [{ "target": "deceased", "change": 10 }, { "target": "community", "change": 8 }]
+        },
+        "outcomeText": "The funeral stretches across five days. Six young monks attend, chanting through the nights. The acan leads the complex ritual sequence: sompoi water (made from Acacia concinna pods, blessed by monks) purifies the body and the living. Bamboo taleo at the four corners of the mourning house deter malevolent spirits. The huean di ('house of joy') signifies the cessation of suffering. You wash the bones after cremation and place them with ngueune du (bone money) for the deceased's journey to muang savane (paradise). The cost is ruinous, but the passage is complete."
+      },
+      {
+        "id": "b",
+        "text": "Cremate quickly to save money -- 1-2 days instead of 5",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 3 },
+          "stats": { "happiness": -3, "spiritualDev": -2, "wealth": -3 },
+          "relationships": [{ "target": "deceased", "change": -3 }, { "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You cremate on the second day, before the auspicious calendar alignment. The acan is unhappy -- the timing matters for the deceased's journey. The community whispers: rushed funerals suggest poverty or, worse, disrespect. The deceased's spirit may not find its way to muang savane without the proper rites. Hair washing after the funeral -- which 'washes away all impurities' as a rebirth symbol -- feels premature. You saved money but the spiritual cost may be higher."
+      },
+      {
+        "id": "c",
+        "text": "Ask the community to collect contributions from every family in the district",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5, "wealth": -5 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "The entire district contributes: rice from one family, pork from another, ducks from a third, money from those who can spare it. The funeral becomes a communal event, strengthening the bonds of reciprocity that hold the village together. You will owe others when their turn comes -- and that is exactly the point. In Lao Buddhism, death is not a private matter but a community responsibility. The deceased benefits from the collective merit of dozens of families."
+      },
+      {
+        "id": "d",
+        "text": "Skim from the community funeral contributions and blame the shortfall on rising costs",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -8, "spiritualDev": -7, "socialStanding": -10, "wealth": 4 },
+          "relationships": [{ "target": "community", "change": -15 }, { "target": "family", "change": -10 }, { "target": "monks", "change": -8 }]
+        },
+        "outcomeText": "Dozens of families contributed their scarce resources -- pork, ducks, rice, money -- trusting you to manage the funeral expenses. You take a portion for yourself and tell everyone the monks charged more, the pork was expensive, the incense cost double this year. The funeral proceeds, but it is noticeably diminished: fewer monks attend, the sompoi water ceremony is abbreviated, the bone-washing ritual is rushed. The acan notices and says quietly that the deceased's passage to muang savane may be incomplete. When the truth surfaces months later -- as it always does in a village where everyone knows everyone -- the betrayal cuts deeper than ordinary theft. You stole from a funeral. You stole from the dead. The reciprocity network that holds the community together fractures around you, and when your own family needs help, the silence from your neighbors is absolute."
+      }
+    ],
+    "tags": ["funeral", "sompoi", "taleo", "acan", "bone-money", "muang-savane"],
+    "source": "Scholar 3 (Boute -- funeral at Boun Tay)"
+  },
+  {
+    "id": "la_adulthood_002",
+    "title": "The Phrasat Obligation",
+    "country": "laos",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 65,
+    "karmaRange": [-100, 100],
+    "description": "Years have passed since your parent's death, but you have not yet performed the phrasat -- the 'palace offering' ceremony that is the definitive ritual to establish the deceased as an ancestor. Until the phrasat is done, your parent's spirit remains unsettled, wandering as phi tay (spirit of the dead). You dream of your parent asking for food and clothing. Your sibling's spouse wants to remarry, but remarriage requires the phrasat to be completed first.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Take on debt to perform the phrasat ceremony now",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 10, "wealth": -12 },
+          "relationships": [{ "target": "deceased", "change": 12 }, { "target": "sibling", "change": 8 }]
+        },
+        "outcomeText": "You build the miniature house at the temple, filling it with everything the deceased might need in muang savane: clothes, rice, money, tools, even a small paper television. The acan leads the ceremony. Monks chant. The phrasat is presented at the temple, and the spirit is formally established as an ancestor. The dreams stop. Your sibling's spouse is free to remarry. The debt is crushing, but the phrase echoes: 'Where he is, he will have everything.' You cannot skip the phrasat."
+      },
+      {
+        "id": "b",
+        "text": "Continue making smaller offerings during Buddhist Lent while saving for the phrasat",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": -3, "spiritualDev": 3, "wealth": 2 },
+          "relationships": [{ "target": "deceased", "change": 2 }, { "target": "sibling", "change": -5 }]
+        },
+        "outcomeText": "You make modest offerings at Khao Phansa and the harvest festivals, transferring merit through libation pouring. The deceased receives some spiritual nourishment but remains unsettled -- an ancestor-in-waiting, trapped between worlds. Your sibling's spouse grows frustrated: years of waiting, unable to move on. The phrasat is 'indispensable but extremely costly' -- some families wait many years. Your parent's spirit visits your dreams with increasing urgency."
+      },
+      {
+        "id": "c",
+        "text": "Transfer the responsibility to your children's generation",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 5 },
+          "stats": { "happiness": -5, "spiritualDev": -4 },
+          "relationships": [{ "target": "deceased", "change": -8 }, { "target": "children", "change": -3 }]
+        },
+        "outcomeText": "You tell your children they will need to perform the phrasat when they are able. They nod uncertainly -- their generation is leaving for the cities, working in Chinese plantations, drifting from the old traditions. The drug addiction among younger people threatens continuity of ritual obligations. Your parent's spirit continues to wander. The saying is clear: 'Until the phrasat is done, the deceased cannot take possession of the merit.' You have deferred the most important obligation to those least equipped to fulfill it."
+      }
+    ],
+    "tags": ["phrasat", "ancestors", "phi-tay", "obligation", "ceremony", "muang-savane"],
+    "source": "Scholar 3 (Boute -- phrasat obligation and remarriage case)"
+  },
+  {
+    "id": "la_adulthood_003",
+    "title": "The Deceased's Spirit Won't Rest",
+    "country": "laos",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "After your mother's funeral, strange things happen. Objects move at night. Family members feel unwell -- headaches, fatigue, a persistent chill. You have vivid dreams of your mother standing in the kitchen, asking for rice and a warm blanket. The phi tay is not at rest.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Contact the acan to perform a merit-transfer ceremony at the temple",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 6, "health": 4 },
+          "relationships": [{ "target": "deceased", "change": 8 }]
+        },
+        "outcomeText": "The acan -- the lay leader who knows both Buddhist texts and local traditions -- arranges a ceremony at the temple. Monks chant and you pour libation water onto the ground, transferring merit to your mother. 'Until this is done, the deceased cannot take possession,' the acan explains. The merit flows through the water into the earth, reaching the spirit world. Your mother's visits become less frequent, her dream-presence calmer."
+      },
+      {
+        "id": "b",
+        "text": "Have monks throw sompoi water with stones onto the roof to expel the spirit",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 3, "health": 3 },
+          "relationships": [{ "target": "deceased", "change": 3 }]
+        },
+        "outcomeText": "The monks arrive with sompoi water -- made from Acacia concinna pods and blessed through chanting -- and small river stones. They splash the water and throw stones onto the roof, chanting prayers of protection. Bamboo taleo are placed at the four corners of the house. The ritual creates a spiritual boundary, protecting the living. The disturbances lessen but the underlying issue remains: your mother needs the phrasat ceremony to become a settled ancestor."
+      },
+      {
+        "id": "c",
+        "text": "Place daily food offerings and address the deceased directly",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 2, "health": 1 },
+          "relationships": [{ "target": "deceased", "change": 5 }]
+        },
+        "outcomeText": "You set out rice and blankets at the household altar each evening, speaking aloud to your mother's spirit. 'I know you are here. I know you need things. I am working to save for the phrasat.' The personal offerings partially satisfy the spirit -- the disturbances decrease but do not stop. The acan says that household offerings are stopgaps; only the formal phrasat ceremony can definitively settle the deceased. But it helps, and the act of speaking to your dead mother brings its own kind of comfort."
+      },
+      {
+        "id": "d",
+        "text": "Begin saving immediately for the phrasat ceremony to definitively settle the deceased",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 5, "wealth": -3 },
+          "relationships": [{ "target": "deceased", "change": 10 }]
+        },
+        "outcomeText": "You open a savings account specifically for the phrasat, contributing from every paycheck. You tell your mother's spirit: 'I will build your palace. It will take time, but it will be done.' The dreams shift: your mother no longer asks for rice. She waits patiently, as if she heard the promise. The Lao say the phrasat cannot be skipped -- and your mother's spirit seems to understand that it is coming."
+      }
+    ],
+    "tags": ["phi-tay", "spirit", "sompoi", "acan", "haunting", "phrasat"],
+    "source": "Scholar 3 (Boute -- post-funeral spirit disturbances and phrasat obligation)"
+  },
+  {
+    "id": "la_adulthood_004",
+    "title": "Pha That Luang Festival",
+    "country": "laos",
+    "lifeStage": "adulthood",
+    "minAge": 20,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "It is the That Luang Festival -- the most important national celebration in Laos, held at the great golden stupa Pha That Luang in Vientiane. The festival combines Buddhist devotion, national pride, and a massive trade fair. Thousands process around the stupa carrying candles. The communist government has co-opted the festival as a national celebration, but its roots are pure Buddhist pilgrimage.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the candlelight procession around the stupa with sincere devotion",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 6, "spiritualDev": 8, "socialStatus": 3 },
+          "relationships": [{ "target": "community", "change": 5 }]
+        },
+        "outcomeText": "You circle the golden stupa three times, candle in hand, chanting with the crowd. The gold gleams in the candlelight. Pha That Luang has stood since the 16th century -- before the French, before the communists, before the wars. It is the symbol of Lao Buddhism and national identity. In this moment, walking among thousands, you feel part of something vast and ancient. The government officials are here too, but the devotion of ordinary people transforms their political theater into genuine sacred space."
+      },
+      {
+        "id": "b",
+        "text": "Visit the trade fair and enjoy the festival's secular aspects",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": 7, "spiritualDev": 0, "wealth": -3 },
+          "relationships": [{ "target": "friends", "change": 5 }]
+        },
+        "outcomeText": "The trade fair is vibrant: food stalls, handicrafts, Chinese electronics, Lao silk. You eat lap (spicy meat salad) and drink Beer Lao while musicians play. The festival has a carnival atmosphere that the communists encourage -- a happy population is a compliant population. But the golden stupa rises above the fairground, its tip catching the last light, and something in you recognizes that the party is happening in the shadow of something far more significant."
+      },
+      {
+        "id": "c",
+        "text": "Make a significant donation at the stupa and dedicate merit to your ancestors",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 7, "wealth": -5 },
+          "relationships": [{ "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "You place your offering at the base of the great stupa and dedicate the merit to all ancestors in your lineage. Monks chant nearby. The merit generated at Pha That Luang is believed to be especially powerful -- the stupa contains relics of the Buddha himself. Your ancestors receive a burst of spiritual credit on the most auspicious night of the Lao calendar. You walk home in the darkness, feeling lighter."
+      },
+      {
+        "id": "d",
+        "text": "Pocket offering money from the donation boxes around the stupa in the crowd's confusion",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -6, "spiritualDev": -8, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "monks", "change": -12 }, { "target": "community", "change": -12 }]
+        },
+        "outcomeText": "The crowd surges around the stupa and you use the press of bodies as cover, reaching into donation boxes and palming bills. The money is warm from the hands of thousands of devotees who gave it with genuine faith. A monk standing nearby watches you with an expression of profound sadness -- not surprise, but the recognition of suffering creating more suffering. You have stolen from Pha That Luang, the holiest site in Laos, on the most sacred night of the year. The stupa contains relics of the Buddha himself, and every offering placed at its base carries the accumulated faith of the entire nation. The money buys you a few meals. The demerit, the monks would say, echoes across lifetimes. You cannot bring yourself to attend the festival again, and every time you see the golden stupa gleaming in the distance, your stomach tightens with a shame that no amount of spending can dissolve."
+      }
+    ],
+    "tags": ["pha-that-luang", "stupa", "festival", "national", "pilgrimage", "vientiane"],
+    "source": "Knowledge base: Laos -- Pha That Luang, national Buddhist identity"
+  },
+  {
+    "id": "la_adulthood_005",
+    "title": "The Drug Epidemic",
+    "country": "laos",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "Your teenage nephew has become addicted to methamphetamine, brought across the border from Myanmar's Golden Triangle. The drug epidemic is devastating rural Lao communities, pulling young people away from the monastery, the rice fields, and the funeral obligations that sustain the spiritual ecosystem. Traditional healing through the monastery has not worked. The government's rehabilitation programs are harsh and prison-like.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Bring your nephew to the monastery for an extended stay with the monks",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 5, "health": 3 },
+          "relationships": [{ "target": "nephew", "change": 3 }, { "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "Your nephew ordains as a novice -- not for merit this time, but for survival. The monastery's discipline provides structure: waking at dawn, alms round, meditation, study, no intoxicants. The monks are patient but firm. The addiction does not disappear overnight, but the monastery offers something the streets do not: meaning, community, and the daily practice of self-control. Whether it works depends on whether the monastery's spiritual medicine is stronger than the chemical pull."
+      },
+      {
+        "id": "b",
+        "text": "Send him to the government rehabilitation center",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": -4, "spiritualDev": 0, "health": 2 },
+          "relationships": [{ "target": "nephew", "change": -5 }]
+        },
+        "outcomeText": "The government center is austere: barbed wire, military discipline, forced labor. Your nephew emerges three months later, thin and frightened. Whether he is cured or merely beaten into temporary compliance is unclear. The center treats addiction as a crime rather than a spiritual or medical problem. The monks would say that without addressing the underlying spiritual emptiness, the addiction will return."
+      },
+      {
+        "id": "c",
+        "text": "Consult the acan for a traditional healing ceremony combining Buddhist and local spirit practices",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 4, "health": 4 },
+          "relationships": [{ "target": "nephew", "change": 5 }]
+        },
+        "outcomeText": "The acan performs a soul-calling ceremony for your nephew -- his khwan have fled, scattered by the drug use. Using sompoi water and chanting, the acan calls the souls back. Mak kua (thorny eggplant) leaves are placed at the corners of the house to ward off the phi that feed on addiction. The traditional approach treats drug addiction as a spiritual crisis: a scattering of the vital essences that must be gathered and restored. Your nephew sleeps deeply for the first time in months."
+      }
+    ],
+    "tags": ["drugs", "addiction", "monastery", "healing", "youth", "modern-crisis"],
+    "source": "Knowledge base: Laos -- drug addiction among younger generation, ritual obligations at risk"
+  },
+  {
+    "id": "la_elderhood_001",
+    "title": "The Fading Traditions",
+    "country": "laos",
+    "lifeStage": "elderhood",
+    "minAge": 55,
+    "maxAge": 80,
+    "karmaRange": [-100, 100],
+    "description": "You are an elder who has kept the traditions faithfully: every boun festival attended, every funeral rite performed, every phrasat obligation fulfilled. But you notice that your grandchildren are drifting. They make ancestor offerings at New Year rather than the traditional harvest-linked dates. They work in Chinese plantations instead of the rice fields. The connection between the Buddhist calendar and the agricultural cycle -- the heartbeat of Lao village life -- is weakening.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Teach your grandchildren the traditions actively, insisting they learn every ritual",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 8, "socialStatus": 6 },
+          "relationships": [{ "target": "grandchildren", "change": 5 }]
+        },
+        "outcomeText": "You gather the grandchildren and teach them the full funeral sequence: the sompoi water preparation, the taleo bamboo trellises, the bone washing, the hair-washing ceremony that 'washes away all impurities.' You teach them the phrasat construction, the libation pouring for merit transfer, the raw egg thrown to select the reliquary location. Some listen eagerly; others fidget with their phones. But the knowledge passes. Whether they use it is their choice, but at least it exists outside your head."
+      },
+      {
+        "id": "b",
+        "text": "Accept that change is inevitable -- anicca, impermanence, applies to traditions too",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 10 },
+          "relationships": []
+        },
+        "outcomeText": "You sit on the temple steps and meditate on impermanence. The rice economy is giving way to cash crops. The Buddhist calendar is losing its grip on the agricultural cycle. The young leave for casinos and cities. This is dukkha -- the suffering of change, the unsatisfactoriness of all conditioned things. You cannot stop it. You can only practice equanimity and trust that the dhamma survives in new forms, even if you do not recognize them."
+      },
+      {
+        "id": "c",
+        "text": "Work with the acan to adapt traditions for the modern context",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 6, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You and the acan discuss how to keep the spiritual core of the traditions while adapting their forms. Perhaps boun festivals can happen on weekends when the young people are home from the plantations. Perhaps merit-transfer ceremonies can be live-streamed for those in the cities. Perhaps the phrasat can incorporate modern materials alongside traditional ones. Adaptation is not betrayal -- Lao Buddhism has always absorbed and adapted. The question is whether this generation can find the balance."
+      }
+    ],
+    "tags": ["tradition", "change", "elderhood", "impermanence", "acan", "adaptation"],
+    "source": "Knowledge base: Laos -- weakening Buddhist-agricultural calendar connection, contemporary issues"
+  },
+  {
+    "id": "la_youngadult_003",
+    "title": "The Hydroelectric Dam",
+    "country": "laos",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "A Chinese-funded hydroelectric dam project will flood your village's ancestral lands, including the temple where generations of phrasat ceremonies established your ancestors. The government promises compensation and new housing. The phi of your ancestors are bound to this land. The monks say the temple cannot be moved -- only rebuilt, losing centuries of accumulated spiritual power.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Organize community opposition to the dam through the monastery",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 5, "socialStatus": 6 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You rally villagers at the temple, and the monks speak against the dam. But in the Lao PDR, opposing government-approved Chinese investment is dangerous. Officials visit the abbot. The dam proceeds regardless, as most do in Laos where 40% of foreign investment comes from China. Your protest is noted, your community bond strengthened, and your ancestors' land is lost. But you did not go quietly."
+      },
+      {
+        "id": "b",
+        "text": "Accept the relocation and focus on performing proper merit-transfer ceremonies before the flooding",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "wealth": 3 },
+          "relationships": [{ "target": "ancestors", "change": 8 }]
+        },
+        "outcomeText": "Before the waters rise, you organize a massive merit-transfer ceremony at the old temple. The acan leads the community through every required ritual: libation pouring for the ancestors, merit dedication at each phrasat site, a final chanting to release the phi from the land they have guarded for generations. You take sacred objects -- a Buddha image, the temple bell, stones from the old reliquary -- to the new village. The ancestors are invited to follow. Whether they will is another question. The dam floods everything else."
+      },
+      {
+        "id": "c",
+        "text": "Take the compensation money and move to Vientiane for a fresh start",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 1, "spiritualDev": -4, "wealth": 8 },
+          "relationships": [{ "target": "community", "change": -8 }, { "target": "ancestors", "change": -10 }]
+        },
+        "outcomeText": "The compensation is generous by rural standards. You move to the capital, find work, and try to build a new life. But the city has no acan who knows your family's rituals, no temple where your ancestors' phrasat ceremonies were performed, no community that remembers your dead. The boun festivals feel generic without the specific ancestral connections that gave them meaning. You have gained money and lost your spiritual rootedness. The ancestors, submerged beneath a Chinese-built reservoir, have no one to transfer merit to them."
+      }
+    ],
+    "tags": ["dam", "china", "displacement", "ancestors", "development", "modernization"],
+    "source": "Knowledge base: Laos -- Chinese hydroelectric dams, globalization, ancestral obligations"
+  }
+]

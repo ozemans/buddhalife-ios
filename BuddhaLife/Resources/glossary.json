@@ -1,0 +1,331 @@
+[
+  {
+    "term": "anatta",
+    "pali": "anatta",
+    "translation": "No-self; the doctrine that no enduring soul or essence exists",
+    "description": "One of the three marks of existence. All conditioned phenomena lack a permanent, unchanging self. Recited during meditation alongside anicca and dukkha.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "anicca",
+    "pali": "anicca",
+    "translation": "Impermanence; all conditioned things are transient",
+    "description": "One of the three marks of existence. Everything that arises will also pass away. Temple sleepers meditate on this truth using mak nap beads.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "dukkha",
+    "pali": "dukkha",
+    "translation": "Suffering; unsatisfactoriness of conditioned existence",
+    "description": "One of the three marks of existence and the First Noble Truth. Life is inherently unsatisfactory not because everything is painful, but because nothing is permanent.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "kamma",
+    "pali": "kamma",
+    "translation": "The moral law of cause and effect",
+    "description": "Every purposeful action registers on the cosmos and eventually returns to you. Karma determines circumstances of birth and death. It is NOT fate but a theory of moral causation placing responsibility on the individual.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "merit",
+    "pali": "kusala / punna",
+    "translation": "Positive karmic stockpile earned through good deeds",
+    "description": "Earned through dana (giving), precept-keeping, ordination, and good deeds. Can be shared with the dead via water-pouring rituals. Once dead, merit is the ONLY power that can reach a person. Local terms: bun (Thai), kutho (Burmese), kuso (Shan/Lao).",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "demerit",
+    "pali": "akusala",
+    "translation": "Negative karmic residue from immoral actions",
+    "description": "Counterbalance to merit. The Shan term wot refers to negative karmic residue. A person who dies with no wot had a spiritually clean life. Violent deaths create extra wot requiring additional merit-making.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "dana",
+    "pali": "dana",
+    "translation": "Generosity; giving; charitable donation",
+    "description": "Gift-giving that produces good karmic consequences. The most important means of gaining access to spiritual power. Inseparable from Theravada devotion. Creates the merit-power nexus linking merit, wealth, and social status.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "sila",
+    "pali": "sila",
+    "translation": "Moral conduct; the precepts",
+    "description": "Five precepts for laity (no killing, stealing, lying, sexual misconduct, intoxication). Eight for devout elders. 227 for monks. Adults say precepts are impossible to follow until old age. A person who 'kept the precepts' is praised at death.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "sangha",
+    "pali": "sangha",
+    "translation": "Community of Buddhist monks and novices",
+    "description": "One of the Three Jewels alongside the Buddha and the Dhamma. The Burmese form thanga is on the banned list for non-Buddhist use in Myanmar. The Sangha is supported materially by laypeople who provide food, shelter, and offerings.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "dhamma",
+    "pali": "dhamma",
+    "translation": "The teachings; cosmic law; Buddhist doctrine",
+    "description": "The totality of Buddhist teaching. Buddhadasa Bhikkhu taught: 'Preserving ecology means conserving dhamma, as dhamma is our inner ecology.' Also spelled dharma in Sanskrit-influenced traditions.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "metta",
+    "pali": "metta",
+    "translation": "Loving-kindness",
+    "description": "Key Buddhist virtue cultivated through meditation and daily recitation. Morning and evening prayers begin and end with spreading metta to all beings. Banned from non-Buddhist use in Myanmar.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "samsara",
+    "pali": "samsara",
+    "translation": "The cycle of rebirth and suffering",
+    "description": "The continuous cycle of death and rebirth driven by karma. All beings are caught in samsara until they achieve nibbana (liberation). The quality of one's actions determines the quality of rebirth.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "nibbana",
+    "pali": "nibbana",
+    "translation": "Liberation from the cycle of rebirth and suffering",
+    "description": "The ultimate goal of Buddhist practice. The Burmese term hnjein means 'extinguished.' In practice, most laypeople focus on better rebirth rather than nibbana, which is seen as the domain of advanced practitioners.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos", "vietnam"]
+  },
+  {
+    "term": "bhikkhu",
+    "pali": "bhikkhu",
+    "translation": "Fully ordained male monk",
+    "description": "Male monastic observing 227 rules. Requires declaration as male for ordination, which bars transgender persons (katoey) from full ordination in reformed Theravada traditions.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "bhikkhuni",
+    "pali": "bhikkhuni",
+    "translation": "Fully ordained female monk",
+    "description": "Female monastic observing 311 rules. The ordination lineage is controversial in Theravada Buddhism, where it died out centuries ago. Some movements seek to restore it.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "vinaya",
+    "pali": "vinaya",
+    "translation": "Monastic code of discipline",
+    "description": "The rules governing monastic life. Identifies four genders: purisa (male), itthi (female), ubhatovyanjanaka (intersex), and pandaka (gender-nonconforming). The 227 rules for bhikkhus cover every aspect of conduct.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "samadhi",
+    "pali": "samadhi",
+    "translation": "Concentration; meditative absorption",
+    "description": "One of the three foundations of Theravada practice alongside sila (morality) and panna (wisdom). Developed through meditation practice, particularly Vipassana (insight) meditation.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "panna",
+    "pali": "panna",
+    "translation": "Wisdom; insight",
+    "description": "One of the three foundations of Theravada practice. Experiential understanding of the three marks of existence (impermanence, suffering, no-self), not merely intellectual knowledge.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "parami",
+    "pali": "parami",
+    "translation": "Perfections; ten principle virtues",
+    "description": "Charity, morality, renunciation, knowledge, effort, honesty, forbearance, loving-kindness, equanimity, and resolution. Accumulated across lifetimes, they determine spiritual progress toward enlightenment.",
+    "countries": ["thailand", "myanmar", "cambodia", "laos"]
+  },
+  {
+    "term": "khwan",
+    "pali": null,
+    "translation": "The 32 souls that animate the body; life force",
+    "description": "When some khwan are missing, the result is poor health or low morale. When ALL are missing, the result is death. Children's and women's khwan are most tenuously attached. At death, khwan become phi (spirits).",
+    "countries": ["thailand", "laos"]
+  },
+  {
+    "term": "phi",
+    "pali": null,
+    "translation": "Spirits; ghosts; disembodied life force",
+    "description": "Hungry, restless beings caught between worlds, preying on the weak. Different from ancestral spirits. The prototypical phi hangs around edges of human settlements. Different cultures use different terms: nats (Myanmar), con ma (Vietnam), Preay (Cambodia).",
+    "countries": ["thailand", "laos"]
+  },
+  {
+    "term": "nats",
+    "pali": null,
+    "translation": "Spirits; local spirit beings",
+    "description": "Burmese term for local spirits honored alongside Buddhism. Nat worship is folded into Theravada practice rather than standing in opposition to it. Nat shrines exist throughout Myanmar.",
+    "countries": ["myanmar"]
+  },
+  {
+    "term": "con ma",
+    "pali": null,
+    "translation": "Angry spirits of the dead",
+    "description": "Vietnamese term for dangerous ghosts. Millions were created by the American War, fundamentally shaping the spiritual landscape. Con quy are the most wicked form -- ghouls haunting former bombing sites.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "Neak Ta",
+    "pali": null,
+    "translation": "Guardian spirit; protector of earth and water",
+    "description": "Khmer term for local guardian spirits with shrines found even within Buddhist pagoda precincts. They exercise ruling power over all living beings in their territory.",
+    "countries": ["cambodia"]
+  },
+  {
+    "term": "Preay",
+    "pali": null,
+    "translation": "The most vengeful ghost in Khmer animist tradition",
+    "description": "Pronunciation close to Prei (forest/jungle). Associated with the terrifying wilderness. Displaced Preay from deforested areas can haunt new developments.",
+    "countries": ["cambodia"]
+  },
+  {
+    "term": "tsao moeng",
+    "pali": null,
+    "translation": "Village guardian spirit",
+    "description": "Shan local deity with a shrine at the village edge. Described as 'half Wild West sheriff and half rough-and-ready gangster.' Source of healing power and community protection. Choosing healers and enforcing sobriety oaths.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "saraa",
+    "pali": null,
+    "translation": "Traditional healer",
+    "description": "Chosen by the tsao moeng, not self-selected. Uses Buddhist scripture and spirit power for healing. Performs pat phi (exorcism) and haung khwan (soul-calling) ceremonies.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "pat phi",
+    "pali": null,
+    "translation": "Sweeping away the spirit; exorcism ritual",
+    "description": "First half of traditional Shan healing. Uses Buddhist scripture, a sword, and offerings to lure phi away from the patient. Followed by haung khwan (soul-calling).",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "haung khwan",
+    "pali": null,
+    "translation": "Calling the souls; soul-retrieval ritual",
+    "description": "Second half of healing. Uses a crossbow with a balanced egg, and offerings to entice khwan (souls) back into the body. The egg falling repeatedly indicates the khwan wants something specific.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "mae chii",
+    "pali": null,
+    "translation": "Buddhist nuns; women who take eight or ten precepts",
+    "description": "Women (and sometimes katoey) who shave their heads and wear white robes. Subordinate monastic status compared to bhikkhus. Also called mae khaao in Shan communities.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "katoey",
+    "pali": null,
+    "translation": "Transgender person",
+    "description": "Thai term for male-to-female transgender persons. Barred from full bhikkhu ordination under reformed Sangha rules. Some seek alternative monastic spaces like Dantham nunnery in Chiang Dao.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "tam giao",
+    "pali": null,
+    "translation": "Triple religion: syncretic Taoism, Buddhism, and Confucianism",
+    "description": "Vietnamese religious worldview that is not institutionalized -- people do not identify as adherents but hold a generalized worldview combining all three traditions with indigenous animism.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "ban tho",
+    "pali": null,
+    "translation": "Family ancestor altar",
+    "description": "Found in virtually every Vietnamese home regardless of religious affiliation. Displays photos of deceased family members, incense, flowers, and fruit offerings. Honored on the 1st and 15th of each lunar month.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "nha tang",
+    "pali": null,
+    "translation": "Paper mansion burned as offering to ancestors",
+    "description": "Elaborate paper replicas of houses, cars, electronics, and money commissioned for burning. The items are believed to reach the ancestors in the otherworld (the gioi khac) as real objects.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "duyen",
+    "pali": null,
+    "translation": "Predestined karmic affinity or bond",
+    "description": "Vietnamese concept explaining why people feel drawn to particular temples, teachers, or places. Understood as consequences of past-life relationships causing predestined inclinations.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "phrasat",
+    "pali": null,
+    "translation": "Palace offering; miniature house for the deceased",
+    "description": "The definitive Lao ritual to establish the deceased as an ancestor. Indispensable but extremely costly. Contains everything the deceased might need in muang savane (paradise). Some families wait years to afford it.",
+    "countries": ["laos"]
+  },
+  {
+    "term": "acan",
+    "pali": null,
+    "translation": "Lay leader; former monk who serves as ritual specialist",
+    "description": "The temple's ritual specialist in Lao tradition who knows both Buddhist texts and local customs. Leads funeral ceremonies and other major rituals.",
+    "countries": ["laos"]
+  },
+  {
+    "term": "sompoi",
+    "pali": null,
+    "translation": "Purifying ritual water",
+    "description": "Made with Acacia concinna pods and blessed by monks. Used throughout Lao funeral ceremonies for purification of the body, the living, and the mourning space.",
+    "countries": ["laos"]
+  },
+  {
+    "term": "dhammayietra",
+    "pali": "dhammayietra",
+    "translation": "Pilgrimage for truth; peace walk",
+    "description": "Cambodian Buddhist peace walk tradition founded by Maha Ghosananda in 1992. Walks traversed conflict zones and landmined areas as mindful walking practice, combining Buddhist healing with post-genocide recovery. Continued until 2018.",
+    "countries": ["cambodia"]
+  },
+  {
+    "term": "thout kyar",
+    "pali": null,
+    "translation": "Keeping faithful; core Plong Karen moral ideal",
+    "description": "Faithfulness to self, others, community, and land. Grounded in communal reciprocity. Stands in tension with the temptations of dirty money from gambling, drugs, and predatory lending.",
+    "countries": ["myanmar"]
+  },
+  {
+    "term": "nalehmu",
+    "pali": null,
+    "translation": "Mutual understanding; networks of reciprocity and trust",
+    "description": "Burmese concept of personalized networks that helped ordinary people survive military rule. Essential social infrastructure in a country where formal institutions are unreliable.",
+    "countries": ["myanmar"]
+  },
+  {
+    "term": "yaat nam",
+    "pali": null,
+    "translation": "Water-pouring merit-sharing ritual",
+    "description": "Pouring water onto the ground while a monk chants, cosmically crediting merit to the deceased. The moment of pouring is when the transfer occurs. Used at funerals and memorial ceremonies.",
+    "countries": ["thailand", "laos"]
+  },
+  {
+    "term": "wan sin",
+    "pali": null,
+    "translation": "Precept days; Buddhist sabbath on full and new moon",
+    "description": "Days when devout laypeople observe additional precepts at the temple. Temple sleepers stay overnight, keeping eight precepts, meditating, and progressively withdrawing from worldly life.",
+    "countries": ["thailand", "laos"]
+  },
+  {
+    "term": "kotsaa",
+    "pali": null,
+    "translation": "Annual second funeral / merit-making ceremony",
+    "description": "Held in the 11th lunar month for all who died in the previous year. Spirits of the recently dead return to collect offerings. Gambling at kotsaa ceremonies is a longstanding tradition.",
+    "countries": ["thailand"]
+  },
+  {
+    "term": "Quan Am",
+    "pali": null,
+    "translation": "Guanyin; Bodhisattva of Compassion",
+    "description": "Important devotional figure in Vietnamese Mahayana Buddhism. Devotees pray to Quan Am for health, academic success, romantic partnership, and general well-being at pagodas on the 1st and 15th of each lunar month.",
+    "countries": ["vietnam"]
+  },
+  {
+    "term": "Prei",
+    "pali": null,
+    "translation": "Forest; jungle; horrifying yet powerful space",
+    "description": "Khmer concept of the wild forest as a space that is both terrifying and sacred. Associated with ghosts (Preay) and contrasted with Srok (ordered village space). The Buddha's life was intimately connected to forests.",
+    "countries": ["cambodia"]
+  },
+  {
+    "term": "Srok",
+    "pali": null,
+    "translation": "Village; community; livable ordered space",
+    "description": "Khmer concept of the ordered, civilized space where things are supposed to be in proper arrangement. Contrasted with Prei (wild, dangerous forest).",
+    "countries": ["cambodia"]
+  }
+]

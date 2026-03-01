@@ -1,0 +1,38 @@
+name: BuddhaLife
+options:
+  bundleIdPrefix: com.buddhalife
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+settings:
+  SWIFT_VERSION: "6.0"
+  INFOPLIST_KEY_UILaunchScreen_Generation: true
+  INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+  INFOPLIST_KEY_UIStatusBarStyle: ""
+  INFOPLIST_KEY_CFBundleDisplayName: BuddhaLife
+targets:
+  BuddhaLife:
+    type: application
+    platform: iOS
+    sources:
+      - path: BuddhaLife
+        excludes:
+          - "Resources/**"
+          - "Preview Content/**"
+    resources:
+      - path: BuddhaLife/Resources
+      - path: BuddhaLife/Assets.xcassets
+      - path: BuddhaLife/PrivacyInfo.xcprivacy
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.buddhalife.app
+      MARKETING_VERSION: "1.0.0"
+      CURRENT_PROJECT_VERSION: "1"
+      TARGETED_DEVICE_FAMILY: "1"
+      INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.simulation-games"
+      SWIFT_STRICT_CONCURRENCY: complete
+    info:
+      path: BuddhaLife/Info.plist
+      properties:
+        UILaunchScreen:
+          UIColorName: AccentColor

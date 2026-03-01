@@ -1,0 +1,752 @@
+[
+  {
+    "id": "mm_childhood_001",
+    "title": "The Monastery School",
+    "country": "myanmar",
+    "lifeStage": "childhood",
+    "minAge": 5,
+    "maxAge": 11,
+    "karmaRange": [-100, 100],
+    "description": "In your neighborhood, the monastery is the first sound of morning -- monks' sermons broadcast from loudspeakers before dawn, a sonic tapestry woven into daily life. Your parents cannot afford private school. The monastery offers free education: reading, writing, arithmetic, and Buddhist scripture. But the government school teaches English and science.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Attend the monastery school and receive a traditional Buddhist education",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 10, "education": 6 },
+          "relationships": [{ "target": "monks", "change": 8 }]
+        },
+        "outcomeText": "You learn to read Burmese script alongside Pali chants, absorbing the vocabulary of Buddhism that runs through Burmese like a river through soil. You memorize the awgatha morning prayer and daily metta recitations. The monks are strict but kind. By the time you leave, you can read scripture, recite blessings at ceremonies, and understand the framework of merit and karma that governs your world."
+      },
+      {
+        "id": "b",
+        "text": "Convince your parents to sacrifice for the government school",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 1, "education": 10 },
+          "relationships": [{ "target": "parents", "change": -3 }]
+        },
+        "outcomeText": "Your parents skip meals to pay school fees. You learn English, basic science, and mathematics. The world beyond Myanmar begins to open in your imagination. But you stumble over Pali terms at temple ceremonies, and the monks notice you cannot recite the standard blessings. In a country where Buddhist vocabulary is the foundation of daily speech, this gap will follow you."
+      },
+      {
+        "id": "c",
+        "text": "Attend both -- monastery in the morning, government school in the afternoon",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 5, "education": 8 },
+          "relationships": [{ "target": "parents", "change": 3 }]
+        },
+        "outcomeText": "You are exhausted, rising before dawn for monastery lessons and studying English by lamplight at night. But you become fluent in both worlds -- the Pali-rich spiritual vocabulary and the English-language modernity pressing in from outside. The double education is grueling but gives you something rare: the ability to move between Buddhist Myanmar and the globalizing world."
+      },
+      {
+        "id": "d",
+        "text": "Attend the monastery school but steal supplies and food to sell at the market",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -4, "spiritualDev": -5, "socialStanding": -8, "wealth": 3 },
+          "relationships": [{ "target": "monks", "change": -12 }, { "target": "parents", "change": -8 }]
+        },
+        "outcomeText": "The monastery feeds you, teaches you, gives you a place to sleep -- and you repay it by stuffing chalk, candles, and rice into your bag to sell at the market stall down the road. The coins feel good in your hand until the head monk summons you. He does not shout; he simply asks you to return what you took and sit with him in silence. The silence is worse than any punishment. Your parents are called. Your mother covers her face. In Myanmar, a monastery is not just a school -- it is the heart of the community's spiritual life, and you have stolen from its body. The other children whisper about you for months."
+      }
+    ],
+    "tags": ["education", "monastery", "childhood", "language", "pali"],
+    "source": "Knowledge base: Myanmar Buddhist institutions -- monastery as sonic tapestry"
+  },
+  {
+    "id": "mm_childhood_002",
+    "title": "The Nat Shrine Offering",
+    "country": "myanmar",
+    "lifeStage": "childhood",
+    "minAge": 6,
+    "maxAge": 12,
+    "karmaRange": [-100, 100],
+    "description": "Your grandmother takes you to the nat shrine at the edge of the village. Nats -- the local spirits -- have been honored here alongside Buddhism for centuries. She wants you to make an offering of coconut, banana, and flowers. Your school friend says nats are superstition and 'real Buddhism' does not include them.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Make the offering with your grandmother, honoring the nats respectfully",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 4, "health": 2 },
+          "relationships": [{ "target": "grandmother", "change": 8 }]
+        },
+        "outcomeText": "You place the coconut and bananas before the nat figure while your grandmother murmurs prayers. The air feels charged. She tells you the nats protect the village and must be honored -- neglecting them invites misfortune. Buddhism and spirit worship are not separate in Myanmar; they are woven into one fabric. You feel the truth of this in the warm pressure of your grandmother's hand on your shoulder."
+      },
+      {
+        "id": "b",
+        "text": "Refuse -- tell your grandmother that you only pray to the Buddha",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": 2, "health": 0 },
+          "relationships": [{ "target": "grandmother", "change": -6 }]
+        },
+        "outcomeText": "Your grandmother's face falls. She says quietly that the nats were here before the temples, and they notice who forgets them. That night you have an uneasy sleep. The monks at the monastery would approve of your orthodoxy, but your grandmother's silence at dinner is its own punishment. In Myanmar, the line between Buddhism and nat worship is not a line at all -- it is the air you breathe."
+      },
+      {
+        "id": "c",
+        "text": "Make the offering but secretly pray to the Buddha instead",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 2, "spiritualDev": 3, "health": 1 },
+          "relationships": [{ "target": "grandmother", "change": 3 }]
+        },
+        "outcomeText": "You go through the motions at the shrine while silently reciting metta prayers. Your grandmother seems satisfied. You have found a child's compromise -- honoring the form while directing your heart elsewhere. Whether the nats notice the difference is another question entirely."
+      },
+      {
+        "id": "d",
+        "text": "Grab the coconut and bananas from the shrine and eat them yourself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -6, "spiritualDev": -5, "socialStanding": -7 },
+          "relationships": [{ "target": "grandmother", "change": -12 }, { "target": "community", "change": -8 }]
+        },
+        "outcomeText": "You are hungry, and the fruit looks better than anything at home. While your grandmother bows her head in prayer, you snatch the bananas from the offering tray and stuff one into your mouth. Your grandmother's scream freezes your blood. She grabs your arm so hard it hurts, her eyes wild with fear -- not anger, but genuine terror. You have eaten food meant for the nats. The spirits are not abstract to her; they are real, powerful, and vengeful. That night you wake drenched in sweat from nightmares. Your grandmother spends the next three days at the shrine making amends, burning incense and begging the nats to forgive a foolish child. The village aunties shake their heads: what kind of child steals from spirits?"
+      }
+    ],
+    "tags": ["nats", "spirits", "syncretism", "grandmother", "childhood"],
+    "source": "Knowledge base: Myanmar distinctive practices -- nats folded into Theravada practice"
+  },
+  {
+    "id": "mm_adolescence_001",
+    "title": "The Shinbyu Ceremony",
+    "country": "myanmar",
+    "lifeStage": "adolescence",
+    "minAge": 10,
+    "maxAge": 16,
+    "karmaRange": [-100, 100],
+    "description": "Your family is preparing for your shinbyu -- your novice ordination. In Myanmar, every Buddhist boy is expected to spend time in the monastery, wearing saffron robes and begging for alms. It is the single greatest act of merit a son can generate for his parents, especially his mother. The ceremony will be lavish or modest depending on your family's resources.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Enter the ordination with deep sincerity, committing to learn and practice",
+        "effects": {
+          "karma": { "merit": 12, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 12, "education": 5 },
+          "relationships": [{ "target": "parents", "change": 10 }, { "target": "monks", "change": 8 }]
+        },
+        "outcomeText": "You shave your head and don the saffron robe, becoming a koyin -- a novice monk. The 75 training rules govern every aspect of your life: how you eat, walk, sit, and speak. You beg for alms at dawn, carrying your bowl through the neighborhood streets. The food tastes different when earned through humility. Your mother's face at the ceremony was the happiest you have ever seen -- this merit goes directly to her account. You stay for three months and emerge changed."
+      },
+      {
+        "id": "b",
+        "text": "Go through with it but count the days until you can leave",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 0, "spiritualDev": 4, "education": 3 },
+          "relationships": [{ "target": "parents", "change": 5 }]
+        },
+        "outcomeText": "You ordain because it is expected. The monastery is boring -- no phone, no music, no meals after noon. You sneak naps during meditation periods and daydream during chanting. But even reluctant novices generate merit for their mothers, and the basic discipline of monastery life leaves its mark. When you return to the world, you appreciate things you took for granted."
+      },
+      {
+        "id": "c",
+        "text": "Ask to delay the ordination -- you want to stay in school",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 3 },
+          "stats": { "happiness": 2, "spiritualDev": -3, "education": 5 },
+          "relationships": [{ "target": "parents", "change": -8 }]
+        },
+        "outcomeText": "Your father is furious. Your mother says nothing, which is worse. In Myanmar, a son who delays ordination delays his mother's greatest source of merit. The neighborhood notices. At ceremonies, your mother sits silently while other women boast about their ordained sons. The school benefit is real, but the social cost is steep. People say: 'He values books over his mother's next life.'"
+      },
+      {
+        "id": "d",
+        "text": "Cause a scene at the ceremony -- mock the rituals and refuse to have your head shaved",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 9 },
+          "stats": { "happiness": -8, "spiritualDev": -7, "socialStanding": -10 },
+          "relationships": [{ "target": "parents", "change": -15 }, { "target": "monks", "change": -10 }, { "target": "community", "change": -10 }]
+        },
+        "outcomeText": "When the razor approaches your head, you jerk away and shout that you do not believe in any of this. You call the chanting boring and the robes ugly. The hall goes silent. Your mother's face crumbles -- this was to be the proudest moment of her life, the moment her son generates the greatest merit she will ever receive. Your father cannot meet anyone's eyes. The monks set down the razor without a word. Guests who traveled hours to witness your ordination file out in stunned silence. In Myanmar, disrupting a shinbyu is not teenage rebellion -- it is a devastation. Your mother's merit, your family's honor, your community's investment of time and resources -- all destroyed in a single tantrum. For years afterward, your mother flinches when other women discuss their sons' ordinations."
+      }
+    ],
+    "tags": ["shinbyu", "ordination", "novice", "merit", "mother", "coming-of-age"],
+    "source": "Knowledge base: Myanmar ordination practices and merit-power nexus"
+  },
+  {
+    "id": "mm_adolescence_002",
+    "title": "The Metta Recitation Competition",
+    "country": "myanmar",
+    "lifeStage": "adolescence",
+    "minAge": 12,
+    "maxAge": 17,
+    "karmaRange": [-100, 100],
+    "description": "Your monastery is holding a metta recitation competition. Students must recite loving-kindness verses perfectly in Pali. The winner earns their family great honor and a scholarship to continue Buddhist studies. You have been practicing for weeks, but a rival student has a photographic memory.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Practice relentlessly and compete with your full effort",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 6, "education": 5 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "You recite the metta verses with feeling, even if your pronunciation is not flawless. The judges note your sincerity. You do not win the competition, but the head monk pulls you aside afterward: 'The point of metta is not perfection in Pali. It is the cultivation of loving-kindness in the heart. You understood that.' The scholarship goes to your rival, but the monk's words stay with you longer."
+      },
+      {
+        "id": "b",
+        "text": "Concede gracefully and support your rival's performance",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 7, "socialStatus": 3 },
+          "relationships": [{ "target": "peers", "change": 5 }]
+        },
+        "outcomeText": "You help your rival practice, correcting their tone and pace. When they win, you clap genuinely. The monks observe this with approval -- equanimity in the face of another's success is a parami, a perfection to be cultivated. Your rival becomes your friend. You have planted merit not through winning but through generosity of spirit."
+      },
+      {
+        "id": "c",
+        "text": "Try to sabotage your rival by disrupting their practice",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -5, "spiritualDev": -6, "socialStatus": -8 },
+          "relationships": [{ "target": "peers", "change": -10 }]
+        },
+        "outcomeText": "You hide your rival's study materials and spread a rumor that they cheat. But the monastery is a small world. A senior monk discovers your deception and calls you before the community. The punishment is severe: extra duties, a public apology, and the deep shame of having violated sila in a sacred space. The metta you were supposed to be reciting -- loving-kindness for all beings -- has never felt more hollow."
+      }
+    ],
+    "tags": ["metta", "recitation", "competition", "monastery", "pali"],
+    "source": "Knowledge base: Myanmar distinctive practices -- morning metta recitations"
+  },
+  {
+    "id": "mm_youngadult_001",
+    "title": "The Drowning Man Pamphlet",
+    "country": "myanmar",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "You are a Buddhist passenger on a boat traveling down the Irrawaddy River. A violent storm breaks out, waves crashing over the bow. A Christian stranger begins handing out pamphlets showing a man drowning in dark water, with a hand reaching down from above. The imagery feels like a terrible omen -- a picture of drowning, distributed while you are literally on water in a storm.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Take the pamphlet as a bad omen and demand the stranger stop distributing them",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -3, "spiritualDev": 0, "socialStatus": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You snatch the pamphlets and throw them overboard, shouting that showing pictures of drowning on a boat in a storm will bring disaster. Other passengers nod vigorously. The stranger retreats, chastened. The storm passes, and the boat arrives safely. You cannot say whether the pamphlets had spiritual power, but the fear they caused was real. In Myanmar, images carry weight -- a picture of death invites death."
+      },
+      {
+        "id": "b",
+        "text": "Accept the pamphlet politely but feel deeply disturbed",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 0 },
+          "stats": { "happiness": -4, "spiritualDev": 1 },
+          "relationships": []
+        },
+        "outcomeText": "You take the pamphlet with both hands, as politeness demands, but your stomach churns. The drowning man's face could be yours. You fold it into your bag and try to recite metta under your breath. The storm passes. At home, you read the pamphlet: it speaks of che zu daw -- grace -- and a God called paya, the same word Buddhists use for the Buddha. The vocabulary is familiar; the message is foreign. You are left unsettled."
+      },
+      {
+        "id": "c",
+        "text": "Read it with genuine curiosity -- what does this other religion offer?",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 1, "spiritualDev": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You read the pamphlet carefully. It describes suffering (dukkha -- a Buddhist word) and says that merit (kutho -- another Buddhist word) is never enough. Instead, it offers 'grace' from a God who saves you freely. The theology fascinates you, though you notice how it borrows Buddhist language to sell a non-Buddhist message. The encounter strengthens your Buddhist identity by forcing you to articulate what you actually believe. The storm passes as you read."
+      },
+      {
+        "id": "d",
+        "text": "Shove the stranger and throw all their pamphlets into the river",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 7 },
+          "stats": { "happiness": -5, "spiritualDev": -5, "socialStanding": -6 },
+          "relationships": [{ "target": "community", "change": -5 }]
+        },
+        "outcomeText": "Rage and superstitious fear merge into something ugly. You grab the stranger by the collar, scatter their pamphlets across the deck, and hurl the stack overboard into the churning river. The stranger stumbles back, shocked. Other passengers stare -- some nod in approval, but an old woman mutters that violence on water angers the nats of the river. The storm intensifies as if in response. When the boat finally docks, you walk off with shaking hands. The metta prayer you recited this morning -- 'may all beings be free from harm' -- echoes in your mind like an accusation. The stranger was foolish, perhaps, but you responded to words with violence. The demerit of that sits heavier than any pamphlet."
+      }
+    ],
+    "tags": ["interfaith", "Christianity", "Irrawaddy", "omen", "storm", "pamphlet"],
+    "source": "Scholar 2 (Edwards -- The Drowning Man tract on the Irrawaddy)"
+  },
+  {
+    "id": "mm_youngadult_002",
+    "title": "Dirty Money and Right Livelihood",
+    "country": "myanmar",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 30,
+    "karmaRange": [-100, 100],
+    "description": "In Karen State, a wealthy thae hti (boss/strongman) offers you a job managing his gambling and money-lending operation. The pay would be ten times what you earn farming rice. Your family owes debts that will take years to repay. The money is ma than shin te paik san -- 'dirty money' -- from gambling, drugs, and debt collection. But it would change your family's life overnight.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the job -- use the money for dana to offset the bad karma",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 8 },
+          "stats": { "happiness": 2, "spiritualDev": -6, "wealth": 15, "socialStatus": -3 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "The money flows. You pay off debts, buy a new roof, and donate generously to the monastery. The monks accept your dana without comment -- the merit of giving is real, even when the source is tainted. But the village Plong Karen elders invoke thout kyar, the ideal of 'keeping faithful' to self and community. You lie awake wondering: can dirty money be laundered through merit? The strongman's world pulls you deeper. 'Temporary' becomes permanent."
+      },
+      {
+        "id": "b",
+        "text": "Refuse -- dirty money brings suffering to you and your family",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 6, "wealth": 0, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 8 }]
+        },
+        "outcomeText": "You tell the thae hti no. He shrugs and moves on -- there are always others willing. Your family's debt persists. Rice farming barely covers expenses. But the elders say you kept faith with the community, with the land, with yourself. The Plong Karen say: 'Money earned from the suffering of others will bring suffering back to you.' Your poverty is honest. Whether that is enough is another question."
+      },
+      {
+        "id": "c",
+        "text": "Ask the village monastery's monks for advice before deciding",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 4, "socialStatus": 3 },
+          "relationships": [{ "target": "monks", "change": 5 }]
+        },
+        "outcomeText": "The senior monk listens carefully. He does not condemn the thae hti directly -- the strongman funds the monastery, after all. But he quotes the Buddha on samma-ajiva (right livelihood) and tells you a story about a man who gained the world but lost his way. He suggests a job at the monastery school instead -- less money, more merit. The path is clear, even if it is harder."
+      },
+      {
+        "id": "d",
+        "text": "Accept temporarily to pay off debts, planning to return to farming afterward",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 5 },
+          "stats": { "happiness": 3, "spiritualDev": -3, "wealth": 8 },
+          "relationships": [{ "target": "family", "change": 3 }]
+        },
+        "outcomeText": "You tell yourself: just until the debts are paid. Six months at most. But the money is intoxicating, the lifestyle seductive. Six months becomes a year. The thae hti's world has its own gravity -- once you enter his orbit, leaving requires force. Your debts are paid, but new debts of loyalty and entanglement have taken their place."
+      }
+    ],
+    "tags": ["dirty-money", "right-livelihood", "strongman", "karen", "gambling", "thout-kyar"],
+    "source": "Scholar 3 (Chambers -- unclean money and the strongman economy in Karen State)"
+  },
+  {
+    "id": "mm_youngadult_003",
+    "title": "The Saffron Revolution",
+    "country": "myanmar",
+    "lifeStage": "young_adulthood",
+    "minAge": 18,
+    "maxAge": 35,
+    "karmaRange": [-100, 100],
+    "description": "The military government has raised fuel prices overnight, devastating ordinary families. Monks across the country have begun marching in protest, turning their alms bowls upside down -- a devastating symbolic act that refuses to accept offerings from the military, effectively excommunicating them from the merit economy. Your monastery is debating whether to join.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the monks in peaceful protest, carrying your upturned bowl through the streets",
+        "effects": {
+          "karma": { "merit": 10, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 8, "socialStatus": 10, "health": -5 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You march through the streets of your city with thousands of other monks, saffron robes flowing. The overturned bowls speak louder than any speech: the military cannot buy merit if the Sangha refuses to receive. Civilians line the streets weeping, pressing water bottles into marchers' hands. Then the soldiers come. Tear gas, batons, gunfire. You are beaten and dragged to detention. But the image of monks marching becomes the symbol of Myanmar's struggle for democracy."
+      },
+      {
+        "id": "b",
+        "text": "Support the movement privately but avoid the streets",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 1 },
+          "stats": { "happiness": -2, "spiritualDev": 2, "socialStatus": 0 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You stay inside the monastery but donate food and medicine to those who march. When soldiers raid the monastery, you claim you were meditating and knew nothing. The cowardice gnaws at you, but you are alive and uninjured. After the crackdown, the surviving marchers are heroes. You are merely surviving. In a country where the military has crushed dissent for decades, survival is not nothing."
+      },
+      {
+        "id": "c",
+        "text": "Argue that monks should stay out of politics and focus on the dhamma",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 3 },
+          "stats": { "happiness": 0, "spiritualDev": 3, "socialStatus": -5 },
+          "relationships": [{ "target": "community", "change": -5 }]
+        },
+        "outcomeText": "You quote the Vinaya: monks should not engage in political activities. The senior monks listen politely but the younger monks are furious. 'When the people cannot afford rice because of the generals, that IS our concern,' one shouts. The debate splits the monastery. You are technically correct about the rules, but the moral weight of the moment overwhelms technicalities. History will not remember the monks who argued procedure while their country burned."
+      }
+    ],
+    "tags": ["saffron-revolution", "protest", "military", "politics", "courage"],
+    "source": "Knowledge base: Myanmar political context -- military rule and Buddhist resistance"
+  },
+  {
+    "id": "mm_adulthood_001",
+    "title": "The Strongman's Donation",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "A wealthy local figure -- a former militia commander known to control gambling, drugs, and predatory lending -- offers to sponsor a major pagoda celebration in your village. He will fund the ordination of several local boys as novice monks, build a new meditation hall, and host a feast for five hundred people. Everyone knows where the money comes from.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Accept the sponsorship gratefully -- his dana generates merit for everyone",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 3 },
+          "stats": { "happiness": 3, "spiritualDev": -2, "socialStatus": 5, "wealth": 3 },
+          "relationships": [{ "target": "community", "change": 3 }]
+        },
+        "outcomeText": "The pagoda celebration is magnificent. Boys ordain in new saffron robes, the meditation hall gleams, and the feast feeds hundreds. The strongman beams, photographed beside senior monks. His lavish dana is simultaneously praised and critiqued -- 'merit is power,' and this donation consolidates his power in the community. You are now part of his patronage network. The saboung kachar (generous benefactor) and the thae hti (ruthless boss) are often the same person."
+      },
+      {
+        "id": "b",
+        "text": "Politely decline -- dirty money will corrupt the merit of the entire ceremony",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -3, "spiritualDev": 6, "socialStatus": -2, "wealth": -2 },
+          "relationships": [{ "target": "community", "change": -3 }]
+        },
+        "outcomeText": "You voice your objection publicly. Some villagers agree; others are furious -- without the strongman's money, there will be no pagoda celebration this year, no ordinations for poor boys, no feast. The strongman is offended, and in Karen State, offending a powerful man has consequences. But the Plong Karen elders quote the concept of thout kyar: keeping faith with right livelihood means refusing what is offered if the source is poisoned."
+      },
+      {
+        "id": "c",
+        "text": "Accept the celebration but maintain personal distance from the sponsor",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 1 },
+          "stats": { "happiness": 1, "spiritualDev": 0, "socialStatus": 2 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You attend the celebration and enjoy the merit-making but avoid the VIP area where the strongman holds court. You eat the food but do not accept personal gifts. It is a tightrope walk -- benefiting from his generosity without endorsing its source. The compromise satisfies no one fully but offends no one either. In the moral landscape of Karen State, where sovereignty is fragmented among armed groups, such compromises are how people survive."
+      },
+      {
+        "id": "d",
+        "text": "Volunteer to manage the donation funds and skim a portion for yourself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 10 },
+          "stats": { "happiness": -7, "spiritualDev": -8, "socialStanding": -10, "wealth": 5 },
+          "relationships": [{ "target": "community", "change": -12 }, { "target": "monks", "change": -10 }]
+        },
+        "outcomeText": "You offer to handle the logistics -- purchasing supplies, paying musicians, coordinating the feast -- and quietly divert a cut into your own pocket. The money is already dirty, you reason, so skimming from dirty money is a victimless crime. But when the meditation hall comes in smaller than promised, the senior monk asks to see the accounts. The numbers do not add up. The strongman, who did not become powerful by being careless, sends men to ask questions. You have managed to commit the rare feat of stealing from both the Sangha and a warlord simultaneously. The monks lose faith in you; the strongman marks you as untrustworthy. The community -- which needed that meditation hall -- sees you as someone who stole merit from an entire village. The money in your pocket buys nothing that replaces what you have lost."
+      }
+    ],
+    "tags": ["strongman", "dana", "dirty-money", "merit-power-nexus", "pagoda", "karen"],
+    "source": "Scholar 3 (Chambers -- Saw Eh Klein the Buddhist strongman)"
+  },
+  {
+    "id": "mm_adulthood_002",
+    "title": "The Lottery Sermon",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-50, 100],
+    "description": "The charismatic monk U Thuzana is giving a sermon at the pagoda. Thousands attend. His teachings are profound, but at the end he encodes lottery numbers in Buddhist terminology and numerology. 'Only those with appropriate karma can find the winning number,' he says. Your family is deeply in debt.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Try to decode the numbers and buy a lottery ticket",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 4 },
+          "stats": { "happiness": -2, "spiritualDev": -4, "wealth": -5 },
+          "relationships": []
+        },
+        "outcomeText": "You spend hours poring over the sermon, cross-referencing Buddhist numerology with the monk's cryptic phrases. You buy a ticket with your decoded numbers. You lose. The money you spent on the ticket was money you needed for rice. Gambling contradicts the fifth precept against intoxication -- and gambling itself is an intoxication of hope. The monk's encoded numbers were real, but 'appropriate karma' apparently was not yours."
+      },
+      {
+        "id": "b",
+        "text": "Focus only on the dhamma teachings and ignore the lottery aspect",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 3, "spiritualDev": 8 },
+          "relationships": [{ "target": "monks", "change": 3 }]
+        },
+        "outcomeText": "You listen to U Thuzana's teachings on impermanence and suffering, letting the numerology wash past you. The sermon is genuinely powerful -- the monk's charisma makes ancient truths feel urgent and personal. You leave spiritually nourished. Your debt remains, but your understanding of why suffering exists has deepened. The merit of hearing dhamma is real, and unlike a lottery ticket, it cannot be lost."
+      },
+      {
+        "id": "c",
+        "text": "Attend for devotion and make a modest offering, but avoid the gambling frenzy",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 5, "wealth": -1 },
+          "relationships": [{ "target": "community", "change": 2 }]
+        },
+        "outcomeText": "You sit in the crowd, make your small dana offering, and receive the monk's blessing. Around you, people scribble numbers on their palms and argue about the encoded sequences. You resist the temptation. The debt will be paid through honest work, not through gambling dressed in religious clothing. But you wonder: in a country where merit is power and poverty is karma's judgment, can the desperate really be blamed for hoping?"
+      },
+      {
+        "id": "d",
+        "text": "Pickpocket other devotees while they are absorbed in decoding the sermon",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 8 },
+          "stats": { "happiness": -6, "spiritualDev": -7, "socialStanding": -10, "wealth": 4 },
+          "relationships": [{ "target": "community", "change": -10 }, { "target": "monks", "change": -5 }]
+        },
+        "outcomeText": "The crowd is thousands strong and utterly absorbed -- heads down, scribbling numbers, muttering calculations. Easy pickings. You brush past distracted devotees, fingers finding wallets and loose kyat notes in longyi folds. You collect more in an hour than you earn in a week. Then a grandmother catches your wrist mid-reach, her grip surprisingly strong. She shouts 'thief' and the crowd turns. At a pagoda. During a sermon. Surrounded by people who came seeking the Buddha's wisdom. You are dragged before the monks, who regard you with an expression that is somehow worse than condemnation -- it is pity. Stealing from people at prayer, in a sacred space, during a teaching on karma. The irony is so perfect it could be a parable. You have generated demerit that will echo across lifetimes."
+      }
+    ],
+    "tags": ["lottery", "sermon", "gambling", "charismatic-monk", "debt", "karma"],
+    "source": "Scholar 3 (Chambers -- U Thuzana's lottery sermons)"
+  },
+  {
+    "id": "mm_adulthood_003",
+    "title": "The Buddhist Word Police",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 60,
+    "karmaRange": [-100, 100],
+    "description": "You are a minority Christian in Myanmar. The Sangha Maha Nayaka Committee -- the government-appointed council of senior monks -- has banned non-Buddhists from using approximately 100 Pali-derived words in publications. This includes metta (loving-kindness), dukkha (suffering), and paya -- the word your church uses for God and Buddhists use for the Buddha. Your congregation is confused: how do you speak about your faith in Burmese if the most meaningful words are off-limits?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Comply and develop entirely new Christian vocabulary",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": -5, "spiritualDev": 2, "socialStatus": -3 },
+          "relationships": [{ "target": "community", "change": -2 }]
+        },
+        "outcomeText": "You work with church leaders to create new terms that avoid the banned Pali words. The result is technically legal but barely comprehensible -- your congregation struggles with unfamiliar vocabulary for concepts they have expressed in Buddhist-derived language their entire lives. The Burmese language is saturated with Pali; stripping it out is like removing the bones from a body. But you are safe from prosecution."
+      },
+      {
+        "id": "b",
+        "text": "Continue using the terms discreetly, hoping authorities will not notice",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": 4, "socialStatus": 0 },
+          "relationships": [{ "target": "congregation", "change": 5 }]
+        },
+        "outcomeText": "You print your church materials using the familiar words and distribute them quietly. For now, the Press Scrutiny Board overlooks your small congregation. But you live with the knowledge that any neighbor's complaint could bring a knock at the door. In Myanmar, where the military used Buddhism as a tool of state-building, minority religions exist on the state's sufferance."
+      },
+      {
+        "id": "c",
+        "text": "Adopt a middle path -- 'domesticate' some terms while 'foreignizing' others",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 5, "socialStatus": 1 },
+          "relationships": [{ "target": "congregation", "change": 3 }]
+        },
+        "outcomeText": "You keep some Buddhist-derived terms that have become genuinely Burmese (like 'suffering' and 'compassion') while introducing foreign alternatives for the most contested words. The church develops a bilingual voice -- part Burmese, part imported. The oscillation between 'domesticating' and 'foreignizing' the gospel becomes your congregation's distinctive character. It is imperfect, but it is honest translation work."
+      },
+      {
+        "id": "d",
+        "text": "Challenge the ruling publicly as religious censorship",
+        "effects": {
+          "karma": { "merit": 5, "demerit": 3 },
+          "stats": { "happiness": -8, "spiritualDev": 3, "socialStatus": -5, "health": -5 },
+          "relationships": [{ "target": "congregation", "change": 8 }]
+        },
+        "outcomeText": "You write a letter to the press arguing that words belong to everyone who speaks the language. The response is swift: police visit your church, your materials are confiscated, and you receive a formal warning. In Myanmar's political context, challenging religious authorities backed by the military is an act of extraordinary courage -- or extraordinary recklessness. Your congregation is inspired and terrified in equal measure."
+      }
+    ],
+    "tags": ["language", "censorship", "interfaith", "Christianity", "pali", "religious-freedom"],
+    "source": "Scholar 2 (Edwards -- state regulation of religious language in Myanmar)"
+  },
+  {
+    "id": "mm_adulthood_004",
+    "title": "The Evangelist at Your Door",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 30,
+    "maxAge": 70,
+    "karmaRange": [0, 100],
+    "description": "A young Christian woman knocks on your door in peri-urban Yangon. She speaks fluently about suffering (dukkha), how merit (kutho) is never enough to escape samsara, and how grace (che zu daw) from Jesus can deliver you to 'everlasting heaven.' She uses Buddhist vocabulary but her message is clearly Christian. Your grandchild watches with wide eyes.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Deflect politely: 'All religions are the same -- tu tu'",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 0 },
+          "stats": { "happiness": 2, "spiritualDev": 1 },
+          "relationships": []
+        },
+        "outcomeText": "You smile and nod, offering her a glass of water and the tu tu response that deflects all religious conversations in Myanmar: 'All roads lead to the same mountain.' The evangelist is frustrated -- she has heard this dismissal a thousand times. But for you, it is not dismissal; it is genuine equanimity. The Buddhist ability to absorb and deflect without anger is itself a spiritual practice. She leaves politely. You return to your afternoon metta recitation."
+      },
+      {
+        "id": "b",
+        "text": "Engage seriously with the theological differences between merit and grace",
+        "effects": {
+          "karma": { "merit": 3, "demerit": 0 },
+          "stats": { "happiness": 1, "spiritualDev": 6 },
+          "relationships": []
+        },
+        "outcomeText": "You invite her to sit and ask her to explain: if grace is free, why does anyone need to be good? If merit does not matter, what motivates moral behavior? She quotes scripture; you quote the dhamma. The conversation becomes genuinely interesting. Your grandchild listens, absorbing the fact that different people believe different things -- a valuable lesson in multi-religious Myanmar. Neither of you converts the other, but both leave understanding something new."
+      },
+      {
+        "id": "c",
+        "text": "Become offended that she is appropriating Buddhist terms and tell her firmly to stop",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -2, "spiritualDev": -1, "socialStatus": 2 },
+          "relationships": []
+        },
+        "outcomeText": "You tell her that paya means the Buddha, not her God, and that using kutho to describe Christian virtue is theft of sacred language. She retreats, startled. Your grandchild asks: 'Why was she using our words?' You explain the Sangha Maha Nayaka's ruling and the long history of Christian missionaries using Buddhist vocabulary to convert people. The defensiveness is understandable in a country where Buddhism and national identity are intertwined."
+      },
+      {
+        "id": "d",
+        "text": "Invite her to visit the monastery with you instead",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 5, "socialStatus": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You reverse the encounter: 'Before you tell me about your faith, come see mine.' She hesitates, then agrees. At the monastery, monks chant the morning metta. The evangelist sits silently, clearly moved by the peaceful atmosphere. She asks questions about meditation. By the end of the visit, she has not converted, but she understands something about Buddhism that pamphlets never taught her. You have demonstrated Buddhist confidence through hospitality, not argument."
+      }
+    ],
+    "tags": ["interfaith", "Christianity", "evangelism", "language", "merit-vs-grace"],
+    "source": "Scholar 2 (Edwards -- Daw Than Than's encounter with evangelists)"
+  },
+  {
+    "id": "mm_adulthood_005",
+    "title": "The Pagoda on Christian Land",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 25,
+    "maxAge": 55,
+    "karmaRange": [-100, 100],
+    "description": "In your Karen State village, a charismatic Buddhist monk has begun building a pagoda on land traditionally used by the Christian community. He claims the area has 'auspicious energy' and that a pagoda will protect the entire village. The Christian families say this is Buddhist revivalism -- an attempt to assert dominance over their community. Tension is rising.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Support the pagoda construction -- Buddhist sacred architecture benefits everyone",
+        "effects": {
+          "karma": { "merit": 4, "demerit": 3 },
+          "stats": { "happiness": 1, "spiritualDev": 2, "socialStatus": 3 },
+          "relationships": [{ "target": "buddhist_community", "change": 5 }, { "target": "christian_community", "change": -8 }]
+        },
+        "outcomeText": "You donate labor and materials. The pagoda rises, gleaming white against the green hills. Buddhist families celebrate. But Christian families watch in bitter silence -- for them, this is not sacred architecture but territorial conquest. The monk's charisma masks a harder truth: in Karen State's fractured landscape, religious buildings are political statements. The pagoda claims this space for Buddhism."
+      },
+      {
+        "id": "b",
+        "text": "Oppose the construction and advocate for interfaith dialogue",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 1 },
+          "stats": { "happiness": -2, "spiritualDev": 5, "socialStatus": -2 },
+          "relationships": [{ "target": "buddhist_community", "change": -5 }, { "target": "christian_community", "change": 8 }]
+        },
+        "outcomeText": "You speak up at the village meeting, arguing that sacred space should not be claimed at another community's expense. The monk is displeased; his followers accuse you of being a Buddhist in name only. But the Christian families express deep gratitude, and some elders from both communities begin talking. In Karen State, where ethnic armed organizations and the military play religion against religion, ordinary people who build bridges are rare and precious."
+      },
+      {
+        "id": "c",
+        "text": "Stay silent and hope the situation resolves itself",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 2 },
+          "stats": { "happiness": -3, "spiritualDev": -1 },
+          "relationships": []
+        },
+        "outcomeText": "You avoid the controversy. The pagoda is built; the Christian families seethe; the village fractures along religious lines. Your silence is complicity in the eyes of one side and cowardice in the eyes of the other. In Karen State, neutrality is itself a position -- and not always a safe one."
+      }
+    ],
+    "tags": ["interfaith", "karen-state", "pagoda", "religious-tension", "territory"],
+    "source": "Knowledge base: Myanmar -- U Thuzana building pagodas in Christian and Muslim compounds"
+  },
+  {
+    "id": "mm_adulthood_006",
+    "title": "The Coup",
+    "country": "myanmar",
+    "lifeStage": "adulthood",
+    "minAge": 18,
+    "maxAge": 65,
+    "karmaRange": [-100, 100],
+    "description": "February 1, 2021. You wake to find soldiers in the streets and the phone network cut. The military has seized power in a coup, arresting Aung San Suu Kyi and other elected leaders. Your monastery is debating how to respond. The memory of 2007's Saffron Revolution -- when monks marched and were brutally suppressed -- hangs heavy. Neighbors are banging pots and pans in protest from their balconies.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Join the Civil Disobedience Movement and refuse to cooperate with the military government",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -5, "spiritualDev": 5, "socialStatus": 8, "health": -8 },
+          "relationships": [{ "target": "community", "change": 10 }]
+        },
+        "outcomeText": "You refuse to pay taxes, boycott military-owned businesses, and join street protests. The risk is extreme: soldiers fire live ammunition into crowds, arrest dissenters, and raid monasteries at night. You rely on nalehmu -- the networks of mutual understanding and trust that have helped Myanmar's people survive decades of military rule. Every day is dangerous. But the movement is massive, and for the first time, the entire country stands together."
+      },
+      {
+        "id": "b",
+        "text": "Keep your head down and protect your family -- survival comes first",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 2 },
+          "stats": { "happiness": -4, "spiritualDev": 0, "socialStatus": -3 },
+          "relationships": [{ "target": "family", "change": 5 }]
+        },
+        "outcomeText": "You board up your windows and stockpile rice. When soldiers patrol your street, you nod politely. When protesters ask you to join, you say you have children to protect. The guilt is real but so is the danger. Many families make this same calculation. In a country where the military has crushed dissent for seventy years, the instinct for self-preservation is not cowardice -- it is a survival strategy refined through generations of suffering."
+      },
+      {
+        "id": "c",
+        "text": "Use Buddhist practice as quiet resistance -- hold meditation vigils and share metta",
+        "effects": {
+          "karma": { "merit": 6, "demerit": 0 },
+          "stats": { "happiness": -1, "spiritualDev": 8, "socialStatus": 5 },
+          "relationships": [{ "target": "community", "change": 6 }]
+        },
+        "outcomeText": "You organize nightly metta recitation gatherings at the monastery, spreading loving-kindness to all beings -- including, as the tradition demands, the soldiers. The military cannot easily crack down on prayer. The meditation vigils become a quiet form of resistance, strengthening community bonds without the physical danger of street protest. Whether metta alone can stop tanks is an open question, but it sustains the spirit of those who practice it."
+      }
+    ],
+    "tags": ["coup", "military", "resistance", "CDM", "nalehmu", "politics"],
+    "source": "Knowledge base: Myanmar -- February 2021 military coup"
+  },
+  {
+    "id": "mm_elderhood_001",
+    "title": "The Meditation Master's Retreat",
+    "country": "myanmar",
+    "lifeStage": "elderhood",
+    "minAge": 50,
+    "maxAge": 80,
+    "karmaRange": [20, 100],
+    "description": "After decades of lay practice, you have the opportunity to attend a ten-day intensive Vipassana meditation retreat at a renowned center. The practice is demanding: 16 hours of sitting daily, no speaking, no eye contact, only two meals before noon. Your body aches and your mind rebels. On the seventh day, a nimitta -- a meditation vision -- appears.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Pursue the nimitta deeper -- this could be a sign of genuine spiritual attainment",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": 5, "spiritualDev": 15, "health": -3 },
+          "relationships": [{ "target": "spiritual_community", "change": 8 }]
+        },
+        "outcomeText": "You follow the vision inward. Colors bloom behind your closed eyes; your body dissolves into sensation. For a timeless moment, you understand impermanence not as a concept but as direct experience. The teacher confirms: this is insight, not delusion. You emerge from the retreat transformed -- not enlightened, but closer to understanding what the monks have always taught. The experience gives you a foundation for the years remaining."
+      },
+      {
+        "id": "b",
+        "text": "Report the vision to your teacher and follow their guidance carefully",
+        "effects": {
+          "karma": { "merit": 7, "demerit": 0 },
+          "stats": { "happiness": 4, "spiritualDev": 12 },
+          "relationships": [{ "target": "teacher", "change": 8 }]
+        },
+        "outcomeText": "The teacher listens, nods, and says: 'Do not grasp at the vision. It is a sign of progress, not the goal itself. Return to the breath.' You follow the instruction, and the vision fades, replaced by a quieter, deeper stillness. The teacher's wisdom prevents you from becoming attached to the experience itself -- the classic trap of the meditator. Equanimity, not ecstasy, is the path."
+      },
+      {
+        "id": "c",
+        "text": "Abandon the retreat -- the intensity is too much for your aging body",
+        "effects": {
+          "karma": { "merit": 1, "demerit": 1 },
+          "stats": { "happiness": 2, "spiritualDev": 2, "health": 2 },
+          "relationships": []
+        },
+        "outcomeText": "You pack your bag and leave on the seventh day, just as something was beginning to open. The teacher says gently: 'Many leave at this stage. The mind creates reasons to flee when it senses transformation approaching.' You return to your normal life, wondering what you might have seen if you had stayed. The body's complaints were real, but were they the real reason you left?"
+      }
+    ],
+    "tags": ["vipassana", "meditation", "nimitta", "retreat", "elderhood", "insight"],
+    "source": "Knowledge base: Myanmar Buddhist concepts -- nimitta, samadhi, meditation practice"
+  },
+  {
+    "id": "mm_elderhood_002",
+    "title": "The Buddhist Nationalist Rally",
+    "country": "myanmar",
+    "lifeStage": "elderhood",
+    "minAge": 50,
+    "maxAge": 80,
+    "karmaRange": [-100, 50],
+    "description": "A prominent monk affiliated with the 969 movement is holding a rally in your town. He preaches that Buddhism is under threat from Muslim immigration, that Buddhist women must be protected from interfaith marriage, and that true Buddhists should boycott Muslim businesses. Your nephew, a shopkeeper, has Muslim customers he considers friends.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Attend the rally and support the defense of Buddhist identity",
+        "effects": {
+          "karma": { "merit": 0, "demerit": 6 },
+          "stats": { "happiness": 2, "spiritualDev": -5, "socialStatus": 3 },
+          "relationships": [{ "target": "nationalist_community", "change": 5 }, { "target": "muslim_neighbors", "change": -10 }]
+        },
+        "outcomeText": "You sit in the crowd as the monk speaks with terrifying charisma about the sasana under siege. His words are fire: protect the religion, protect the race, boycott outsiders. The crowd roars. But afterward, walking past the shuttered Muslim shops, you see your nephew's friend Ibrahim lowering his head and hurrying home. The metta you recite every morning -- 'may all beings be happy' -- does not say 'may all Buddhist beings be happy.' Something does not fit."
+      },
+      {
+        "id": "b",
+        "text": "Refuse to attend and speak privately against Buddhist nationalism",
+        "effects": {
+          "karma": { "merit": 8, "demerit": 0 },
+          "stats": { "happiness": -2, "spiritualDev": 8, "socialStatus": -4 },
+          "relationships": [{ "target": "muslim_neighbors", "change": 5 }, { "target": "nationalist_community", "change": -8 }]
+        },
+        "outcomeText": "You tell your family: 'The Buddha taught metta for all beings, not just our kind.' Your neighbors are divided -- some admire your courage, others accuse you of being soft on threats to the sasana. Your nephew quietly continues serving Muslim customers. In a country where Buddhist nationalism has fueled ethnic cleansing, standing against the current is both spiritually correct and socially dangerous."
+      },
+      {
+        "id": "c",
+        "text": "Ignore the rally entirely and focus on your personal practice",
+        "effects": {
+          "karma": { "merit": 2, "demerit": 1 },
+          "stats": { "happiness": 0, "spiritualDev": 3 },
+          "relationships": []
+        },
+        "outcomeText": "You close your door and meditate. The rally's distant chanting seeps through the walls. You try to focus on the breath, but the words reach you: 'Protect the sasana.' You wonder: is personal practice enough when the dhamma itself is being weaponized? The Buddha's silence on politics was strategic; yours might be something else."
+      }
+    ],
+    "tags": ["969-movement", "nationalism", "interfaith", "metta", "bigotry", "rohingya"],
+    "source": "Knowledge base: Myanmar contemporary issues -- Buddhist nationalism and anti-Muslim sentiment"
+  }
+]

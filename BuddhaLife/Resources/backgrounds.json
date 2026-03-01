@@ -1,0 +1,297 @@
+{
+  "thailand": [
+    {
+      "id": "th_rural_farm",
+      "label": "Rice farming family in Isan",
+      "region": "northeast",
+      "class": "poor",
+      "startStats": {
+        "happiness": 5,
+        "health": 6,
+        "spiritualDev": 4,
+        "education": 2,
+        "wealth": 1,
+        "socialStatus": 2
+      },
+      "description": "Born into a family of subsistence rice farmers in Thailand's poorest region. The village monastery is the center of community life, and the Buddhist calendar governs the rhythms of planting and harvest. Cash is scarce but merit is earned through generosity and temple service."
+    },
+    {
+      "id": "th_urban_bangkok",
+      "label": "Middle-class family in Bangkok",
+      "region": "central",
+      "class": "middle",
+      "startStats": {
+        "happiness": 6,
+        "health": 5,
+        "spiritualDev": 2,
+        "education": 6,
+        "wealth": 6,
+        "socialStatus": 5
+      },
+      "description": "Born into a Bangkok family with steady income from the service economy. Education is prioritized, and Buddhism is practiced through temple visits on holy days and major ceremonies. The modernist-devotional tension in Thai Buddhism shapes your spiritual options."
+    },
+    {
+      "id": "th_shan_village",
+      "label": "Shan family in Mae Hong Son province",
+      "region": "northwest",
+      "class": "poor",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 7,
+        "education": 2,
+        "wealth": 1,
+        "socialStatus": 2
+      },
+      "description": "Born into a Shan ethnic minority family in the remote hills near the Myanmar border. Your village follows Theravada Buddhism interwoven with spirit beliefs: the tsao moeng guardian spirit, phi, and traditional healers (saraa) are part of daily life. Central Thai is taught at school, but at home you speak Shan."
+    },
+    {
+      "id": "th_temple_family",
+      "label": "Family connected to a prominent temple in Chiang Mai",
+      "region": "north",
+      "class": "middle",
+      "startStats": {
+        "happiness": 6,
+        "health": 5,
+        "spiritualDev": 8,
+        "education": 5,
+        "wealth": 4,
+        "socialStatus": 6
+      },
+      "description": "Born into a family with deep temple connections in the northern tradition. Your grandfather was a monk for twenty years; your grandmother is a respected temple sleeper. The Lanna Buddhist heritage of Chiang Mai -- forest monks, meditation lineages, and the khruba tradition -- shapes your spiritual landscape."
+    }
+  ],
+  "myanmar": [
+    {
+      "id": "mm_yangon_working",
+      "label": "Working-class family in Yangon",
+      "region": "lower_myanmar",
+      "class": "poor",
+      "startStats": {
+        "happiness": 4,
+        "health": 4,
+        "spiritualDev": 5,
+        "education": 4,
+        "wealth": 2,
+        "socialStatus": 3
+      },
+      "description": "Born in Yangon's crowded neighborhoods where the monastery loudspeaker is the first sound of morning. Buddhism is the sonic tapestry of everyday life -- sermons broadcast at dawn, metta recitations at dusk. Political instability and military rule shape every aspect of daily existence."
+    },
+    {
+      "id": "mm_karen_village",
+      "label": "Plong Karen Buddhist family in Karen State",
+      "region": "karen_state",
+      "class": "poor",
+      "startStats": {
+        "happiness": 4,
+        "health": 4,
+        "spiritualDev": 6,
+        "education": 2,
+        "wealth": 1,
+        "socialStatus": 2
+      },
+      "description": "Born into a Karen ethnic family where Theravada Buddhism meets the ideal of thout kyar (keeping faithful). Sovereignty in Karen State is fractured among ethnic armed organizations, militias, and the state military. The moral complexity of dirty money, strongman patronage, and right livelihood defines your world."
+    },
+    {
+      "id": "mm_mandalay_merchant",
+      "label": "Merchant family in Mandalay",
+      "region": "upper_myanmar",
+      "class": "middle",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 4,
+        "education": 5,
+        "wealth": 6,
+        "socialStatus": 5
+      },
+      "description": "Born into a trading family in Myanmar's cultural capital. Mandalay is the heartland of Burmese Buddhism -- monasteries, pagodas, and meditation centers crowd every neighborhood. The merit-power nexus is on full display: your family's social status depends on the generosity of its dana."
+    },
+    {
+      "id": "mm_shan_migrant",
+      "label": "Shan migrant family near the Thai border",
+      "region": "shan_state",
+      "class": "poor",
+      "startStats": {
+        "happiness": 3,
+        "health": 4,
+        "spiritualDev": 5,
+        "education": 2,
+        "wealth": 1,
+        "socialStatus": 1
+      },
+      "description": "Born into a Shan family that migrated from Burma into Thailand over a generation ago, part of a movement driven by political troubles spanning over 100 years. You live between two worlds: Myanmar's Buddhist heritage and Thailand's economic opportunity. Legal status is precarious; Buddhist identity is the one constant."
+    }
+  ],
+  "cambodia": [
+    {
+      "id": "kh_phnom_penh_survivor",
+      "label": "Post-genocide family in Phnom Penh",
+      "region": "phnom_penh",
+      "class": "poor",
+      "startStats": {
+        "happiness": 3,
+        "health": 4,
+        "spiritualDev": 3,
+        "education": 3,
+        "wealth": 2,
+        "socialStatus": 2
+      },
+      "description": "Born to a family still scarred by the Khmer Rouge genocide. Your grandparents survived the ukrittakamm; your parents grew up in the aftermath. The Buddhist institutions being rebuilt around you are fragile -- monks who could teach scripture were among those killed. Recovery is spiritual as much as material."
+    },
+    {
+      "id": "kh_siem_reap_rural",
+      "label": "Rural family near Angkor Wat",
+      "region": "siem_reap",
+      "class": "poor",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 5,
+        "education": 2,
+        "wealth": 2,
+        "socialStatus": 3
+      },
+      "description": "Born near the ancient temples of Angkor, where the heritage of Khmer Buddhist kings shadows daily life. Tourism provides some income, but the village pagoda and Neak Ta shrines define your spiritual world. The boundary between Srok (ordered village) and Prei (terrifying forest) shapes your understanding of sacred space."
+    },
+    {
+      "id": "kh_battambang_farming",
+      "label": "Rice farming family in Battambang",
+      "region": "battambang",
+      "class": "poor",
+      "startStats": {
+        "happiness": 4,
+        "health": 5,
+        "spiritualDev": 4,
+        "education": 2,
+        "wealth": 2,
+        "socialStatus": 2
+      },
+      "description": "Born into Cambodia's rice bowl, where agriculture and Buddhism are deeply intertwined. Landmines from the civil war era still dot the countryside. The Dhammayietra peace walks pass through your province, and environmental Buddhism -- forest ordination, sacred tree protection -- is a living practice."
+    }
+  ],
+  "vietnam": [
+    {
+      "id": "vn_hanoi_educated",
+      "label": "Educated family in Hanoi",
+      "region": "north",
+      "class": "middle",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 3,
+        "education": 7,
+        "wealth": 5,
+        "socialStatus": 5
+      },
+      "description": "Born into an educated Hanoi family where Confucian values of filial piety and academic achievement drive daily life. Buddhism is part of the tam giao (triple religion) -- not a separate identity but a strand in the cultural fabric alongside Confucianism and Taoism. The ancestor altar sits in the living room, honored with offerings on the 1st and 15th of each lunar month."
+    },
+    {
+      "id": "vn_mekong_farmer",
+      "label": "Farming family in the Mekong Delta",
+      "region": "south",
+      "class": "poor",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 5,
+        "education": 2,
+        "wealth": 2,
+        "socialStatus": 2
+      },
+      "description": "Born into a farming family in the lush Mekong Delta, where Theravada Buddhist communities mix with the predominantly Mahayana culture. The war's legacy is everywhere: con ma (angry spirits) haunt former battlefields, and the otherworld intrudes regularly into daily life. Ancestor worship is the foundation of family identity."
+    },
+    {
+      "id": "vn_hcmc_modern",
+      "label": "Modern family in Ho Chi Minh City",
+      "region": "south",
+      "class": "middle",
+      "startStats": {
+        "happiness": 6,
+        "health": 5,
+        "spiritualDev": 2,
+        "education": 6,
+        "wealth": 6,
+        "socialStatus": 5
+      },
+      "description": "Born into a dynamic Ho Chi Minh City family navigating Vietnam's market economy. Buddhist youth programs at temples like Giac Ngo attract your generation with meditation retreats, celebrity talks, and social networking. The tension between modernist Buddhism (philosophical, meditation-focused) and devotional Buddhism (supplication, chanting) defines your spiritual options."
+    },
+    {
+      "id": "vn_hue_traditional",
+      "label": "Traditional family in Hue",
+      "region": "central",
+      "class": "middle",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 6,
+        "education": 5,
+        "wealth": 4,
+        "socialStatus": 5
+      },
+      "description": "Born in the ancient imperial capital, where Buddhist pagodas and Confucian traditions run deep. Hue is the heartland of Vietnamese Buddhist reform movements. Thich Nhat Hanh's legacy of engaged Buddhism and the School of Youth for Social Services have roots here. The Confucian ideal of ngu dai dong duong (five generations under one roof) still shapes family expectations."
+    }
+  ],
+  "laos": [
+    {
+      "id": "la_luang_prabang",
+      "label": "Family in the royal capital of Luang Prabang",
+      "region": "north",
+      "class": "middle",
+      "startStats": {
+        "happiness": 6,
+        "health": 5,
+        "spiritualDev": 7,
+        "education": 4,
+        "wealth": 4,
+        "socialStatus": 5
+      },
+      "description": "Born in the graceful former royal capital, where the morning alms round defines the rhythm of daily life. Luang Prabang's Buddhist heritage is now a UNESCO site, bringing tourists and their money. The communist government coexists uneasily with the monarchy's Buddhist legacy."
+    },
+    {
+      "id": "la_boun_tay_multi",
+      "label": "Multi-ethnic family in Boun Tay district",
+      "region": "north",
+      "class": "poor",
+      "startStats": {
+        "happiness": 4,
+        "health": 5,
+        "spiritualDev": 6,
+        "education": 2,
+        "wealth": 1,
+        "socialStatus": 2
+      },
+      "description": "Born into a multi-ethnic community in northern Laos where Lue, Phounoy, Khmu, and Akha peoples practice Theravada Buddhism alongside local spirit traditions. The acan (lay leader) bridges Buddhist texts and local customs. Funerals are the most important ceremonies, and the phrasat obligation for deceased ancestors weighs on every family."
+    },
+    {
+      "id": "la_vientiane_modern",
+      "label": "Urban family in Vientiane",
+      "region": "central",
+      "class": "middle",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 3,
+        "education": 5,
+        "wealth": 5,
+        "socialStatus": 4
+      },
+      "description": "Born in the Lao capital where the great golden stupa Pha That Luang anchors national Buddhist identity. Chinese investment is transforming the city -- casinos, hotels, and plantations bring money and disruption. The communist government promotes 'scientific socialism' while 90% of the population practices Buddhism."
+    },
+    {
+      "id": "la_southern_rural",
+      "label": "Subsistence family in Champasak province",
+      "region": "south",
+      "class": "poor",
+      "startStats": {
+        "happiness": 5,
+        "health": 5,
+        "spiritualDev": 5,
+        "education": 1,
+        "wealth": 1,
+        "socialStatus": 2
+      },
+      "description": "Born in the rural south near the ancient temple of Wat Phu, where the Mekong River shapes both agriculture and spirituality. The connection between the Buddhist calendar and the rice cycle is the heartbeat of life. Boun festivals mark the agricultural seasons. Cash crops are beginning to replace subsistence farming under Chinese commercial influence."
+    }
+  ]
+}
