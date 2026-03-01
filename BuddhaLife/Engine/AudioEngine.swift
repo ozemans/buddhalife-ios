@@ -7,7 +7,7 @@ import Observation
 /// Programmatic waveform-based sound engine using AVAudioEngine.
 /// Faithfully ports audioEngine.js — generates sine/triangle tones with ADSR envelopes
 /// for temple bells, chimes, merit/demerit sounds, and screen transitions.
-@Observable
+@MainActor @Observable
 final class AudioEngine {
 
     // MARK: - Singleton
@@ -222,7 +222,8 @@ final class AudioEngine {
 
         // Schedule cleanup after the tone completes
         let cleanupDelay = delaySeconds + totalDuration + 0.1
-        DispatchQueue.main.asyncAfter(deadline: .now() + cleanupDelay) { [weak engine] in
+        Task { @MainActor [weak engine] in
+            try? await Task.sleep(nanoseconds: UInt64(cleanupDelay * 1_000_000_000))
             guard let engine else { return }
             engine.disconnectNodeOutput(sourceNode)
             engine.detach(sourceNode)

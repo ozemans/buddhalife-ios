@@ -12,6 +12,7 @@ private struct StatConfig: Identifiable {
     let maxValue: Int
 }
 
+nonisolated(unsafe)
 private let statConfigs: [StatConfig] = [
     StatConfig(id: "health",         keyPath: \.health,         label: "Health",    emoji: "\u{2764}\u{FE0F}", color: Color(red: 1.0, green: 0.231, blue: 0.188),   maxValue: 100),
     StatConfig(id: "happiness",      keyPath: \.happiness,      label: "Happiness", emoji: "\u{1F60A}",        color: Color(red: 1.0, green: 0.800, blue: 0.0),     maxValue: 100),
@@ -19,6 +20,7 @@ private let statConfigs: [StatConfig] = [
     StatConfig(id: "wisdom",         keyPath: \.wisdom,         label: "Wisdom",    emoji: "\u{1F9E0}",        color: Color(red: 0.0, green: 0.478, blue: 1.0),     maxValue: 100),
     StatConfig(id: "socialStanding", keyPath: \.socialStanding, label: "Social",    emoji: "\u{1F465}",        color: Color(red: 0.686, green: 0.322, blue: 0.871), maxValue: 100),
     StatConfig(id: "spiritualDev",   keyPath: \.spiritualDev,   label: "Spiritual", emoji: "\u{1F64F}",        color: Color(red: 0.910, green: 0.588, blue: 0.047), maxValue: 100),
+    StatConfig(id: "education",      keyPath: \.education,      label: "Education", emoji: "\u{1F4DA}",        color: Color(red: 0.204, green: 0.667, blue: 0.863), maxValue: 100),
 ]
 
 // MARK: - StatsPanelView

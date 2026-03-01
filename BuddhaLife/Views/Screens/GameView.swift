@@ -125,6 +125,7 @@ struct GameView: View {
         case .play:
             if let event = engine.currentEvent {
                 EventCardView(event: event, engine: engine)
+                    .id(event.id)
             } else {
                 AgeAdvanceView(engine: engine)
             }

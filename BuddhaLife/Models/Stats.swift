@@ -7,6 +7,7 @@ struct Stats: Codable, Equatable {
     var wisdom: Int = 0
     var socialStanding: Int = 50
     var spiritualDev: Int = 0
+    var education: Int = 0
 
     mutating func apply(changes: [String: Int]) {
         for (key, delta) in changes {
@@ -15,8 +16,9 @@ struct Stats: Codable, Equatable {
             case "happiness": happiness = clamp(happiness + delta, max: 100)
             case "wealth": wealth = clamp(wealth + delta, max: 200)
             case "wisdom": wisdom = clamp(wisdom + delta, max: 100)
-            case "socialStanding": socialStanding = clamp(socialStanding + delta, max: 100)
+            case "socialStatus", "socialStanding": socialStanding = clamp(socialStanding + delta, max: 100)
             case "spiritualDev": spiritualDev = clamp(spiritualDev + delta, max: 100)
+            case "education": education = clamp(education + delta, max: 100)
             default: break
             }
         }

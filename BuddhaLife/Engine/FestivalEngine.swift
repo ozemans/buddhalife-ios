@@ -129,7 +129,8 @@ struct FestivalEngine {
 
     /// Load festivals from the bundled festivals.json file.
     private static func loadFestivals() -> [Festival] {
-        guard let url = Bundle.main.url(forResource: "festivals", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: "festivals", withExtension: "json", subdirectory: "Resources") ??
+              Bundle.main.url(forResource: "festivals", withExtension: "json") else {
             return []
         }
         do {

@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		049704DA1D410CFD3A178D32 /* LifeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16227A4839647AFBA7A180B3 /* LifeEvent.swift */; };
 		0BEF69BC7FE2F08170D7497F /* Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191CFE029B162705310C44DF /* Karma.swift */; };
+		1417C148A884AD3D4ADDD301 /* cambodia.json in Resources */ = {isa = PBXBuildFile; fileRef = CF6E2DABB66EC72F23B799B7 /* cambodia.json */; };
 		179C2E5EC4B448764B97842B /* FestivalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BACFDF35E0AA267C6A5F66 /* FestivalEngine.swift */; };
 		291778A5386AF32DCDDFFC32 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 577C37C9A5FEC5EE93F52123 /* PrivacyInfo.xcprivacy */; };
 		34707B4BCA43FDAB029A5FEF /* GameEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11449BFCE0E7FA339199D2C7 /* GameEvent.swift */; };
+		35209C438EC53E74FF5C96CB /* thailand.json in Resources */ = {isa = PBXBuildFile; fileRef = DB2635D6ED2E1ABC9F9C1D4A /* thailand.json */; };
 		360F1F1A650910CFB86AA1EC /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63416DCEA70FA8B3E36AAFB1 /* PersistenceManager.swift */; };
 		376ED2373F19E74CF5E5D09C /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BEBF180261F8BF1E5123E /* Formatting.swift */; };
 		39A8E14701E2A73B1036581E /* GlossaryTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367EAE5E626933BC99409C9 /* GlossaryTerm.swift */; };
@@ -22,9 +24,11 @@
 		53FE54E1A06DC7475CAEC12E /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581F5E7DF84114DA0BB8CEA /* Festival.swift */; };
 		5C56ACF1A9A210738D0DB766 /* KarmaVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E07730DAAEE20FC2EF66C5 /* KarmaVisualizerView.swift */; };
 		5FC0A1A0163A6FAEA6D27B54 /* EncyclopediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEAED536885411365553D71 /* EncyclopediaView.swift */; };
+		64E76CE30BA521875C86D90A /* backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A44294E48632DD2879ADC /* backgrounds.json */; };
 		7BB7C535277B87B1BCE3EC89 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDFB1CF5FDD1E10173E3199 /* Stats.swift */; };
 		7CCE8B9FDE35CF34137822C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E641D35852E9EB344E7456FF /* ContentView.swift */; };
 		7CE3675D36396097C6A39E20 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E881EFE30FEDE56949DB6B /* AudioEngine.swift */; };
+		811B9656F99A8FF0EAF61427 /* laos.json in Resources */ = {isa = PBXBuildFile; fileRef = C7C0E3BC8F6D572B9A4BBA08 /* laos.json */; };
 		86651B6F5EFE97043BC18041 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACB6B3A472F886F71EF227 /* EventCardView.swift */; };
 		8CB99BA550D03CABE42E0025 /* EventSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F275EC7DCE7F0D597FE757 /* EventSelector.swift */; };
 		8FF985C8A22E3A11A817FB7E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9868EAE5356DF6919A7204 /* ProfileView.swift */; };
@@ -33,14 +37,19 @@
 		98AE7EB7C2CD3C5661DD1F97 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF5A87BF039E3FD6C1957FC /* CustomTabBar.swift */; };
 		9D4320A789A9447C8E0E3147 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5953BB2D82FF86A9518E96E8 /* GameView.swift */; };
 		A4A5E67E51E7C19FA6AB64A4 /* LifeProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BBD4E23FB86ECF3CEB68C /* LifeProgression.swift */; };
+		A6E05F3745FD415EBEBE90A5 /* shared.json in Resources */ = {isa = PBXBuildFile; fileRef = FFA425EFAA2B6F85B61EAD26 /* shared.json */; };
 		AE12F7D64873F219CA86BD4F /* NPCEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD04CD9EA218704B3625DA7 /* NPCEngine.swift */; };
+		B47C5ED37009B9DEDBD17E0B /* myanmar.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C84CB2C9D3343CF97AC1503 /* myanmar.json */; };
 		B556B23A8838ED03D024CE6C /* SoundToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF14F1E382D21AA1A3A919 /* SoundToggleView.swift */; };
 		BA3FEB6C9549510E727489BF /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9D9934BF01094AB2402C68 /* Background.swift */; };
+		C2812EEEE885BAE88C57281F /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = C93F6111815655A2527EA1ED /* glossary.json */; };
 		C9B923221B9D44B6EA295010 /* EndOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BABEB444CC0E1805875CAAB /* EndOfLifeView.swift */; };
 		CBE8E9FFCF40A8D523424D76 /* RandomHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BF20119F435FE8D3E26E2 /* RandomHelpers.swift */; };
 		DCABD3C951AAC2A779826408 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B7FD3E8391FFAA65373DD2 /* Character.swift */; };
 		DEDEB975BF1AEFE8614C3EA8 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FB712E48A0D60030AD211 /* TitleView.swift */; };
+		E11AF57FBA8D4D57AAFC4DC4 /* vietnam.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C46B4F9BA5FA21F8715C41F /* vietnam.json */; };
 		EBA04FCA93F87508E61CE503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAAD14A4173D45492FA6FA2 /* Assets.xcassets */; };
+		ECB716DB3ABD41AC4AFADD51 /* festivals.json in Resources */ = {isa = PBXBuildFile; fileRef = 58A1996F28E8FDB33C3A019D /* festivals.json */; };
 		EE2259F3E1654D50C2AF3BF9 /* ConsequenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7B7883C18B2CA6D1F01F4 /* ConsequenceEngine.swift */; };
 		EF4F2F73356BA6C5D98AFAD8 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C061951513C95976429A2 /* GameState.swift */; };
 		F58ABE28F20336D927A4533B /* BuddhaLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B247FD4C55A4D056E72A1F /* BuddhaLifeApp.swift */; };
@@ -59,10 +68,13 @@
 		31BC52D65AFAB8E5FDC6439C /* StatsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPanelView.swift; sourceTree = "<group>"; };
 		3581F5E7DF84114DA0BB8CEA /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
 		3C3BEBF180261F8BF1E5123E /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		3C84CB2C9D3343CF97AC1503 /* myanmar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = myanmar.json; sourceTree = "<group>"; };
 		40B247FD4C55A4D056E72A1F /* BuddhaLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddhaLifeApp.swift; sourceTree = "<group>"; };
+		4E4A44294E48632DD2879ADC /* backgrounds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backgrounds.json; sourceTree = "<group>"; };
 		4FF5A87BF039E3FD6C1957FC /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		54CF9893FAF09C7A3A3EFDCB /* KarmaEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaEngine.swift; sourceTree = "<group>"; };
 		577C37C9A5FEC5EE93F52123 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		58A1996F28E8FDB33C3A019D /* festivals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = festivals.json; sourceTree = "<group>"; };
 		5953BB2D82FF86A9518E96E8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5C9D9934BF01094AB2402C68 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		61ACB6B3A472F886F71EF227 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
@@ -76,16 +88,22 @@
 		8E3F9DAEBD66197135FE5A54 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		97E07730DAAEE20FC2EF66C5 /* KarmaVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaVisualizerView.swift; sourceTree = "<group>"; };
 		9A7C931194EC5F15A3690C25 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		9C46B4F9BA5FA21F8715C41F /* vietnam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vietnam.json; sourceTree = "<group>"; };
 		A9F275EC7DCE7F0D597FE757 /* EventSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelector.swift; sourceTree = "<group>"; };
 		C17B21C2F453AF86A7E8137F /* AgeAdvanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeAdvanceView.swift; sourceTree = "<group>"; };
 		C26C061951513C95976429A2 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		C7C0E3BC8F6D572B9A4BBA08 /* laos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = laos.json; sourceTree = "<group>"; };
+		C93F6111815655A2527EA1ED /* glossary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary.json; sourceTree = "<group>"; };
 		CEFF14F1E382D21AA1A3A919 /* SoundToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundToggleView.swift; sourceTree = "<group>"; };
+		CF6E2DABB66EC72F23B799B7 /* cambodia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cambodia.json; sourceTree = "<group>"; };
+		DB2635D6ED2E1ABC9F9C1D4A /* thailand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thailand.json; sourceTree = "<group>"; };
 		DDF7B7883C18B2CA6D1F01F4 /* ConsequenceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsequenceEngine.swift; sourceTree = "<group>"; };
 		E0E881EFE30FEDE56949DB6B /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		E641D35852E9EB344E7456FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDAAD14A4173D45492FA6FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDEAED536885411365553D71 /* EncyclopediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaView.swift; sourceTree = "<group>"; };
 		F367EAE5E626933BC99409C9 /* GlossaryTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryTerm.swift; sourceTree = "<group>"; };
+		FFA425EFAA2B6F85B61EAD26 /* shared.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shared.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -113,6 +131,17 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		9035A86FFD9C41CD1CF2130D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A44294E48632DD2879ADC /* backgrounds.json */,
+				58A1996F28E8FDB33C3A019D /* festivals.json */,
+				C93F6111815655A2527EA1ED /* glossary.json */,
+				FD01516793958C0C7072327B /* events */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		90A353E1DF7363732A58A806 /* BuddhaLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +152,7 @@
 				577C37C9A5FEC5EE93F52123 /* PrivacyInfo.xcprivacy */,
 				9A80CFC18253893A446B31D8 /* Engine */,
 				E172025D4A5ABEEB734378A3 /* Models */,
+				9035A86FFD9C41CD1CF2130D /* Resources */,
 				75A797A84DC7F89A9B555133 /* Utilities */,
 				D10FE199116951B3ADA716B8 /* Views */,
 			);
@@ -198,6 +228,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FD01516793958C0C7072327B /* events */ = {
+			isa = PBXGroup;
+			children = (
+				CF6E2DABB66EC72F23B799B7 /* cambodia.json */,
+				C7C0E3BC8F6D572B9A4BBA08 /* laos.json */,
+				3C84CB2C9D3343CF97AC1503 /* myanmar.json */,
+				FFA425EFAA2B6F85B61EAD26 /* shared.json */,
+				DB2635D6ED2E1ABC9F9C1D4A /* thailand.json */,
+				9C46B4F9BA5FA21F8715C41F /* vietnam.json */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +297,15 @@
 			files = (
 				EBA04FCA93F87508E61CE503 /* Assets.xcassets in Resources */,
 				291778A5386AF32DCDDFFC32 /* PrivacyInfo.xcprivacy in Resources */,
+				64E76CE30BA521875C86D90A /* backgrounds.json in Resources */,
+				1417C148A884AD3D4ADDD301 /* cambodia.json in Resources */,
+				ECB716DB3ABD41AC4AFADD51 /* festivals.json in Resources */,
+				C2812EEEE885BAE88C57281F /* glossary.json in Resources */,
+				811B9656F99A8FF0EAF61427 /* laos.json in Resources */,
+				B47C5ED37009B9DEDBD17E0B /* myanmar.json in Resources */,
+				A6E05F3745FD415EBEBE90A5 /* shared.json in Resources */,
+				35209C438EC53E74FF5C96CB /* thailand.json in Resources */,
+				E11AF57FBA8D4D57AAFC4DC4 /* vietnam.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

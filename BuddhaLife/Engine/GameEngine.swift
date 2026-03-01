@@ -6,7 +6,7 @@ import Observation
 /// The central game state manager. Combines the reducer from gameState.js
 /// and the orchestration logic from App.jsx (handleAdvanceYear, handleMakeChoice, etc.)
 /// into a single @Observable class for SwiftUI binding.
-@Observable
+@MainActor @Observable
 final class GameEngine {
 
     // MARK: - Event Probability by Life Stage
@@ -54,7 +54,8 @@ final class GameEngine {
         let eventFiles = ["thailand", "myanmar", "cambodia", "vietnam", "laos", "shared"]
         var events: [GameEvent] = []
         for file in eventFiles {
-            if let url = Bundle.main.url(forResource: file, withExtension: "json", subdirectory: nil) ??
+            if let url = Bundle.main.url(forResource: file, withExtension: "json", subdirectory: "Resources/events") ??
+               Bundle.main.url(forResource: file, withExtension: "json", subdirectory: "Resources") ??
                Bundle.main.url(forResource: file, withExtension: "json") {
                 do {
                     let data = try Data(contentsOf: url)
@@ -183,6 +184,7 @@ final class GameEngine {
                 festival: festival,
                 age: character.age
             )
+            seenEvents.insert(festivalEvent.id)
             triggerEvent(festivalEvent)
             return
         }
@@ -264,11 +266,13 @@ final class GameEngine {
         if !AudioEngine.shared.isMuted {
             AudioEngine.shared.playChime()
             if adapted.karmaEffect == "positive" {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 300_000_000)
                     AudioEngine.shared.playMeritSound()
                 }
             } else if adapted.karmaEffect == "negative" {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: 300_000_000)
                     AudioEngine.shared.playDemeritSound()
                 }
             }

@@ -13,18 +13,20 @@ import SwiftUI
 
 struct SoundToggleView: View {
 
+    private let audio = AudioEngine.shared
+
     var body: some View {
         Button {
-            AudioEngine.shared.isMuted.toggle()
+            audio.isMuted.toggle()
         } label: {
-            Image(systemName: AudioEngine.shared.isMuted ? "speaker.slash.fill" : "speaker.wave.2.fill")
+            Image(systemName: audio.isMuted ? "speaker.slash.fill" : "speaker.wave.2.fill")
                 .font(.system(size: 18))
                 .foregroundStyle(.white.opacity(0.9))
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(AudioEngine.shared.isMuted ? "Unmute sound" : "Mute sound")
+        .accessibilityLabel(audio.isMuted ? "Unmute sound" : "Mute sound")
     }
 }
 

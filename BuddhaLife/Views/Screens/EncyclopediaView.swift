@@ -263,7 +263,8 @@ struct EncyclopediaView: View {
 
     /// Load glossary terms from the bundled glossary.json file.
     private func loadGlossary() {
-        guard let url = Bundle.main.url(forResource: "glossary", withExtension: "json"),
+        guard let url = (Bundle.main.url(forResource: "glossary", withExtension: "json", subdirectory: "Resources") ??
+              Bundle.main.url(forResource: "glossary", withExtension: "json")),
               let data = try? Data(contentsOf: url),
               let decoded = try? JSONDecoder().decode([GlossaryTerm].self, from: data) else {
             return

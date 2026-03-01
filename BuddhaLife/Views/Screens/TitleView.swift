@@ -261,7 +261,8 @@ struct TitleView: View {
     // MARK: - Background Loading
 
     private func loadRandomBackground(for country: String) -> String {
-        guard let url = Bundle.main.url(forResource: "backgrounds", withExtension: "json"),
+        guard let url = (Bundle.main.url(forResource: "backgrounds", withExtension: "json", subdirectory: "Resources") ??
+              Bundle.main.url(forResource: "backgrounds", withExtension: "json")),
               let data = try? Data(contentsOf: url),
               let allBackgrounds = try? JSONDecoder().decode(BackgroundsByCountry.self, from: data),
               let countryBackgrounds = allBackgrounds[country],

@@ -18,10 +18,8 @@ targets:
     sources:
       - path: BuddhaLife
         excludes:
-          - "Resources/**"
           - "Preview Content/**"
     resources:
-      - path: BuddhaLife/Resources
       - path: BuddhaLife/Assets.xcassets
       - path: BuddhaLife/PrivacyInfo.xcprivacy
     settings:

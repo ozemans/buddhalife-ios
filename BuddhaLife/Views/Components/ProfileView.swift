@@ -126,7 +126,8 @@ struct ProfileView: View {
     /// Resolve a background ID to its human-readable label by loading backgrounds.json.
     /// Falls back to the raw ID if the lookup fails.
     private func backgroundLabel(for backgroundId: String) -> String {
-        guard let url = Bundle.main.url(forResource: "backgrounds", withExtension: "json"),
+        guard let url = (Bundle.main.url(forResource: "backgrounds", withExtension: "json", subdirectory: "Resources") ??
+              Bundle.main.url(forResource: "backgrounds", withExtension: "json")),
               let data = try? Data(contentsOf: url),
               let dict = try? JSONDecoder().decode(BackgroundsByCountry.self, from: data) else {
             return backgroundId
