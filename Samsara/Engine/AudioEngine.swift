@@ -29,7 +29,7 @@ final class AudioEngine: NSObject {
 
     // MARK: - Private State
 
-    private static let muteKey = "buddhalife_muted"
+    private static let muteKey = "samsara_muted"
 
     private var engine: AVAudioEngine?
     private var players: [AVAudioPlayerNode] = []

@@ -86,7 +86,7 @@ struct TitleView: View {
                 Text("\u{2638}\u{FE0F}")
                     .font(.system(size: 64))
 
-                Text("BuddhaLife")
+                Text("Samsara")
                     .font(.system(size: 32, weight: .bold))
                     .tracking(-0.5)
                     .foregroundStyle(Color("TextPrimary"))

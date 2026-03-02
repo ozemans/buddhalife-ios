@@ -6,7 +6,7 @@ import Foundation
 /// Ported from the localStorage-based persistence in gameState.js.
 struct PersistenceManager {
 
-    private static let fileName = "buddhalife_save.json"
+    private static let fileName = "samsara_save.json"
 
     // MARK: - File Path
 

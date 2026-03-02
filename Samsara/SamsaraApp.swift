@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct BuddhaLifeApp: App {
+struct SamsaraApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

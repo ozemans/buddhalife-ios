@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0319E04AD6B440304104DA63 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC2C275BA20D553E43E08 /* EventCardView.swift */; };
+		09BE748F0387E7F8CDA710C1 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6B7A02EF53140319BF7AAE /* Relationship.swift */; };
+		09E1CF50143EDEB5763418CF /* GameEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C029519B6BC3D00B3B71361A /* GameEvent.swift */; };
+		0E0DE3B1EBBC76F6EFBFBACD /* SamsaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513862AA3DE4E13149C5FFD /* SamsaraApp.swift */; };
+		0F00B04C97C97E42C894523E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B817441A084191518751D /* GameView.swift */; };
+		17E9AC5752C08A56F9ED1AB7 /* ConsequenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35865A8C32106696F2746D38 /* ConsequenceEngine.swift */; };
+		1AD8FD17D01F56B6D31FC2F3 /* NPCEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEEF246635F2732863400C0 /* NPCEngine.swift */; };
+		1F6C59E2D7255C6196155842 /* EventSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A4406F1764B411BA455EB /* EventSelector.swift */; };
+		249E344DD2561DB0AAC6574F /* KarmaEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02CDEB836986B77DD73944 /* KarmaEngine.swift */; };
+		277BD5B47406D0EA0890EF7A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056EE16645B1185263737D77 /* Character.swift */; };
+		280D4C261DCC6F4B5B8488CA /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E583402EB7CC0180B6D4F19 /* AudioEngine.swift */; };
+		2952F13015CCC1858CD4387C /* GlossaryTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E2E6BEF546BC4DDDB367B /* GlossaryTerm.swift */; };
+		2A90BDFA69A11F1DEDBEA88F /* cambodia.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDEDB64605D4A177F53AB1 /* cambodia.json */; };
+		2E8656CD0D8246E49B42E873 /* AgeAdvanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260B16F279830BCB159C99C /* AgeAdvanceView.swift */; };
+		2F40C7B912A75723947773BF /* myanmar.json in Resources */ = {isa = PBXBuildFile; fileRef = E29055FA9385702DC07C970E /* myanmar.json */; };
+		3CB118E65898C72DF570ED32 /* backgrounds.json in Resources */ = {isa = PBXBuildFile; fileRef = BA132615DE40876D30EEF0F5 /* backgrounds.json */; };
+		4AF61ACC6B61E0D4E880642F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752344113C54D187753F90DF /* ContentView.swift */; };
+		4CD3CAE38A90C0ADB1E25B9B /* shared.json in Resources */ = {isa = PBXBuildFile; fileRef = 11E12B1E4002C2E143959EAF /* shared.json */; };
+		4F5F048CB3080FD7C893539C /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17994F5D4AFB6746AC76321 /* Formatting.swift */; };
+		52753283B2824126F8B7A1D5 /* LifeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6320E6BBC7C57CA2B26E6 /* LifeEvent.swift */; };
+		54A0CFFC6E2D430877556C9A /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D1FFBDEFAE331D3EAB553 /* TitleView.swift */; };
+		631D09DEF1E32927B6A694DB /* EndOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93905112F23A387C612516 /* EndOfLifeView.swift */; };
+		64D7009C83571922EFF77C48 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A271E2ADC28CCD4CED508B /* Stats.swift */; };
+		6BDCE4DA499237B28FD0B130 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6696C4A65C3799C534586 /* PersistenceManager.swift */; };
+		75018B2A15BFD2B1FB26EE7B /* vietnam.json in Resources */ = {isa = PBXBuildFile; fileRef = 91A10C98D463ABD4E87696AF /* vietnam.json */; };
+		76A067B2410EE2C56C673699 /* festivals.json in Resources */ = {isa = PBXBuildFile; fileRef = C838AE28BDECE6C27BBDAFDD /* festivals.json */; };
+		7B505420A49DA55630F90785 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03C6AAF79481B841D82A9A9 /* CustomTabBar.swift */; };
+		8512BCD46977410207DCB747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E157066707C3836763269 /* Assets.xcassets */; };
+		8531D227CE0EA533DE710C04 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD03BFCF52BC35D31AF09C2E /* ProfileView.swift */; };
+		89944CED8EC0FFB85C74559F /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761C8BA7A3B738FFA0F3104 /* Festival.swift */; };
+		93B6F8D510A4903A7501EE7C /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = E9A353C4F6E0BD12929E804A /* glossary.json */; };
+		9A911BD5D1223A3862CC3890 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11FB4CF850B04A1900A8E0 /* GameState.swift */; };
+		A43497CE7803AC366EF49C41 /* StatsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7059802438D3F43295229A /* StatsPanelView.swift */; };
+		AD51CA2EBA2E8DF9CED9D123 /* KarmaVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822E9BE9AB044979A2AEC35 /* KarmaVisualizerView.swift */; };
+		AFBE6A4EB6F6B0BFDB3CD42F /* thailand.json in Resources */ = {isa = PBXBuildFile; fileRef = 24655CC6049481A608B5CD61 /* thailand.json */; };
+		B1DD7DBFB12F5218822225B9 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856F7154C262546CDF57642 /* GameEngine.swift */; };
+		B25E28ABB258B221C6623716 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1FC5D5EFFBC36A2A0D637 /* Background.swift */; };
+		BCAC38D14F548CE3DC07655B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D6D2E7738967C5CFBCFAD652 /* PrivacyInfo.xcprivacy */; };
+		BE2577081ECC10E59B3E6C61 /* Karma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CC0CD25F16F3E71E758CDC /* Karma.swift */; };
+		C7D7C8E5E8171A4468A64B8B /* FestivalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F0487D258A5087BAB20941 /* FestivalEngine.swift */; };
+		D0A46E2E7B0AE09E7ED18ED9 /* EncyclopediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9FF3BC29A27EA4CDA040F7 /* EncyclopediaView.swift */; };
+		D84014C570DA840C24E85604 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5399F2E40E6D858CF1C3D /* TimelineView.swift */; };
+		E12308A48F866BC4FFE11979 /* SoundToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFFC47D4F01CDD7E9D99BB /* SoundToggleView.swift */; };
+		E4B09A4F2C3A311B3206F455 /* laos.json in Resources */ = {isa = PBXBuildFile; fileRef = A20C3D9E69AB30C4796D9C39 /* laos.json */; };
+		E6232E48BBBBB242E404B5A2 /* RandomHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB22106E1494F95CCB206E79 /* RandomHelpers.swift */; };
+		EE0C50010DF31F0336E5BDC1 /* LifeProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A44C41F9C89532F807EB55 /* LifeProgression.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		056EE16645B1185263737D77 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0D9A4406F1764B411BA455EB /* EventSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelector.swift; sourceTree = "<group>"; };
+		10F0487D258A5087BAB20941 /* FestivalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalEngine.swift; sourceTree = "<group>"; };
+		11E12B1E4002C2E143959EAF /* shared.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shared.json; sourceTree = "<group>"; };
+		1BFDEDB64605D4A177F53AB1 /* cambodia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cambodia.json; sourceTree = "<group>"; };
+		1CF1FC5D5EFFBC36A2A0D637 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		1D02CDEB836986B77DD73944 /* KarmaEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaEngine.swift; sourceTree = "<group>"; };
+		1D5B817441A084191518751D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		1ED6696C4A65C3799C534586 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		1F8E157066707C3836763269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24655CC6049481A608B5CD61 /* thailand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thailand.json; sourceTree = "<group>"; };
+		260E41966170BEA96C78E69B /* Samsara.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Samsara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9FF3BC29A27EA4CDA040F7 /* EncyclopediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaView.swift; sourceTree = "<group>"; };
+		35865A8C32106696F2746D38 /* ConsequenceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsequenceEngine.swift; sourceTree = "<group>"; };
+		37CC0CD25F16F3E71E758CDC /* Karma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Karma.swift; sourceTree = "<group>"; };
+		589E2E6BEF546BC4DDDB367B /* GlossaryTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryTerm.swift; sourceTree = "<group>"; };
+		58A271E2ADC28CCD4CED508B /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		5A93905112F23A387C612516 /* EndOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfLifeView.swift; sourceTree = "<group>"; };
+		5AA5399F2E40E6D858CF1C3D /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		5BEEF246635F2732863400C0 /* NPCEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCEngine.swift; sourceTree = "<group>"; };
+		6E583402EB7CC0180B6D4F19 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		71A44C41F9C89532F807EB55 /* LifeProgression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeProgression.swift; sourceTree = "<group>"; };
+		7513862AA3DE4E13149C5FFD /* SamsaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsaraApp.swift; sourceTree = "<group>"; };
+		752344113C54D187753F90DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BD4E872E70EEB586971CE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7E5D1FFBDEFAE331D3EAB553 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		7E6B7A02EF53140319BF7AAE /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		8EF6320E6BBC7C57CA2B26E6 /* LifeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEvent.swift; sourceTree = "<group>"; };
+		91A10C98D463ABD4E87696AF /* vietnam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vietnam.json; sourceTree = "<group>"; };
+		A03C6AAF79481B841D82A9A9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		A20C3D9E69AB30C4796D9C39 /* laos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = laos.json; sourceTree = "<group>"; };
+		B17994F5D4AFB6746AC76321 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		BA132615DE40876D30EEF0F5 /* backgrounds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backgrounds.json; sourceTree = "<group>"; };
+		BD11FB4CF850B04A1900A8E0 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		C029519B6BC3D00B3B71361A /* GameEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEvent.swift; sourceTree = "<group>"; };
+		C838AE28BDECE6C27BBDAFDD /* festivals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = festivals.json; sourceTree = "<group>"; };
+		CB22106E1494F95CCB206E79 /* RandomHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHelpers.swift; sourceTree = "<group>"; };
+		CD03BFCF52BC35D31AF09C2E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D260B16F279830BCB159C99C /* AgeAdvanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeAdvanceView.swift; sourceTree = "<group>"; };
+		D6D2E7738967C5CFBCFAD652 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D822E9BE9AB044979A2AEC35 /* KarmaVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaVisualizerView.swift; sourceTree = "<group>"; };
+		D856F7154C262546CDF57642 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		DC7059802438D3F43295229A /* StatsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPanelView.swift; sourceTree = "<group>"; };
+		DFCAC2C275BA20D553E43E08 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		E29055FA9385702DC07C970E /* myanmar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = myanmar.json; sourceTree = "<group>"; };
+		E9A353C4F6E0BD12929E804A /* glossary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = glossary.json; sourceTree = "<group>"; };
+		F761C8BA7A3B738FFA0F3104 /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
+		F7DFFC47D4F01CDD7E9D99BB /* SoundToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundToggleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		001384746D4E0BA5A9FE6A5A /* events */ = {
+			isa = PBXGroup;
+			children = (
+				1BFDEDB64605D4A177F53AB1 /* cambodia.json */,
+				A20C3D9E69AB30C4796D9C39 /* laos.json */,
+				E29055FA9385702DC07C970E /* myanmar.json */,
+				11E12B1E4002C2E143959EAF /* shared.json */,
+				24655CC6049481A608B5CD61 /* thailand.json */,
+				91A10C98D463ABD4E87696AF /* vietnam.json */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		1093AF85ECE56FD95321277E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D260B16F279830BCB159C99C /* AgeAdvanceView.swift */,
+				A03C6AAF79481B841D82A9A9 /* CustomTabBar.swift */,
+				DFCAC2C275BA20D553E43E08 /* EventCardView.swift */,
+				D822E9BE9AB044979A2AEC35 /* KarmaVisualizerView.swift */,
+				CD03BFCF52BC35D31AF09C2E /* ProfileView.swift */,
+				F7DFFC47D4F01CDD7E9D99BB /* SoundToggleView.swift */,
+				DC7059802438D3F43295229A /* StatsPanelView.swift */,
+				5AA5399F2E40E6D858CF1C3D /* TimelineView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2D7FB7ED1E7132F7AA7F2814 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6E583402EB7CC0180B6D4F19 /* AudioEngine.swift */,
+				35865A8C32106696F2746D38 /* ConsequenceEngine.swift */,
+				0D9A4406F1764B411BA455EB /* EventSelector.swift */,
+				10F0487D258A5087BAB20941 /* FestivalEngine.swift */,
+				D856F7154C262546CDF57642 /* GameEngine.swift */,
+				1D02CDEB836986B77DD73944 /* KarmaEngine.swift */,
+				71A44C41F9C89532F807EB55 /* LifeProgression.swift */,
+				5BEEF246635F2732863400C0 /* NPCEngine.swift */,
+				1ED6696C4A65C3799C534586 /* PersistenceManager.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		55240A3F0311F90E6490B513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260E41966170BEA96C78E69B /* Samsara.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C999F4B5B54F9AA23DF678F /* Samsara */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E157066707C3836763269 /* Assets.xcassets */,
+				752344113C54D187753F90DF /* ContentView.swift */,
+				7BD4E872E70EEB586971CE4E /* Info.plist */,
+				D6D2E7738967C5CFBCFAD652 /* PrivacyInfo.xcprivacy */,
+				7513862AA3DE4E13149C5FFD /* SamsaraApp.swift */,
+				2D7FB7ED1E7132F7AA7F2814 /* Engine */,
+				C455F96C80D806466B1A5DC5 /* Models */,
+				B9AA8876C2D584DEF7D9F10A /* Resources */,
+				B8945905E05127D269DB4D18 /* Utilities */,
+				AC532BB09675323BD198E00F /* Views */,
+			);
+			path = Samsara;
+			sourceTree = "<group>";
+		};
+		643D8474CE75AA14614A59DF = {
+			isa = PBXGroup;
+			children = (
+				5C999F4B5B54F9AA23DF678F /* Samsara */,
+				55240A3F0311F90E6490B513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1CBFCF39B23A49AC8020536 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2B9FF3BC29A27EA4CDA040F7 /* EncyclopediaView.swift */,
+				5A93905112F23A387C612516 /* EndOfLifeView.swift */,
+				1D5B817441A084191518751D /* GameView.swift */,
+				7E5D1FFBDEFAE331D3EAB553 /* TitleView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AC532BB09675323BD198E00F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1093AF85ECE56FD95321277E /* Components */,
+				A1CBFCF39B23A49AC8020536 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8945905E05127D269DB4D18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B17994F5D4AFB6746AC76321 /* Formatting.swift */,
+				CB22106E1494F95CCB206E79 /* RandomHelpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B9AA8876C2D584DEF7D9F10A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA132615DE40876D30EEF0F5 /* backgrounds.json */,
+				C838AE28BDECE6C27BBDAFDD /* festivals.json */,
+				E9A353C4F6E0BD12929E804A /* glossary.json */,
+				001384746D4E0BA5A9FE6A5A /* events */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C455F96C80D806466B1A5DC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CF1FC5D5EFFBC36A2A0D637 /* Background.swift */,
+				056EE16645B1185263737D77 /* Character.swift */,
+				F761C8BA7A3B738FFA0F3104 /* Festival.swift */,
+				C029519B6BC3D00B3B71361A /* GameEvent.swift */,
+				BD11FB4CF850B04A1900A8E0 /* GameState.swift */,
+				589E2E6BEF546BC4DDDB367B /* GlossaryTerm.swift */,
+				37CC0CD25F16F3E71E758CDC /* Karma.swift */,
+				8EF6320E6BBC7C57CA2B26E6 /* LifeEvent.swift */,
+				7E6B7A02EF53140319BF7AAE /* Relationship.swift */,
+				58A271E2ADC28CCD4CED508B /* Stats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D692B14FF45129E2F1E43A9 /* Samsara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854DFED63E55BD1C31F47A8B /* Build configuration list for PBXNativeTarget "Samsara" */;
+			buildPhases = (
+				AB2AE9E4E7FFA17A9C553282 /* Sources */,
+				A9BBE0CB3C2E67585278AFF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Samsara;
+			packageProductDependencies = (
+			);
+			productName = Samsara;
+			productReference = 260E41966170BEA96C78E69B /* Samsara.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42E66D44A2AB4D9C6F5B001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 14CDB5A8993B86655A6F7C39 /* Build configuration list for PBXProject "Samsara" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 643D8474CE75AA14614A59DF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D692B14FF45129E2F1E43A9 /* Samsara */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9BBE0CB3C2E67585278AFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8512BCD46977410207DCB747 /* Assets.xcassets in Resources */,
+				BCAC38D14F548CE3DC07655B /* PrivacyInfo.xcprivacy in Resources */,
+				3CB118E65898C72DF570ED32 /* backgrounds.json in Resources */,
+				2A90BDFA69A11F1DEDBEA88F /* cambodia.json in Resources */,
+				76A067B2410EE2C56C673699 /* festivals.json in Resources */,
+				93B6F8D510A4903A7501EE7C /* glossary.json in Resources */,
+				E4B09A4F2C3A311B3206F455 /* laos.json in Resources */,
+				2F40C7B912A75723947773BF /* myanmar.json in Resources */,
+				4CD3CAE38A90C0ADB1E25B9B /* shared.json in Resources */,
+				AFBE6A4EB6F6B0BFDB3CD42F /* thailand.json in Resources */,
+				75018B2A15BFD2B1FB26EE7B /* vietnam.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2AE9E4E7FFA17A9C553282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8656CD0D8246E49B42E873 /* AgeAdvanceView.swift in Sources */,
+				280D4C261DCC6F4B5B8488CA /* AudioEngine.swift in Sources */,
+				B25E28ABB258B221C6623716 /* Background.swift in Sources */,
+				277BD5B47406D0EA0890EF7A /* Character.swift in Sources */,
+				17E9AC5752C08A56F9ED1AB7 /* ConsequenceEngine.swift in Sources */,
+				4AF61ACC6B61E0D4E880642F /* ContentView.swift in Sources */,
+				7B505420A49DA55630F90785 /* CustomTabBar.swift in Sources */,
+				D0A46E2E7B0AE09E7ED18ED9 /* EncyclopediaView.swift in Sources */,
+				631D09DEF1E32927B6A694DB /* EndOfLifeView.swift in Sources */,
+				0319E04AD6B440304104DA63 /* EventCardView.swift in Sources */,
+				1F6C59E2D7255C6196155842 /* EventSelector.swift in Sources */,
+				89944CED8EC0FFB85C74559F /* Festival.swift in Sources */,
+				C7D7C8E5E8171A4468A64B8B /* FestivalEngine.swift in Sources */,
+				4F5F048CB3080FD7C893539C /* Formatting.swift in Sources */,
+				B1DD7DBFB12F5218822225B9 /* GameEngine.swift in Sources */,
+				09E1CF50143EDEB5763418CF /* GameEvent.swift in Sources */,
+				9A911BD5D1223A3862CC3890 /* GameState.swift in Sources */,
+				0F00B04C97C97E42C894523E /* GameView.swift in Sources */,
+				2952F13015CCC1858CD4387C /* GlossaryTerm.swift in Sources */,
+				BE2577081ECC10E59B3E6C61 /* Karma.swift in Sources */,
+				249E344DD2561DB0AAC6574F /* KarmaEngine.swift in Sources */,
+				AD51CA2EBA2E8DF9CED9D123 /* KarmaVisualizerView.swift in Sources */,
+				52753283B2824126F8B7A1D5 /* LifeEvent.swift in Sources */,
+				EE0C50010DF31F0336E5BDC1 /* LifeProgression.swift in Sources */,
+				1AD8FD17D01F56B6D31FC2F3 /* NPCEngine.swift in Sources */,
+				6BDCE4DA499237B28FD0B130 /* PersistenceManager.swift in Sources */,
+				8531D227CE0EA533DE710C04 /* ProfileView.swift in Sources */,
+				E6232E48BBBBB242E404B5A2 /* RandomHelpers.swift in Sources */,
+				09BE748F0387E7F8CDA710C1 /* Relationship.swift in Sources */,
+				0E0DE3B1EBBC76F6EFBFBACD /* SamsaraApp.swift in Sources */,
+				E12308A48F866BC4FFE11979 /* SoundToggleView.swift in Sources */,
+				64D7009C83571922EFF77C48 /* Stats.swift in Sources */,
+				A43497CE7803AC366EF49C41 /* StatsPanelView.swift in Sources */,
+				D84014C570DA840C24E85604 /* TimelineView.swift in Sources */,
+				54A0CFFC6E2D430877556C9A /* TitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D4CFB9238F1B61AC7D7CB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Samsara/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsara.app;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		61A27DEF42391F876DBDFBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Samsara/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsara.app;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		78FB408A77F6235B68CDE4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Samsara;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C8C67B3B4B1BBB5B86918CB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Samsara;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14CDB5A8993B86655A6F7C39 /* Build configuration list for PBXProject "Samsara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C67B3B4B1BBB5B86918CB1 /* Debug */,
+				78FB408A77F6235B68CDE4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		854DFED63E55BD1C31F47A8B /* Build configuration list for PBXNativeTarget "Samsara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A27DEF42391F876DBDFBF1 /* Debug */,
+				3D4CFB9238F1B61AC7D7CB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42E66D44A2AB4D9C6F5B001 /* Project object */;
+}
